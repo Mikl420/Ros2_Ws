@@ -1,0 +1,20 @@
+[3.536s] Invoking command in '/home/robotix/ros2_ws/src/robotix': PYTHONPATH=/home/robotix/ros2_ws/src/build/robotix/prefix_override:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/robotix build --build-base /home/robotix/ros2_ws/src/build/robotix/build install --record /home/robotix/ros2_ws/src/build/robotix/install.log --single-version-externally-managed
+[4.618s] running egg_info
+[4.620s] writing ../build/robotix/robotix.egg-info/PKG-INFO
+[4.621s] writing dependency_links to ../build/robotix/robotix.egg-info/dependency_links.txt
+[4.622s] writing entry points to ../build/robotix/robotix.egg-info/entry_points.txt
+[4.623s] writing requirements to ../build/robotix/robotix.egg-info/requires.txt
+[4.623s] writing top-level names to ../build/robotix/robotix.egg-info/top_level.txt
+[4.631s] reading manifest file '../build/robotix/robotix.egg-info/SOURCES.txt'
+[4.636s] writing manifest file '../build/robotix/robotix.egg-info/SOURCES.txt'
+[4.637s] running build
+[4.637s] running build_py
+[4.638s] running install
+[4.640s] running install_lib
+[4.645s] running install_data
+[4.647s] running install_egg_info
+[4.654s] removing '/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix-0.0.0-py3.10.egg-info' (and everything under it)
+[4.656s] Copying ../build/robotix/robotix.egg-info to /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix-0.0.0-py3.10.egg-info
+[4.663s] running install_scripts
+[4.746s] writing list of installed files to '/home/robotix/ros2_ws/src/build/robotix/install.log'
+[4.875s] Invoked command in '/home/robotix/ros2_ws/src/robotix' returned '0': PYTHONPATH=/home/robotix/ros2_ws/src/build/robotix/prefix_override:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/robotix build --build-base /home/robotix/ros2_ws/src/build/robotix/build install --record /home/robotix/ros2_ws/src/build/robotix/install.log --single-version-externally-managed

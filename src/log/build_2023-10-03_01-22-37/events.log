@@ -1,0 +1,373 @@
+[0.000000] (-) TimerEvent: {}
+[0.004363] (robotix) JobQueued: {'identifier': 'robotix', 'dependencies': OrderedDict()}
+[0.006474] (robotix) JobStarted: {'identifier': 'robotix'}
+[0.100659] (-) TimerEvent: {}
+[0.216008] (-) TimerEvent: {}
+[0.321462] (-) TimerEvent: {}
+[0.423846] (-) TimerEvent: {}
+[0.533037] (-) TimerEvent: {}
+[0.635747] (-) TimerEvent: {}
+[0.737316] (-) TimerEvent: {}
+[0.838464] (-) TimerEvent: {}
+[0.939595] (-) TimerEvent: {}
+[1.040710] (-) TimerEvent: {}
+[1.141784] (-) TimerEvent: {}
+[1.242875] (-) TimerEvent: {}
+[1.344022] (-) TimerEvent: {}
+[1.445011] (-) TimerEvent: {}
+[1.545789] (-) TimerEvent: {}
+[1.646685] (-) TimerEvent: {}
+[1.747379] (-) TimerEvent: {}
+[1.848180] (-) TimerEvent: {}
+[1.949256] (-) TimerEvent: {}
+[2.050470] (-) TimerEvent: {}
+[2.151572] (-) TimerEvent: {}
+[2.252571] (-) TimerEvent: {}
+[2.353419] (-) TimerEvent: {}
+[2.454259] (-) TimerEvent: {}
+[2.555190] (-) TimerEvent: {}
+[2.656291] (-) TimerEvent: {}
+[2.757387] (-) TimerEvent: {}
+[2.858403] (-) TimerEvent: {}
+[2.959202] (-) TimerEvent: {}
+[3.060001] (-) TimerEvent: {}
+[3.160694] (-) TimerEvent: {}
+[3.261369] (-) TimerEvent: {}
+[3.362024] (-) TimerEvent: {}
+[3.462673] (-) TimerEvent: {}
+[3.563384] (-) TimerEvent: {}
+[3.664090] (-) TimerEvent: {}
+[3.764845] (-) TimerEvent: {}
+[3.865752] (-) TimerEvent: {}
+[3.967290] (-) TimerEvent: {}
+[4.068175] (-) TimerEvent: {}
+[4.169038] (-) TimerEvent: {}
+[4.269713] (-) TimerEvent: {}
+[4.370370] (-) TimerEvent: {}
+[4.471075] (-) TimerEvent: {}
+[4.571789] (-) TimerEvent: {}
+[4.672550] (-) TimerEvent: {}
+[4.773799] (-) TimerEvent: {}
+[4.875056] (-) TimerEvent: {}
+[4.976389] (-) TimerEvent: {}
+[5.077705] (-) TimerEvent: {}
+[5.178949] (-) TimerEvent: {}
+[5.280300] (-) TimerEvent: {}
+[5.382011] (-) TimerEvent: {}
+[5.483337] (-) TimerEvent: {}
+[5.584835] (-) TimerEvent: {}
+[5.686155] (-) TimerEvent: {}
+[5.795352] (-) TimerEvent: {}
+[5.896967] (-) TimerEvent: {}
+[5.998214] (-) TimerEvent: {}
+[6.099634] (-) TimerEvent: {}
+[6.200767] (-) TimerEvent: {}
+[6.301636] (-) TimerEvent: {}
+[6.402557] (-) TimerEvent: {}
+[6.503530] (-) TimerEvent: {}
+[6.604685] (-) TimerEvent: {}
+[6.705695] (-) TimerEvent: {}
+[6.806798] (-) TimerEvent: {}
+[6.907902] (-) TimerEvent: {}
+[7.008953] (-) TimerEvent: {}
+[7.211170] (-) TimerEvent: {}
+[7.312271] (-) TimerEvent: {}
+[7.413119] (-) TimerEvent: {}
+[7.513903] (-) TimerEvent: {}
+[7.614914] (-) TimerEvent: {}
+[7.715988] (-) TimerEvent: {}
+[7.816840] (-) TimerEvent: {}
+[7.917824] (-) TimerEvent: {}
+[8.019107] (-) TimerEvent: {}
+[8.120044] (-) TimerEvent: {}
+[8.220905] (-) TimerEvent: {}
+[8.321928] (-) TimerEvent: {}
+[8.423018] (-) TimerEvent: {}
+[8.523963] (-) TimerEvent: {}
+[8.625201] (-) TimerEvent: {}
+[8.726311] (-) TimerEvent: {}
+[8.827478] (-) TimerEvent: {}
+[8.928385] (-) TimerEvent: {}
+[9.029492] (-) TimerEvent: {}
+[9.130554] (-) TimerEvent: {}
+[9.231632] (-) TimerEvent: {}
+[9.332684] (-) TimerEvent: {}
+[9.433753] (-) TimerEvent: {}
+[9.534833] (-) TimerEvent: {}
+[9.635993] (-) TimerEvent: {}
+[9.737121] (-) TimerEvent: {}
+[9.838127] (-) TimerEvent: {}
+[9.939199] (-) TimerEvent: {}
+[10.040326] (-) TimerEvent: {}
+[10.141437] (-) TimerEvent: {}
+[10.242466] (-) TimerEvent: {}
+[10.343405] (-) TimerEvent: {}
+[10.444579] (-) TimerEvent: {}
+[10.545590] (-) TimerEvent: {}
+[10.646571] (-) TimerEvent: {}
+[10.747597] (-) TimerEvent: {}
+[10.848558] (-) TimerEvent: {}
+[10.949380] (-) TimerEvent: {}
+[11.050347] (-) TimerEvent: {}
+[11.151488] (-) TimerEvent: {}
+[11.252564] (-) TimerEvent: {}
+[11.353593] (-) TimerEvent: {}
+[11.454488] (-) TimerEvent: {}
+[11.555611] (-) TimerEvent: {}
+[11.656729] (-) TimerEvent: {}
+[11.757764] (-) TimerEvent: {}
+[11.858528] (-) TimerEvent: {}
+[11.959648] (-) TimerEvent: {}
+[12.060930] (-) TimerEvent: {}
+[12.161905] (-) TimerEvent: {}
+[12.262835] (-) TimerEvent: {}
+[12.363941] (-) TimerEvent: {}
+[12.464983] (-) TimerEvent: {}
+[12.566053] (-) TimerEvent: {}
+[12.667150] (-) TimerEvent: {}
+[12.768256] (-) TimerEvent: {}
+[12.869348] (-) TimerEvent: {}
+[12.970414] (-) TimerEvent: {}
+[13.071535] (-) TimerEvent: {}
+[13.172592] (-) TimerEvent: {}
+[13.273586] (-) TimerEvent: {}
+[13.374695] (-) TimerEvent: {}
+[13.475876] (-) TimerEvent: {}
+[13.577016] (-) TimerEvent: {}
+[13.678150] (-) TimerEvent: {}
+[13.779022] (-) TimerEvent: {}
+[13.880020] (-) TimerEvent: {}
+[13.980851] (-) TimerEvent: {}
+[14.081643] (-) TimerEvent: {}
+[14.182409] (-) TimerEvent: {}
+[14.283379] (-) TimerEvent: {}
+[14.384527] (-) TimerEvent: {}
+[14.485298] (-) TimerEvent: {}
+[14.586461] (-) TimerEvent: {}
+[14.687934] (-) TimerEvent: {}
+[14.789040] (-) TimerEvent: {}
+[14.890105] (-) TimerEvent: {}
+[14.991148] (-) TimerEvent: {}
+[15.092236] (-) TimerEvent: {}
+[15.193327] (-) TimerEvent: {}
+[15.294395] (-) TimerEvent: {}
+[15.395420] (-) TimerEvent: {}
+[15.496485] (-) TimerEvent: {}
+[15.597349] (-) TimerEvent: {}
+[15.698189] (-) TimerEvent: {}
+[15.799050] (-) TimerEvent: {}
+[15.899981] (-) TimerEvent: {}
+[16.000909] (-) TimerEvent: {}
+[16.101886] (-) TimerEvent: {}
+[16.202993] (-) TimerEvent: {}
+[16.304096] (-) TimerEvent: {}
+[16.405084] (-) TimerEvent: {}
+[16.506176] (-) TimerEvent: {}
+[16.607262] (-) TimerEvent: {}
+[16.708436] (-) TimerEvent: {}
+[16.809373] (-) TimerEvent: {}
+[16.910404] (-) TimerEvent: {}
+[17.011375] (-) TimerEvent: {}
+[17.112651] (-) TimerEvent: {}
+[17.213850] (-) TimerEvent: {}
+[17.314892] (-) TimerEvent: {}
+[17.416205] (-) TimerEvent: {}
+[17.517278] (-) TimerEvent: {}
+[17.618348] (-) TimerEvent: {}
+[17.719336] (-) TimerEvent: {}
+[17.820174] (-) TimerEvent: {}
+[17.921068] (-) TimerEvent: {}
+[18.022123] (-) TimerEvent: {}
+[18.123144] (-) TimerEvent: {}
+[18.224211] (-) TimerEvent: {}
+[18.325267] (-) TimerEvent: {}
+[18.565575] (-) TimerEvent: {}
+[18.666646] (-) TimerEvent: {}
+[18.767411] (-) TimerEvent: {}
+[18.868277] (-) TimerEvent: {}
+[18.969382] (-) TimerEvent: {}
+[19.070192] (-) TimerEvent: {}
+[19.170963] (-) TimerEvent: {}
+[19.271756] (-) TimerEvent: {}
+[19.372533] (-) TimerEvent: {}
+[19.473326] (-) TimerEvent: {}
+[19.574243] (-) TimerEvent: {}
+[19.675087] (-) TimerEvent: {}
+[19.780516] (-) TimerEvent: {}
+[19.881465] (-) TimerEvent: {}
+[19.982425] (-) TimerEvent: {}
+[20.083603] (-) TimerEvent: {}
+[20.185784] (-) TimerEvent: {}
+[20.289834] (-) TimerEvent: {}
+[20.392699] (-) TimerEvent: {}
+[20.496423] (-) TimerEvent: {}
+[20.611874] (-) TimerEvent: {}
+[20.713733] (-) TimerEvent: {}
+[20.815686] (-) TimerEvent: {}
+[20.917921] (-) TimerEvent: {}
+[21.022845] (-) TimerEvent: {}
+[21.126433] (-) TimerEvent: {}
+[21.234591] (-) TimerEvent: {}
+[21.336559] (-) TimerEvent: {}
+[21.440525] (-) TimerEvent: {}
+[21.545850] (-) TimerEvent: {}
+[21.649636] (-) TimerEvent: {}
+[21.753565] (-) TimerEvent: {}
+[21.857409] (-) TimerEvent: {}
+[22.745982] (-) TimerEvent: {}
+[22.847426] (-) TimerEvent: {}
+[22.948982] (-) TimerEvent: {}
+[23.050769] (-) TimerEvent: {}
+[23.152560] (-) TimerEvent: {}
+[23.254328] (-) TimerEvent: {}
+[23.356102] (-) TimerEvent: {}
+[23.467886] (-) TimerEvent: {}
+[23.576559] (-) TimerEvent: {}
+[23.678559] (-) TimerEvent: {}
+[23.782013] (-) TimerEvent: {}
+[23.892680] (-) TimerEvent: {}
+[23.996929] (-) TimerEvent: {}
+[24.101035] (-) TimerEvent: {}
+[24.202599] (-) TimerEvent: {}
+[24.303906] (-) TimerEvent: {}
+[24.405197] (-) TimerEvent: {}
+[24.506395] (-) TimerEvent: {}
+[24.607289] (-) TimerEvent: {}
+[24.708474] (-) TimerEvent: {}
+[24.809558] (-) TimerEvent: {}
+[24.910659] (-) TimerEvent: {}
+[25.011744] (-) TimerEvent: {}
+[25.112637] (-) TimerEvent: {}
+[25.213639] (-) TimerEvent: {}
+[25.314495] (-) TimerEvent: {}
+[25.415288] (-) TimerEvent: {}
+[25.516275] (-) TimerEvent: {}
+[25.617346] (-) TimerEvent: {}
+[25.718355] (-) TimerEvent: {}
+[25.819052] (-) TimerEvent: {}
+[25.919989] (-) TimerEvent: {}
+[26.021017] (-) TimerEvent: {}
+[26.122089] (-) TimerEvent: {}
+[26.222962] (-) TimerEvent: {}
+[26.324056] (-) TimerEvent: {}
+[26.424864] (-) TimerEvent: {}
+[26.525823] (-) TimerEvent: {}
+[26.626914] (-) TimerEvent: {}
+[26.727910] (-) TimerEvent: {}
+[26.828772] (-) TimerEvent: {}
+[26.929883] (-) TimerEvent: {}
+[27.030907] (-) TimerEvent: {}
+[27.131820] (-) TimerEvent: {}
+[27.232663] (-) TimerEvent: {}
+[27.333557] (-) TimerEvent: {}
+[27.434619] (-) TimerEvent: {}
+[27.535657] (-) TimerEvent: {}
+[27.636703] (-) TimerEvent: {}
+[27.737884] (-) TimerEvent: {}
+[28.533565] (-) TimerEvent: {}
+[28.634899] (-) TimerEvent: {}
+[28.736338] (-) TimerEvent: {}
+[28.837864] (-) TimerEvent: {}
+[28.939048] (-) TimerEvent: {}
+[29.040179] (-) TimerEvent: {}
+[29.141426] (-) TimerEvent: {}
+[29.242674] (-) TimerEvent: {}
+[29.343993] (-) TimerEvent: {}
+[29.445227] (-) TimerEvent: {}
+[29.546464] (-) TimerEvent: {}
+[29.647560] (-) TimerEvent: {}
+[29.748591] (-) TimerEvent: {}
+[29.849650] (-) TimerEvent: {}
+[30.643206] (-) TimerEvent: {}
+[30.744052] (-) TimerEvent: {}
+[30.844971] (-) TimerEvent: {}
+[30.945807] (-) TimerEvent: {}
+[31.046616] (-) TimerEvent: {}
+[31.147400] (-) TimerEvent: {}
+[31.248224] (-) TimerEvent: {}
+[31.348996] (-) TimerEvent: {}
+[31.449789] (-) TimerEvent: {}
+[31.550783] (-) TimerEvent: {}
+[31.651632] (-) TimerEvent: {}
+[31.750748] (robotix) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/robotix', 'build', '--build-base', '/home/robotix/ros2_ws/src/build/robotix/build', 'install', '--record', '/home/robotix/ros2_ws/src/build/robotix/install.log', '--single-version-externally-managed'], 'cwd': '/home/robotix/ros2_ws/src/robotix', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotix', 'SSH_CLIENT': '192.168.129.2 63658 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robotix', 'OLDPWD': '/home/robotix/ros2_ws/src/robotix', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'robotix', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/robotix/ros2_ws/src/build/robotix', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.129.2 63658 192.168.129.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotix/ros2_ws/src/build/robotix/prefix_override:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[31.763339] (-) TimerEvent: {}
+[31.866241] (-) TimerEvent: {}
+[31.968168] (-) TimerEvent: {}
+[32.069394] (-) TimerEvent: {}
+[32.170321] (-) TimerEvent: {}
+[32.271363] (-) TimerEvent: {}
+[32.372424] (-) TimerEvent: {}
+[32.473394] (-) TimerEvent: {}
+[32.574333] (-) TimerEvent: {}
+[32.675252] (-) TimerEvent: {}
+[32.777198] (-) TimerEvent: {}
+[32.879378] (-) TimerEvent: {}
+[32.981478] (-) TimerEvent: {}
+[33.083562] (-) TimerEvent: {}
+[33.185569] (-) TimerEvent: {}
+[33.289385] (-) TimerEvent: {}
+[33.393218] (-) TimerEvent: {}
+[33.496981] (-) TimerEvent: {}
+[33.541104] (robotix) StdoutLine: {'line': b'running egg_info\n'}
+[33.564012] (robotix) StdoutLine: {'line': b'creating ../build/robotix/robotix.egg-info\n'}
+[33.568798] (robotix) StdoutLine: {'line': b'writing ../build/robotix/robotix.egg-info/PKG-INFO\n'}
+[33.575019] (robotix) StdoutLine: {'line': b'writing dependency_links to ../build/robotix/robotix.egg-info/dependency_links.txt\n'}
+[33.580041] (robotix) StdoutLine: {'line': b'writing entry points to ../build/robotix/robotix.egg-info/entry_points.txt\n'}
+[33.585177] (robotix) StdoutLine: {'line': b'writing requirements to ../build/robotix/robotix.egg-info/requires.txt\n'}
+[33.589633] (robotix) StdoutLine: {'line': b'writing top-level names to ../build/robotix/robotix.egg-info/top_level.txt\n'}
+[33.595285] (robotix) StdoutLine: {'line': b"writing manifest file '../build/robotix/robotix.egg-info/SOURCES.txt'\n"}
+[33.597197] (-) TimerEvent: {}
+[33.638961] (robotix) StdoutLine: {'line': b"reading manifest file '../build/robotix/robotix.egg-info/SOURCES.txt'\n"}
+[33.651320] (robotix) StdoutLine: {'line': b"writing manifest file '../build/robotix/robotix.egg-info/SOURCES.txt'\n"}
+[33.660785] (robotix) StdoutLine: {'line': b'running build\n'}
+[33.672534] (robotix) StdoutLine: {'line': b'running build_py\n'}
+[33.677393] (robotix) StdoutLine: {'line': b'creating /home/robotix/ros2_ws/src/build/robotix/build\n'}
+[33.680732] (robotix) StdoutLine: {'line': b'creating /home/robotix/ros2_ws/src/build/robotix/build/lib\n'}
+[33.683923] (robotix) StdoutLine: {'line': b'creating /home/robotix/ros2_ws/src/build/robotix/build/lib/robotix\n'}
+[33.687738] (robotix) StdoutLine: {'line': b'copying robotix/__init__.py -> /home/robotix/ros2_ws/src/build/robotix/build/lib/robotix\n'}
+[33.693239] (robotix) StdoutLine: {'line': b'running install\n'}
+[33.697584] (-) TimerEvent: {}
+[33.702124] (robotix) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[33.704863] (robotix) StderrLine: {'line': b'  warnings.warn(\n'}
+[33.715544] (robotix) StdoutLine: {'line': b'running install_lib\n'}
+[33.728146] (robotix) StdoutLine: {'line': b'creating /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix\n'}
+[33.735789] (robotix) StdoutLine: {'line': b'copying /home/robotix/ros2_ws/src/build/robotix/build/lib/robotix/__init__.py -> /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix\n'}
+[33.738099] (robotix) StdoutLine: {'line': b'byte-compiling /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix/__init__.py to __init__.cpython-310.pyc\n'}
+[33.744528] (robotix) StdoutLine: {'line': b'running install_data\n'}
+[33.752619] (robotix) StdoutLine: {'line': b'creating /home/robotix/ros2_ws/src/install/robotix/share/ament_index\n'}
+[33.756809] (robotix) StdoutLine: {'line': b'creating /home/robotix/ros2_ws/src/install/robotix/share/ament_index/resource_index\n'}
+[33.760270] (robotix) StdoutLine: {'line': b'creating /home/robotix/ros2_ws/src/install/robotix/share/ament_index/resource_index/packages\n'}
+[33.764415] (robotix) StdoutLine: {'line': b'copying resource/robotix -> /home/robotix/ros2_ws/src/install/robotix/share/ament_index/resource_index/packages\n'}
+[33.769639] (robotix) StdoutLine: {'line': b'copying package.xml -> /home/robotix/ros2_ws/src/install/robotix/share/robotix\n'}
+[33.774525] (robotix) StdoutLine: {'line': b'running install_egg_info\n'}
+[33.798010] (-) TimerEvent: {}
+[33.802549] (robotix) StdoutLine: {'line': b'Copying ../build/robotix/robotix.egg-info to /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix-0.0.0-py3.10.egg-info\n'}
+[33.825740] (robotix) StdoutLine: {'line': b'running install_scripts\n'}
+[33.898416] (-) TimerEvent: {}
+[34.001567] (-) TimerEvent: {}
+[34.104716] (-) TimerEvent: {}
+[34.207999] (-) TimerEvent: {}
+[34.235835] (robotix) StdoutLine: {'line': b"writing list of installed files to '/home/robotix/ros2_ws/src/build/robotix/install.log'\n"}
+[34.308358] (-) TimerEvent: {}
+[34.411716] (-) TimerEvent: {}
+[34.515404] (-) TimerEvent: {}
+[34.618679] (-) TimerEvent: {}
+[34.722007] (-) TimerEvent: {}
+[34.825566] (-) TimerEvent: {}
+[34.840922] (robotix) CommandEnded: {'returncode': 0}
+[34.926365] (-) TimerEvent: {}
+[35.028415] (-) TimerEvent: {}
+[35.190827] (-) TimerEvent: {}
+[35.293980] (-) TimerEvent: {}
+[35.441047] (-) TimerEvent: {}
+[35.544582] (-) TimerEvent: {}
+[35.648399] (-) TimerEvent: {}
+[35.752752] (-) TimerEvent: {}
+[35.861841] (-) TimerEvent: {}
+[35.975166] (-) TimerEvent: {}
+[36.104132] (-) TimerEvent: {}
+[36.247356] (-) TimerEvent: {}
+[36.359894] (-) TimerEvent: {}
+[36.461576] (-) TimerEvent: {}
+[36.470104] (robotix) JobEnded: {'identifier': 'robotix', 'rc': 0}
+[36.477581] (-) EventReactorShutdown: {}

@@ -1,0 +1,41 @@
+[1.765s] Invoking command in '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/src/build/ydlidar_ros2_driver -- -j4 -l4
+[1.966s] [35m[1mConsolidate compiler generated dependencies of target ydlidar_ros2_driver_node[0m
+[2.032s] [ 50%] Built target ydlidar_ros2_driver_client
+[2.067s] [ 75%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[4.177s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:1:1:[m[K [01;31m[Kerror: [m[K‘[01m[K﻿[m[K’ does not name a type
+[4.177s]     1 | [01;31m[K﻿[m[K﻿/*
+[4.178s]       |  
+[4.185s] In file included from [01m[K/usr/include/stdlib.h:395[m[K,
+[4.185s]                  from [01m[K/usr/include/c++/11/cstdlib:75[m[K,
+[4.186s]                  from [01m[K/usr/include/c++/11/stdlib.h:36[m[K,
+[4.186s]                  from [01m[K/usr/local/include/core/common/ydlidar_def.h:29[m[K,
+[4.187s]                  from [01m[K/usr/local/include/src/CYdLidar.h:47[m[K,
+[4.187s]                  from [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:16[m[K:
+[4.188s] [01m[K/usr/include/aarch64-linux-gnu/sys/types.h:33:9:[m[K [01;31m[Kerror: [m[K‘[01m[K__u_char[m[K’ does not name a type; did you mean ‘[01m[K__u_short[m[K’?
+[4.188s]    33 | typedef [01;31m[K__u_char[m[K u_char;
+[4.188s]       |         [01;31m[K^~~~~~~~[m[K
+[4.189s]       |         [32m[K__u_short[m[K
+[13.562s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[13.562s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:169:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.563s]   169 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[13.564s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[13.564s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:170:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.565s]   170 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[13.565s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[13.565s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:171:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.566s]   171 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[13.566s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[13.631s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[13.632s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:179:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.632s]   179 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[13.633s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[13.633s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:180:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.634s]   180 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[13.634s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[13.634s] [01m[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:181:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.635s]   181 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[13.635s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[17.982s] gmake[2]: *** [CMakeFiles/ydlidar_ros2_driver_node.dir/build.make:76: CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o] Error 1
+[17.983s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ydlidar_ros2_driver_node.dir/all] Error 2
+[17.984s] gmake: *** [Makefile:146: all] Error 2
+[17.991s] Invoked command in '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/src/build/ydlidar_ros2_driver -- -j4 -l4

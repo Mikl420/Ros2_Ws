@@ -1,0 +1,3 @@
+[1.788s] Invoking command in '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/src/build/ydlidar_ros2_driver -- -j4 -l4
+[2.906s] [ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[2.915s] [ 75%] Built target ydlidar_ros2_driver_client

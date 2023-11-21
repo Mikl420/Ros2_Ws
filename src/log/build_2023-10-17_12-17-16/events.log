@@ -1,0 +1,263 @@
+[0.000000] (-) TimerEvent: {}
+[0.001524] (robotix) JobQueued: {'identifier': 'robotix', 'dependencies': OrderedDict()}
+[0.001910] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.002148] (robotix) JobStarted: {'identifier': 'robotix'}
+[0.098008] (-) TimerEvent: {}
+[0.198711] (-) TimerEvent: {}
+[0.299771] (-) TimerEvent: {}
+[0.360218] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.399953] (-) TimerEvent: {}
+[0.500876] (-) TimerEvent: {}
+[0.601567] (-) TimerEvent: {}
+[0.702368] (-) TimerEvent: {}
+[0.803067] (-) TimerEvent: {}
+[0.903793] (-) TimerEvent: {}
+[1.004435] (-) TimerEvent: {}
+[1.105122] (-) TimerEvent: {}
+[1.205758] (-) TimerEvent: {}
+[1.306402] (-) TimerEvent: {}
+[1.407049] (-) TimerEvent: {}
+[1.507713] (-) TimerEvent: {}
+[1.608386] (-) TimerEvent: {}
+[1.709100] (-) TimerEvent: {}
+[1.809874] (-) TimerEvent: {}
+[1.910663] (-) TimerEvent: {}
+[2.011416] (-) TimerEvent: {}
+[2.112590] (-) TimerEvent: {}
+[2.117425] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[2.120896] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[2.124015] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotix'), ('SSH_CLIENT', '192.168.129.8 49723 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robotix'), ('OLDPWD', '/home/robotix'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robotix/ros2_ws/src/install:/home/robotix/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '12'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.129.8 49723 192.168.129.31 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotix/ros2_ws/src/build/robotix:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble')]), 'shell': False}
+[2.212808] (-) TimerEvent: {}
+[2.314273] (-) TimerEvent: {}
+[2.326880] (ydlidar_ros2_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ydlidar_ros2_driver_node\x1b[0m\n'}
+[2.392445] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_client\n'}
+[2.414505] (-) TimerEvent: {}
+[2.430758] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o\x1b[0m\n'}
+[2.514690] (-) TimerEvent: {}
+[2.615397] (-) TimerEvent: {}
+[2.716104] (-) TimerEvent: {}
+[2.816820] (-) TimerEvent: {}
+[2.917544] (-) TimerEvent: {}
+[3.018242] (-) TimerEvent: {}
+[3.118956] (-) TimerEvent: {}
+[3.219675] (-) TimerEvent: {}
+[3.320404] (-) TimerEvent: {}
+[3.421146] (-) TimerEvent: {}
+[3.521929] (-) TimerEvent: {}
+[3.622737] (-) TimerEvent: {}
+[3.723402] (-) TimerEvent: {}
+[3.825183] (-) TimerEvent: {}
+[3.893533] (robotix) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/robotix/ros2_ws/src/build/robotix/build', '--no-deps', 'install_data'], 'cwd': '/home/robotix/ros2_ws/src/build/robotix', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotix', 'SSH_CLIENT': '192.168.129.8 49723 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robotix', 'OLDPWD': '/home/robotix', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robotix/ros2_ws/src/install:/home/robotix/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'robotix', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '12', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/robotix/ros2_ws/src/build/robotix', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.129.8 49723 192.168.129.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotix/ros2_ws/src/build/robotix/prefix_override:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/src/build/robotix:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver'}, 'shell': False}
+[3.925351] (-) TimerEvent: {}
+[4.026037] (-) TimerEvent: {}
+[4.126725] (-) TimerEvent: {}
+[4.227463] (-) TimerEvent: {}
+[4.328209] (-) TimerEvent: {}
+[4.428999] (-) TimerEvent: {}
+[4.525767] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:1:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K\xef\xbb\xbf\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.526492] (ydlidar_ros2_driver) StderrLine: {'line': b'    1 | \x1b[01;31m\x1b[K\xef\xbb\xbf\x1b[m\x1b[K\xef\xbb\xbf/*\n'}
+[4.527015] (ydlidar_ros2_driver) StderrLine: {'line': b'      |  \n'}
+[4.529155] (-) TimerEvent: {}
+[4.533675] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/stdlib.h:395\x1b[m\x1b[K,\n'}
+[4.534310] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/cstdlib:75\x1b[m\x1b[K,\n'}
+[4.534836] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdlib.h:36\x1b[m\x1b[K,\n'}
+[4.535336] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/core/common/ydlidar_def.h:29\x1b[m\x1b[K,\n'}
+[4.535808] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/src/CYdLidar.h:47\x1b[m\x1b[K,\n'}
+[4.536287] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:16\x1b[m\x1b[K:\n'}
+[4.536766] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/sys/types.h:33:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__u_char\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[K__u_short\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.537334] (ydlidar_ros2_driver) StderrLine: {'line': b'   33 | typedef \x1b[01;31m\x1b[K__u_char\x1b[m\x1b[K u_char;\n'}
+[4.537830] (ydlidar_ros2_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.538300] (ydlidar_ros2_driver) StderrLine: {'line': b'      |         \x1b[32m\x1b[K__u_short\x1b[m\x1b[K\n'}
+[4.629318] (-) TimerEvent: {}
+[4.730130] (-) TimerEvent: {}
+[4.830933] (-) TimerEvent: {}
+[4.931817] (-) TimerEvent: {}
+[5.032781] (-) TimerEvent: {}
+[5.133619] (-) TimerEvent: {}
+[5.234489] (-) TimerEvent: {}
+[5.298659] (robotix) StdoutLine: {'line': b'running develop\n'}
+[5.334650] (-) TimerEvent: {}
+[5.435494] (-) TimerEvent: {}
+[5.536475] (-) TimerEvent: {}
+[5.637364] (-) TimerEvent: {}
+[5.738188] (-) TimerEvent: {}
+[5.838997] (-) TimerEvent: {}
+[5.939830] (-) TimerEvent: {}
+[6.040762] (-) TimerEvent: {}
+[6.141758] (-) TimerEvent: {}
+[6.191166] (robotix) StdoutLine: {'line': b'running egg_info\n'}
+[6.192202] (robotix) StdoutLine: {'line': b'writing robotix.egg-info/PKG-INFO\n'}
+[6.193244] (robotix) StdoutLine: {'line': b'writing dependency_links to robotix.egg-info/dependency_links.txt\n'}
+[6.194444] (robotix) StdoutLine: {'line': b'writing entry points to robotix.egg-info/entry_points.txt\n'}
+[6.195624] (robotix) StdoutLine: {'line': b'writing requirements to robotix.egg-info/requires.txt\n'}
+[6.196640] (robotix) StdoutLine: {'line': b'writing top-level names to robotix.egg-info/top_level.txt\n'}
+[6.206937] (robotix) StdoutLine: {'line': b"reading manifest file 'robotix.egg-info/SOURCES.txt'\n"}
+[6.211503] (robotix) StdoutLine: {'line': b"writing manifest file 'robotix.egg-info/SOURCES.txt'\n"}
+[6.218565] (robotix) StdoutLine: {'line': b'running build_ext\n'}
+[6.219613] (robotix) StdoutLine: {'line': b'Creating /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix.egg-link (link to .)\n'}
+[6.224734] (robotix) StdoutLine: {'line': b'Installing codeuse script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.225941] (robotix) StdoutLine: {'line': b'Installing controller script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.227066] (robotix) StdoutLine: {'line': b'Installing ctrl_claw script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.228134] (robotix) StdoutLine: {'line': b'Installing ctrl_nav script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.229127] (robotix) StdoutLine: {'line': b'Installing jetson script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.230212] (robotix) StdoutLine: {'line': b'Installing laser script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.231197] (robotix) StdoutLine: {'line': b'Installing lidar script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.232149] (robotix) StdoutLine: {'line': b'Installing motor script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.233323] (robotix) StdoutLine: {'line': b'Installing motor_claw script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.234366] (robotix) StdoutLine: {'line': b'Installing motor_plateau script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[6.235915] (robotix) StdoutLine: {'line': b'\n'}
+[6.236787] (robotix) StdoutLine: {'line': b'Installed /home/robotix/ros2_ws/src/build/robotix\n'}
+[6.237604] (robotix) StdoutLine: {'line': b'running install_data\n'}
+[6.242035] (-) TimerEvent: {}
+[6.343634] (-) TimerEvent: {}
+[6.390358] (robotix) CommandEnded: {'returncode': 0}
+[6.443934] (-) TimerEvent: {}
+[6.545078] (-) TimerEvent: {}
+[6.647202] (-) TimerEvent: {}
+[6.749643] (-) TimerEvent: {}
+[6.812008] (robotix) JobEnded: {'identifier': 'robotix', 'rc': 0}
+[6.849857] (-) TimerEvent: {}
+[6.950641] (-) TimerEvent: {}
+[7.051380] (-) TimerEvent: {}
+[7.152144] (-) TimerEvent: {}
+[7.252956] (-) TimerEvent: {}
+[7.353723] (-) TimerEvent: {}
+[7.454445] (-) TimerEvent: {}
+[7.555170] (-) TimerEvent: {}
+[7.655937] (-) TimerEvent: {}
+[7.756649] (-) TimerEvent: {}
+[7.857368] (-) TimerEvent: {}
+[7.958084] (-) TimerEvent: {}
+[8.058825] (-) TimerEvent: {}
+[8.159598] (-) TimerEvent: {}
+[8.260353] (-) TimerEvent: {}
+[8.361108] (-) TimerEvent: {}
+[8.461812] (-) TimerEvent: {}
+[8.562526] (-) TimerEvent: {}
+[8.663265] (-) TimerEvent: {}
+[8.763993] (-) TimerEvent: {}
+[8.864698] (-) TimerEvent: {}
+[8.965540] (-) TimerEvent: {}
+[9.066247] (-) TimerEvent: {}
+[9.166962] (-) TimerEvent: {}
+[9.267660] (-) TimerEvent: {}
+[9.368369] (-) TimerEvent: {}
+[9.469198] (-) TimerEvent: {}
+[9.569914] (-) TimerEvent: {}
+[9.670631] (-) TimerEvent: {}
+[9.771342] (-) TimerEvent: {}
+[9.872057] (-) TimerEvent: {}
+[9.972779] (-) TimerEvent: {}
+[10.073534] (-) TimerEvent: {}
+[10.174241] (-) TimerEvent: {}
+[10.274941] (-) TimerEvent: {}
+[10.375644] (-) TimerEvent: {}
+[10.476392] (-) TimerEvent: {}
+[10.577118] (-) TimerEvent: {}
+[10.677819] (-) TimerEvent: {}
+[10.778530] (-) TimerEvent: {}
+[10.879306] (-) TimerEvent: {}
+[10.980089] (-) TimerEvent: {}
+[11.080795] (-) TimerEvent: {}
+[11.181539] (-) TimerEvent: {}
+[11.282238] (-) TimerEvent: {}
+[11.382943] (-) TimerEvent: {}
+[11.483684] (-) TimerEvent: {}
+[11.584383] (-) TimerEvent: {}
+[11.685137] (-) TimerEvent: {}
+[11.785831] (-) TimerEvent: {}
+[11.886538] (-) TimerEvent: {}
+[11.987317] (-) TimerEvent: {}
+[12.088028] (-) TimerEvent: {}
+[12.188744] (-) TimerEvent: {}
+[12.289557] (-) TimerEvent: {}
+[12.390250] (-) TimerEvent: {}
+[12.490982] (-) TimerEvent: {}
+[12.591708] (-) TimerEvent: {}
+[12.692432] (-) TimerEvent: {}
+[12.793195] (-) TimerEvent: {}
+[12.893918] (-) TimerEvent: {}
+[12.994662] (-) TimerEvent: {}
+[13.095395] (-) TimerEvent: {}
+[13.196115] (-) TimerEvent: {}
+[13.296884] (-) TimerEvent: {}
+[13.397663] (-) TimerEvent: {}
+[13.498381] (-) TimerEvent: {}
+[13.599148] (-) TimerEvent: {}
+[13.699876] (-) TimerEvent: {}
+[13.800625] (-) TimerEvent: {}
+[13.901358] (-) TimerEvent: {}
+[13.929411] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[13.930178] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:169:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest_header\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.930611] (ydlidar_ros2_driver) StderrLine: {'line': b'  169 |     [&laser](\x1b[01;35m\x1b[Kconst std::shared_ptr<rmw_request_id_t> request_header\x1b[m\x1b[K,\n'}
+[13.930988] (ydlidar_ros2_driver) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.931358] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:170:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.931757] (ydlidar_ros2_driver) StderrLine: {'line': b'  170 |   \x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req\x1b[m\x1b[K,\n'}
+[13.932133] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.932518] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:171:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.932910] (ydlidar_ros2_driver) StderrLine: {'line': b'  171 |   \x1b[01;35m\x1b[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response\x1b[m\x1b[K) -> bool\n'}
+[13.933428] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[13.994697] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[13.995477] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:179:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest_header\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.995914] (ydlidar_ros2_driver) StderrLine: {'line': b'  179 |     [&laser](\x1b[01;35m\x1b[Kconst std::shared_ptr<rmw_request_id_t> request_header\x1b[m\x1b[K,\n'}
+[13.996370] (ydlidar_ros2_driver) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.996766] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:180:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.997298] (ydlidar_ros2_driver) StderrLine: {'line': b'  180 |   \x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req\x1b[m\x1b[K,\n'}
+[13.997729] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.998105] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:181:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresponse\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.998543] (ydlidar_ros2_driver) StderrLine: {'line': b'  181 |   \x1b[01;35m\x1b[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response\x1b[m\x1b[K) -> bool\n'}
+[13.998958] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[14.001520] (-) TimerEvent: {}
+[14.102232] (-) TimerEvent: {}
+[14.202952] (-) TimerEvent: {}
+[14.303707] (-) TimerEvent: {}
+[14.404425] (-) TimerEvent: {}
+[14.505189] (-) TimerEvent: {}
+[14.605888] (-) TimerEvent: {}
+[14.706595] (-) TimerEvent: {}
+[14.807300] (-) TimerEvent: {}
+[14.908006] (-) TimerEvent: {}
+[15.008748] (-) TimerEvent: {}
+[15.109538] (-) TimerEvent: {}
+[15.210242] (-) TimerEvent: {}
+[15.310958] (-) TimerEvent: {}
+[15.411734] (-) TimerEvent: {}
+[15.512490] (-) TimerEvent: {}
+[15.613196] (-) TimerEvent: {}
+[15.713908] (-) TimerEvent: {}
+[15.814604] (-) TimerEvent: {}
+[15.915369] (-) TimerEvent: {}
+[16.016125] (-) TimerEvent: {}
+[16.116837] (-) TimerEvent: {}
+[16.217609] (-) TimerEvent: {}
+[16.318299] (-) TimerEvent: {}
+[16.418996] (-) TimerEvent: {}
+[16.519745] (-) TimerEvent: {}
+[16.620464] (-) TimerEvent: {}
+[16.721176] (-) TimerEvent: {}
+[16.821882] (-) TimerEvent: {}
+[16.922571] (-) TimerEvent: {}
+[17.023295] (-) TimerEvent: {}
+[17.123987] (-) TimerEvent: {}
+[17.224680] (-) TimerEvent: {}
+[17.325442] (-) TimerEvent: {}
+[17.426188] (-) TimerEvent: {}
+[17.526912] (-) TimerEvent: {}
+[17.627625] (-) TimerEvent: {}
+[17.728352] (-) TimerEvent: {}
+[17.829111] (-) TimerEvent: {}
+[17.929820] (-) TimerEvent: {}
+[18.030552] (-) TimerEvent: {}
+[18.131317] (-) TimerEvent: {}
+[18.232056] (-) TimerEvent: {}
+[18.332820] (-) TimerEvent: {}
+[18.358982] (ydlidar_ros2_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ydlidar_ros2_driver_node.dir/build.make:76: CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o] Error 1\n'}
+[18.359869] (ydlidar_ros2_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ydlidar_ros2_driver_node.dir/all] Error 2\n'}
+[18.360860] (ydlidar_ros2_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[18.367019] (ydlidar_ros2_driver) CommandEnded: {'returncode': 2}
+[18.433427] (-) TimerEvent: {}
+[18.534405] (-) TimerEvent: {}
+[18.635197] (-) TimerEvent: {}
+[18.736255] (-) TimerEvent: {}
+[18.778983] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 2}
+[18.790959] (-) EventReactorShutdown: {}

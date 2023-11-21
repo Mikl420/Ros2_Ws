@@ -1,0 +1,12 @@
+[console_scripts]
+codeuse = robotix.codeuse:main
+controller = robotix.controller:main
+ctrl_claw = robotix.ctrl_claw:main
+ctrl_nav = robotix.ctrl_nav:main
+jetson = robotix.jetson:main
+laser = robotix.laser:main
+lidar = robotix.lidar:main
+motor = robotix.motor:main
+motor_claw = robotix.motor_claw:main
+motor_plateau = robotix.motor_plateau:main
+

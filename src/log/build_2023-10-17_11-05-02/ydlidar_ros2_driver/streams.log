@@ -1,0 +1,55 @@
+[1.663s] Invoking command in '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake /home/robotix/ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver
+[2.739s] -- The C compiler identification is GNU 11.4.0
+[3.546s] -- The CXX compiler identification is GNU 11.4.0
+[3.600s] -- Detecting C compiler ABI info
+[4.007s] -- Detecting C compiler ABI info - done
+[4.038s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.040s] -- Detecting C compile features
+[4.043s] -- Detecting C compile features - done
+[4.059s] -- Detecting CXX compiler ABI info
+[4.484s] -- Detecting CXX compiler ABI info - done
+[4.514s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.516s] -- Detecting CXX compile features
+[4.518s] -- Detecting CXX compile features - done
+[4.559s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.510s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[5.869s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.162s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[6.576s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.626s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.699s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.810s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.959s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.415s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.441s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.045s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.177s] -- Found FastRTPS: /opt/ros/humble/include  
+[8.418s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.499s] -- Looking for pthread.h
+[8.887s] -- Looking for pthread.h - found
+[8.889s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.250s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[9.255s] -- Found Threads: TRUE  
+[10.088s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.706s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[11.252s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[11.409s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[11.410s]   By not providing "Findydlidar_sdk.cmake" in CMAKE_MODULE_PATH this project
+[11.410s]   has asked CMake to find a package configuration file provided by
+[11.410s]   "ydlidar_sdk", but CMake did not find one.
+[11.411s] 
+[11.411s]   Could not find a package configuration file provided by "ydlidar_sdk" with
+[11.411s]   any of the following names:
+[11.412s] 
+[11.412s]     ydlidar_sdkConfig.cmake
+[11.413s]     ydlidar_sdk-config.cmake
+[11.414s] 
+[11.414s]   Add the installation prefix of "ydlidar_sdk" to CMAKE_PREFIX_PATH or set
+[11.415s]   "ydlidar_sdk_DIR" to a directory containing one of the above files.  If
+[11.416s]   "ydlidar_sdk" provides a separate development package or SDK, be sure it
+[11.416s]   has been installed.
+[11.417s] 
+[11.417s] [0m
+[11.418s] -- Configuring incomplete, errors occurred!
+[11.418s] See also "/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver/CMakeFiles/CMakeOutput.log".
+[11.441s] Invoked command in '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver' returned '1': CMAKE_PREFIX_PATH=/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake /home/robotix/ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver

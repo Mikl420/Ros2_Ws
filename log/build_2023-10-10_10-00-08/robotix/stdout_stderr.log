@@ -1,0 +1,31 @@
+running develop
+running egg_info
+creating robotix.egg-info
+writing robotix.egg-info/PKG-INFO
+writing dependency_links to robotix.egg-info/dependency_links.txt
+writing entry points to robotix.egg-info/entry_points.txt
+writing requirements to robotix.egg-info/requires.txt
+writing top-level names to robotix.egg-info/top_level.txt
+writing manifest file 'robotix.egg-info/SOURCES.txt'
+reading manifest file 'robotix.egg-info/SOURCES.txt'
+writing manifest file 'robotix.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix.egg-link (link to .)
+Installing codeuse script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing controller script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing ctrl_claw script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing ctrl_nav script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing jetson script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing laser script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing lidar script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing motor script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing motor_claw script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing motor_plateau script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+
+Installed /home/robotix/ros2_ws/build/robotix
+running install_data
+creating /home/robotix/ros2_ws/install/robotix/share/ament_index
+creating /home/robotix/ros2_ws/install/robotix/share/ament_index/resource_index
+creating /home/robotix/ros2_ws/install/robotix/share/ament_index/resource_index/packages
+copying resource/robotix -> /home/robotix/ros2_ws/install/robotix/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotix/ros2_ws/install/robotix/share/robotix

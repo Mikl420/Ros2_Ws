@@ -1,0 +1,142 @@
+[4.464s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[4.465s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff883fec50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff886caad0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff886caad0>>)
+[4.763s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.764s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.765s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robotix/ros2_ws'
+[4.766s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.766s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.767s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.768s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.853s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.853s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.853s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.853s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.853s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.854s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.854s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.855s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.856s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.857s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.857s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.858s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.859s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.860s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.861s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.862s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[4.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[4.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[4.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[4.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[4.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[4.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[4.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[4.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[4.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extensions ['ignore', 'ignore_ament_install']
+[4.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'ignore'
+[4.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'ignore_ament_install'
+[4.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extensions ['colcon_pkg']
+[4.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'colcon_pkg'
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extensions ['colcon_meta']
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'colcon_meta'
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extensions ['ros']
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'ros'
+[4.884s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotix' with type 'ros.ament_python' and name 'robotix'
+[4.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.471s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/robotix/ros2_ws/install
+[5.532s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 180 installed packages in /opt/ros/humble
+[5.537s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.947s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_args' from command line to 'None'
+[5.947s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_target' from command line to 'None'
+[5.947s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.947s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_clean_cache' from command line to 'False'
+[5.948s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_clean_first' from command line to 'False'
+[5.948s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_force_configure' from command line to 'False'
+[5.948s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'ament_cmake_args' from command line to 'None'
+[5.948s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'catkin_cmake_args' from command line to 'None'
+[5.948s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.948s] DEBUG:colcon.colcon_core.verb:Building package 'robotix' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotix/ros2_ws/build/robotix', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotix/ros2_ws/install/robotix', 'merge_install': False, 'path': '/home/robotix/ros2_ws/src/robotix', 'symlink_install': True, 'test_result_base': None}
+[6.003s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.060s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.061s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotix/ros2_ws/src/robotix' with build type 'ament_python'
+[6.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotix', 'ament_prefix_path')
+[6.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/ament_prefix_path.ps1'
+[6.142s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/ament_prefix_path.dsv'
+[6.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/ament_prefix_path.sh'
+[6.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.206s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.697s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotix/ros2_ws/src/robotix'
+[7.764s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.764s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotix/ros2_ws/build/robotix': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/robotix/build --no-deps install_data
+[12.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotix', 'pythonpath_develop')
+[12.253s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotix/ros2_ws/build/robotix' returned '0': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/robotix/build --no-deps install_data
+[12.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/build/robotix/share/robotix/hook/pythonpath_develop.ps1'
+[12.321s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/build/robotix/share/robotix/hook/pythonpath_develop.dsv'
+[12.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/build/robotix/share/robotix/hook/pythonpath_develop.sh'
+[12.412s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix' for CMake module files
+[12.415s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix' for CMake config files
+[12.418s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/lib'
+[12.420s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/bin'
+[12.420s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/lib/pkgconfig/robotix.pc'
+[12.421s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages'
+[12.422s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotix', 'pythonpath')
+[12.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/pythonpath.ps1'
+[12.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/pythonpath.dsv'
+[12.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/pythonpath.sh'
+[12.482s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/bin'
+[12.483s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotix)
+[12.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/robotix/share/robotix/package.ps1'
+[12.545s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotix/ros2_ws/install/robotix/share/robotix/package.dsv'
+[12.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/robotix/share/robotix/package.sh'
+[12.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/robotix/share/robotix/package.bash'
+[12.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/robotix/share/robotix/package.zsh'
+[12.561s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotix/ros2_ws/install/robotix/share/colcon-core/packages/robotix)
+[12.563s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.564s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.565s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.565s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.660s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[12.660s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.661s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.661s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.665s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[12.665s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.722s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotix/ros2_ws/install/local_setup.ps1'
+[12.727s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotix/ros2_ws/install/_local_setup_util_ps1.py'
+[12.734s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotix/ros2_ws/install/setup.ps1'
+[12.806s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotix/ros2_ws/install/local_setup.sh'
+[12.812s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotix/ros2_ws/install/_local_setup_util_sh.py'
+[12.815s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotix/ros2_ws/install/setup.sh'
+[12.893s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotix/ros2_ws/install/local_setup.bash'
+[12.897s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotix/ros2_ws/install/setup.bash'
+[12.957s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotix/ros2_ws/install/local_setup.zsh'
+[12.960s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotix/ros2_ws/install/setup.zsh'

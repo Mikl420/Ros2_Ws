@@ -1,0 +1,31 @@
+running egg_info
+creating ../build/robotix/robotix.egg-info
+writing ../build/robotix/robotix.egg-info/PKG-INFO
+writing dependency_links to ../build/robotix/robotix.egg-info/dependency_links.txt
+writing entry points to ../build/robotix/robotix.egg-info/entry_points.txt
+writing requirements to ../build/robotix/robotix.egg-info/requires.txt
+writing top-level names to ../build/robotix/robotix.egg-info/top_level.txt
+writing manifest file '../build/robotix/robotix.egg-info/SOURCES.txt'
+reading manifest file '../build/robotix/robotix.egg-info/SOURCES.txt'
+writing manifest file '../build/robotix/robotix.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robotix/ros2_ws/src/build/robotix/build
+creating /home/robotix/ros2_ws/src/build/robotix/build/lib
+creating /home/robotix/ros2_ws/src/build/robotix/build/lib/robotix
+copying robotix/__init__.py -> /home/robotix/ros2_ws/src/build/robotix/build/lib/robotix
+running install
+running install_lib
+creating /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/src/build/robotix/build/lib/robotix/__init__.py -> /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix
+byte-compiling /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/robotix/ros2_ws/src/install/robotix/share/ament_index
+creating /home/robotix/ros2_ws/src/install/robotix/share/ament_index/resource_index
+creating /home/robotix/ros2_ws/src/install/robotix/share/ament_index/resource_index/packages
+copying resource/robotix -> /home/robotix/ros2_ws/src/install/robotix/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotix/ros2_ws/src/install/robotix/share/robotix
+running install_egg_info
+Copying ../build/robotix/robotix.egg-info to /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/robotix/ros2_ws/src/build/robotix/install.log'
