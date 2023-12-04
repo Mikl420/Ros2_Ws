@@ -35,6 +35,11 @@ class Ctrl_nav(Node):
         self.angle_plante_1 = []
         self.angle_plante_2 = []
         self.angle_plante_3 = []
+        self.distance_plantes = []
+        self.angle_plantes = []
+        self.determination = 0
+        self.reculer = False
+        #self.last_msg
         self.calculer_angle_distance(self.pos_x, self.pos_y, self.angle_abs, self.tab_coord_x[0], self.tab_coord_y[0])
         self.my_publish()
 
@@ -56,18 +61,30 @@ class Ctrl_nav(Node):
                 str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
                 str_var2 = f"{int(self.cmd_angle):03d}"  # Formatage sur 3 caractères
                 msg.data = f"D{str_var1}P{str_var2}F"
+                if self.reculer == True :
+                    str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
+                    str_var2 = f"{int(self.cmd_angle):03d}"  # Formatage sur 3 caractères
+                    msg.data = f"R{str_var1}N{str_var2}F"
+
             else:
                 #msg.data = "D{}N{}F".format(int(self.cmd_distance),
                  #                          int(self.cmd_angle))
                 str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
                 str_var2 = f"{int(self.cmd_angle):03d}"  # Formatage sur 3 caractères
                 msg.data = f"D{str_var1}N{str_var2}F"
+                if self.reculer == True :
+                    str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
+                    str_var2 = f"{int(self.cmd_angle):03d}"  # Formatage sur 3 caractères
+                    msg.data = f"R{str_var1}P{str_var2}F"
+
             print(msg.data)
+            #self.last_msg = msg
             self.publisher_cmd_pos.publish(msg)
             self.index += 1
+            self.reculer = False
             #print(self.positions_tab_)
         elif self.choice == 0:
-            msg.date = "D{0000}N{000}F" #msg d'arrêt lidar
+            msg.data = "D{0000}N{000}F" #msg d'arrêt lidar
     def my_callback_choice(self, choice:Int16):
         self.choice = choice
 
@@ -83,16 +100,61 @@ class Ctrl_nav(Node):
     def my_callback_real_pos(self, real_pos: Twist):
         self.my_publish_reached_pos()
         self.determine_real_pos(real_pos)
-        if self.choice == 1 :
+        if self.choice == 1:
             #self.calculer_angle_distance(self.tab_coord_x[self.index + 1], self.tab_coord_y[self.index + 1], self.angle_abs,
                                         #self.tab_coord_x[self.index + 2], self.tab_coord_y[self.index + 2])
             self.calculer_angle_distance(self.pos_x, self.pos_y, self.angle_abs,
                                          self.tab_coord_x[self.index], self.tab_coord_y[self.index])
-        if self.choice == 2 :
-            i = self.trouver_indice_plus_petite_valeur(self.distance_plante_2)
-            self.cmd_distance = self.distance_plante_2[i] * 10 - 100
-            self.cmd_angle = self.angle_plante_2[i]
+        if self.choice == 2:
+            if self.determination == 0:# determine plante la plus proche+ met  ds cmd_distance et commande_angle les datas
+                # + stock ds distance-plantes et angles_plantes les commandes pour les 2 prochaines plantes
+                self.determination_ordre_plante()
+            elif self.determination == 1: #Renvoyer les commandes cmd_dist cmd_angle mais préciser R
+                self.reculer= True
+                self.determination = 2
+            elif self.determination == 2:
+                self.cmd_distance = self.distance_plantes[0]
+                self.cmd_angle = self.angle_plantes[0]
+                self.determination = 3
+            elif self.determination == 3: #Renvoyer les commandes cmd_dist cmd_angle mais préciser R
+                self.reculer = True
+                self.determination = 4
+            elif self.determination == 4:
+                self.cmd_distance = self.distance_plantes[1]
+                self.cmd_angle = self.angle_plantes[1]
+                self.determination = 0
+                self.distance_plantes.clear()
+                self.angle_plantes.clear()
+
         self.my_publish()
+
+    def determination_ordre_plante(self):
+        i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante_1)
+        i2 = self.trouver_indice_plus_petite_valeur(self.distance_plante_2)
+        i3 = self.trouver_indice_plus_petite_valeur(self.distance_plante_3)
+        if (i1 < i2 and i1 < i3):
+            self.cmd_distance = self.distance_plante_1[i1] * 10 - 100
+            self.cmd_angle = self.angle_plante_1[i1]
+            self.distance_plantes.append(self.distance_plante_2[i2] * 10 - 100)
+            self.angle_plantes.append(self.angle_plante_2[i2])
+            self.distance_plantes.append(self.distance_plante_3[i3] * 10 - 100)
+            self.angle_plantes.append(self.angle_plante_3[i3])
+        elif (i2 < i1 and i2 < i3):
+            self.cmd_distance = self.distance_plante_2[i2] * 10 - 100
+            self.cmd_angle = self.angle_plante_2[i2]
+            self.distance_plantes.append(self.distance_plante_1[i1] * 10 - 100)
+            self.angle_plantes.append(self.angle_plante_1[i1])
+            self.distance_plantes.append(self.distance_plante_3[i3] * 10 - 100)
+            self.angle_plantes.append(self.angle_plante_3[i3])
+        elif (i3 < i1 and i3 < i2):
+            self.cmd_distance = self.distance_plante_3[i3] * 10 - 100
+            self.cmd_angle = self.angle_plante_3[i3]
+            self.distance_plantes.append(self.distance_plante_2[i2] * 10 - 100)
+            self.angle_plantes.append(self.angle_plante_2[i2])
+            self.distance_plantes.append(self.distance_plante_1[i1] * 10 - 100)
+            self.angle_plantes.append(self.angle_plante_1[i1])
+        self.determination = 1
+
 #    def my_callback_cmd_pos(self, scan:LaserScan):
 #        print("The Array of ranges is: ", scan.ranges)
 #        print("The first value is : ", scan.ranges[1])
@@ -109,12 +171,12 @@ class Ctrl_nav(Node):
 #        pass
 
     def determine_real_pos(self, real_pos: Twist):
-        self.angle_abs += real_pos.angular
-        self.pos_x = self.pos_x + real_pos.linear.x * math.cos(math.radians(real_pos.angular))
-        self.pos_y = self.pos_y + real_pos.linear.x * math.sin(math.radians(real_pos.angular))
+        self.angle_abs += real_pos.linear.y
+        self.pos_x = self.pos_x + real_pos.linear.x * math.cos(math.radians(real_pos.linear.y))
+        self.pos_y = self.pos_y + real_pos.linear.x * math.sin(math.radians(real_pos.linear.y))
 
-        #self.pox_x_abs[self.index + 1] = self.pox_x_abs[self.index] + real_pos.linear.x * math.cos(math.radians(real_pos.angular))
-        #self.tab_coord_y[self.index + 1] = self.tab_coord_y[self.index] + real_pos.linear.x * math.sin(math.radians(real_pos.angular))
+        #self.pox_x_abs[self.index + 1] = self.pox_x_abs[self.index] + real_pos.linear.x * math.cos(math.radians(real_pos.linear.y))
+        #self.tab_coord_y[self.index + 1] = self.tab_coord_y[self.index] + real_pos.linear.x * math.sin(math.radians(real_pos.linear.y))
         #real_pos.linear.x c'est la distance reçue des codeuses.
 
 

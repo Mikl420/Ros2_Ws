@@ -13,6 +13,7 @@
   <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>string</depend>
+  <depend>re</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
