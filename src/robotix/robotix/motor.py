@@ -25,12 +25,12 @@ class Motor(Node):
         print(msg)
         msg_byte = Byte()
         msg_byte = bytes(msg, 'utf-8')
-        print("hello zbi")
-        #self.ser_.write(msg_byte)
-        strings = ["D1096N045", "D0696N45", "D0000P178"]
-        byte_array = [s.encode('utf-8') for s in strings]
-        for i in range(len(strings)):
-            self.ser_.write(byte_array[i])
+        print(msg_byte)
+        self.ser_.write(msg_byte)
+        #strings = ["D1096N045", "D0696N45", "D0000P178"]
+        #byte_array = [s.encode('utf-8') for s in strings]
+        #for i in range(len(strings)):
+            #self.ser_.write(byte_array[i])
             # Affichez le tableau de bytes
             #print(byte_array)
 
