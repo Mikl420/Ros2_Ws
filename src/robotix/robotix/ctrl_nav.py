@@ -16,20 +16,33 @@ class Ctrl_nav(Node):
         self.publisher_cmd_pos = self.create_publisher(String, "/robotix/cmd_pos", 10)
         self.subscriber_choice = self.create_subscription(Int16, "/robotix/choice", self.my_callback_choice, 10)
         self.subscriber_real_pos = self.create_subscription(Twist, "/robotix/real_pos", self.my_callback_real_pos, 10)
-        self.subscriber_lidar_ = self.create_subscription(LaserScan, "/scan", self.my_callback_cmd_pos, 10)
+        self.subscriber_lidar_ = self.create_subscription(LaserScan, "/scan", self.my_callback_lidar, 10)
         self.get_logger().info("Hello from ctrl_nav")
-        self.pos_x_abs = [0, 100, 200]
-        self.pos_y_abs = [0, 100, 200]
+        self.pos_x_abs = [0, 200]
+        self.pos_y_abs = [0, 200]
+        self.pos_x = 0
+        self.pos_y = 0
         self.angle_abs = 0
-        self.cmd_distance = 0
-        self.cmd_angle = 0
+        self.cmd_distance = 141
+        self.cmd_angle = 45
         self.index = 0
         self.distance_rel = 0
         self.choice = 1
+        self.distance_plante_1 = []
+        self.distance_plante_2 = []
+        self.distance_plante_3 = []
+        self.angle_plante_1 = []
+        self.angle_plante_2 = []
+        self.angle_plante_3 = []
+        msg_init = String()
+        msg_init.data = "D{}P{}F".format(int(self.cmd_distance),
+                                    int(self.cmd_angle))
+        self.publisher_cmd_pos.publish(msg_init)
+
 
     def my_publish(self):
         msg = String()
-        if self.choice == 1:
+        if self.choice == 1 or self.choice == 2:
             if self.cmd_angle >= 0:
                 msg.data = "D{}P{}F".format(int(self.cmd_distance),
                                            int(self.cmd_angle))
@@ -46,8 +59,13 @@ class Ctrl_nav(Node):
         self.choice = choice
     def my_callback_real_pos(self, real_pos: Twist):
         self.determine_real_pos(real_pos)
-        self.calculer_angle_distance(self.pos_x_abs[self.index + 1], self.pos_y_abs[self.index + 1], self.angle_abs,
-                                     self.pos_x_abs[self.index + 2], self.pos_y_abs[self.index + 2])
+        if self.choice == 1 :
+            #self.calculer_angle_distance(self.pos_x_abs[self.index + 1], self.pos_y_abs[self.index + 1], self.angle_abs,
+                                        #self.pos_x_abs[self.index + 2], self.pos_y_abs[self.index + 2])
+            self.calculer_angle_distance(self.pos_x, self.pos_y, self.angle_abs,
+                                         self.pos_x_abs[self.index], self.pos_y_abs[self.index])
+        if self.choice == 2 :
+            pass #logique déplacement via le lidar
         self.my_publish()
 #    def my_callback_cmd_pos(self, scan:LaserScan):
 #        print("The Array of ranges is: ", scan.ranges)
@@ -66,9 +84,13 @@ class Ctrl_nav(Node):
 
     def determine_real_pos(self, real_pos: Twist):
         self.angle_abs += real_pos.angular
-        self.pox_x_abs[self.index + 1] = self.pox_x_abs[self.index] + real_pos.linear.x * math.cos(math.radians(real_pos.angular))
-        self.pos_y_abs[self.index + 1] = self.pos_y_abs[self.index] + real_pos.linear.x * math.sin(math.radians(real_pos.angular))
+        self.pos_x = self.pos_x + real_pos.linear.x * math.cos(math.radians(real_pos.angular))
+        self.pos_y = self.pos_y + real_pos.linear.x * math.sin(math.radians(real_pos.angular))
+
+        #self.pox_x_abs[self.index + 1] = self.pox_x_abs[self.index] + real_pos.linear.x * math.cos(math.radians(real_pos.angular))
+        #self.pos_y_abs[self.index + 1] = self.pos_y_abs[self.index] + real_pos.linear.x * math.sin(math.radians(real_pos.angular))
         #real_pos.linear.x c'est la distance reçue des codeuses.
+
 
     def calculer_angle_distance(self, x_depart, y_depart, orientation_depart, x_destination, y_destination):
         # Calculer la différence en x et en y entre les points de départ et d'arrivée
@@ -86,6 +108,78 @@ class Ctrl_nav(Node):
 
         # Calculer l'angle de rotation nécessaire pour atteindre la nouvelle orientation
         self.cmd_angle = angle_degrees - orientation_depart
+
+    def my_callback_lidar(self, laser: LaserScan):
+
+        self.extract_consecutive_nonzero_values(laser)
+        ranges = laser.ranges
+        nombre_de_valeurs = len(ranges)
+        # Afficher le résultat
+        print("Le nombre de valeurs dans le tableau est :", nombre_de_valeurs, "\n")
+        print("Valeurs du tableau ranges :", ranges, "\n")
+
+        print("Valeurs du tableau distance_plante_1 :", self.distance_plante_1, "\n")
+        print("Valeurs du tableau distance_plante_2 :", self.distance_plante_2, "\n")
+        print("Valeurs du tableau distance_plante_3 :", self.distance_plante_3, "\n")
+
+        print("Valeurs du tableau angle_plante_1 :", self.angle_plante_1, "\n")
+        print("Valeurs du tableau angle_plante_2 :", self.angle_plante_2, "\n")
+        print("Valeurs du tableau angle_plante_3 :", self.angle_plante_3, "\n")
+
+        print("\n")
+
+        self.distance_plante_1.clear()
+        self.distance_plante_2.clear()
+        self.distance_plante_3.clear()
+
+        self.angle_plante_1.clear()
+        self.angle_plante_2.clear()
+        self.angle_plante_3.clear()
+
+    def extract_consecutive_nonzero_values(self, laser: LaserScan):
+            ranges = laser.ranges
+
+            for i in range(1, len(ranges) - 1):
+                if ranges[i] == 0 and ranges[i - 1] != 0 and ranges[i + 1] != 0:
+                    moyenne = (ranges[i - 1] + ranges[i + 1]) / 2.0
+                    ranges[i] = moyenne
+
+            number_sequence = 0
+            last_value = 0.0
+            last_last_value = 0.0
+            for index, value in enumerate(ranges):
+                if (last_value != 0.0) and (value== 0.0):
+                    number_sequence += 1
+                if value != 0 :
+                    match number_sequence:
+                        case 0:
+                            self.distance_plante_1.append(value)
+                            self.angle_plante_1.append(index)
+                        case 1:
+                            self.distance_plante_2.append(value)
+                            self.angle_plante_2.append(index)
+                        case 2:
+                            self.distance_plante_3.append(value)
+                            self.angle_plante_3.append(index)
+                last_last_value = last_value
+                last_value = value
+
+
+            #if(len(self.angle_plante_1) <= 3 or len(self.angle_plante_2) <= 3 or len(self.angle_plante_3) <= 3):
+            #    self.my_callback_lidar(laser)
+
+            number_samples = len(ranges)
+            angle_increment = 100/(number_samples-1)
+            for i in range(len(self.angle_plante_1)):
+                self.angle_plante_1[i] = self.angle_plante_1[i] * angle_increment - 50
+
+            for i in range(len(self.angle_plante_2)):
+                self.angle_plante_2[i] = self.angle_plante_2[i] * angle_increment - 50
+
+            for i in range(len(self.angle_plante_3)):
+                self.angle_plante_3[i] = self.angle_plante_3[i] * angle_increment - 50
+
+
 
 
 
