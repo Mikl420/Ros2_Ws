@@ -19,8 +19,10 @@ class Ctrl_nav(Node):
         self.subscriber_real_pos = self.create_subscription(Twist, "/robotix/real_pos", self.my_callback_real_pos, 10)
         self.subscriber_lidar_ = self.create_subscription(LaserScan, "/scan", self.my_callback_lidar, 10)
         self.get_logger().info("Hello from ctrl_nav")
-        self.tab_coord_x = [302, 480, 605]
-        self.tab_coord_y = [350, 500, 700]
+        self.tab_coord_x = [1000, 2000 ]#605
+        self.tab_coord_y = [1000, 2000]#700
+        #self.tab_coord_x = [441]
+        #self.tab_coord_y = [268]
         self.pos_x = 241
         self.pos_y = 268
         self.angle_abs = 0
@@ -45,12 +47,12 @@ class Ctrl_nav(Node):
 
 
 
-    def my_publish_reached_pos(self):
-        reached = Int16()
-        reached = 0
-        if (self.index == 2):
-            reached = 1 #un pour dire qu'on a atteint la position
-        self.publisher.publish(reached)
+    #def my_publish_reached_pos(self): #A décommenter
+     #   reached = Int16()
+     #   reached = 0
+     #   if (self.index == 2):
+     #       reached = 1 #un pour dire qu'on a atteint la position
+     #   self.publisher.publish(reached)
 
     def my_publish(self):
         msg = String()
@@ -70,11 +72,11 @@ class Ctrl_nav(Node):
                 #msg.data = "D{}N{}F".format(int(self.cmd_distance),
                  #                          int(self.cmd_angle))
                 str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
-                str_var2 = f"{int(self.cmd_angle):03d}"  # Formatage sur 3 caractères
+                str_var2 = f"{int(abs(self.cmd_angle)):03d}"  # Formatage sur 3 caractères
                 msg.data = f"D{str_var1}N{str_var2}F"
                 if self.reculer == True :
                     str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
-                    str_var2 = f"{int(self.cmd_angle):03d}"  # Formatage sur 3 caractères
+                    str_var2 = f"{int(abs(self.cmd_angle)):03d}"  # Formatage sur 3 caractères
                     msg.data = f"R{str_var1}P{str_var2}F"
 
             print(msg.data)
@@ -98,7 +100,7 @@ class Ctrl_nav(Node):
 
         return indice_plus_petite_valeur
     def my_callback_real_pos(self, real_pos: Twist):
-        self.my_publish_reached_pos()
+        #self.my_publish_reached_pos() #à decommenter
         self.determine_real_pos(real_pos)
         if self.choice == 1:
             #self.calculer_angle_distance(self.tab_coord_x[self.index + 1], self.tab_coord_y[self.index + 1], self.angle_abs,

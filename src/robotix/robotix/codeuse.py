@@ -12,8 +12,8 @@ class Codeuse(Node):
         super().__init__("codeuse")
         self.publisher_ = self.create_publisher(Twist, "/robotix/real_pos", 10)
         #self.subscriber_ = self.create_subscription(Twist, "/robotix/real_pos", self.my_callback, 10)
-        self.timer_ = self.create_timer(1.5, self.my_publish)
-        self.ser_ = serial.Serial("/dev/ttyACM0", 9600)
+        self.timer_ = self.create_timer(0.1, self.my_publish)
+        self.ser_ = serial.Serial("/dev/ttyACM1", 9600)
         self.get_logger().info("Hello from codeuse")
         self.nb_bytes = 9
         self.data_str = bytearray([])
@@ -32,7 +32,7 @@ class Codeuse(Node):
                 # Utiliser les groupes de correspondance pour extraire les valeurs
             #    twist.linear.x = float(match.group(1) or match.group(3))
             #    twist.angular = float(match.group(2) or match.group(4))
-            twist.linear.x =float( self.data_str[1:5])
+            twist.linear.x =float(self.data_str[1:5])
             twist.linear.y = float(self.data_str[6:9])
             print(twist.linear.x)
             print(twist.linear.y)

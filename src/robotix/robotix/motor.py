@@ -27,6 +27,7 @@ class Motor(Node):
         msg_byte = bytes(msg, 'utf-8')
         print(msg_byte)
         self.ser_.write(msg_byte)
+        print("I send the Byte")
         #strings = ["D1096N045", "D0696N45", "D0000P178"]
         #byte_array = [s.encode('utf-8') for s in strings]
         #for i in range(len(strings)):

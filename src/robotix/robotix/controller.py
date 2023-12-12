@@ -16,7 +16,7 @@ class Controller(Node):
         self.publisher_ = self.create_publisher(Int16, "/robotix/choice", 10)
         self.subscriber_ = self.create_subscription(Int16, "/robotix/reached_pos", self.my_callback_reached_pos, 10)
         self.subscriber_ = self.create_subscription(Int16, "/robotix/claw_end", self.my_callback_claw, 10)
-        self.subscriber_ = self.create_subscription(Twist, "/robotix/real_pos", self.my_callback_pos, 10)
+        #self.subscriber_ = self.create_subscription(Twist, "/robotix/real_pos", self.my_callback_pos, 10)
         #self.timer_ = self.create_timer(10.0, self.my_publish)
         self.get_logger().info("Hello from controller")
         self.msg = Int16()
