@@ -19,15 +19,17 @@ class Motor(Node):
         self.get_logger().info("Hello from motor")
 
     def my_callback(self, pos: String):
-        print(pos.data)
+        #print(pos.data)
         msg = String
         msg = pos.data
-        print(msg)
+        #print(msg)
         msg_byte = Byte()
         msg_byte = bytes(msg, 'utf-8')
-        print(msg_byte)
-        self.ser_.write(msg_byte)
-        print("I send the Byte")
+        #print(msg_byte)
+        if self.ser_.write(msg_byte):
+            print("I sended the Byte ", msg_byte, "\n")
+
+
         #strings = ["D1096N045", "D0696N45", "D0000P178"]
         #byte_array = [s.encode('utf-8') for s in strings]
         #for i in range(len(strings)):

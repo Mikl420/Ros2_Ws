@@ -7,13 +7,9 @@ class Ctrl_claw(Node):
 
     def __init__(self):
         super().__init__("ctrl_claw")
-        self.publisher_ = self.create_publisher(Twist, "/robotix/cmd_pos", 10)
-        self.publisher_ = self.create_publisher(Twist, "/robotix/cmd_plat", 10)
         self.publisher_ = self.create_publisher(Twist, "/robotix/cmd_claw", 10)
         self.subscriber_ = self.create_subscription(Twist, "/robotix/choice", self.my_callback, 10)
-        self.subscriber_ = self.create_subscription(Twist, "/robotix/jetson", self.my_callback, 10)
-        self.subscriber_ = self.create_subscription(Twist, "/robotix/laser", self.my_callback, 10)
-        self.timer_ = self.create_timer(0.5, self.my_publish)
+        #self.timer_ = self.create_timer(0.5, self.my_publish)
         self.get_logger().info("Hello from ctrl_claw")
 
     def my_callback(self):

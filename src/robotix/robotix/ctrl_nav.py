@@ -13,18 +13,18 @@ class Ctrl_nav(Node):
 
     def __init__(self):
         super().__init__("ctrl_nav")
-        self.publisher = self.create_publisher(Int16, '/robotix/reached_pos', 10)
+        #self.publisher = self.create_publisher(Int16, '/robotix/reached_pos', 10)
         self.publisher_cmd_pos = self.create_publisher(String, "/robotix/cmd_pos", 10)
         self.subscriber_choice = self.create_subscription(Int16, "/robotix/choice", self.my_callback_choice, 10)
         self.subscriber_real_pos = self.create_subscription(Twist, "/robotix/real_pos", self.my_callback_real_pos, 10)
         self.subscriber_lidar_ = self.create_subscription(LaserScan, "/scan", self.my_callback_lidar, 10)
         self.get_logger().info("Hello from ctrl_nav")
-        self.tab_coord_x = [1000, 2000 ]#605
-        self.tab_coord_y = [1000, 2000]#700
+        self.tab_coord_x = [200,200]#605
+        self.tab_coord_y = [200,100]#700
         #self.tab_coord_x = [441]
         #self.tab_coord_y = [268]
-        self.pos_x = 241
-        self.pos_y = 268
+        self.pos_x = 0#241
+        self.pos_y = 500#268
         self.angle_abs = 0
         self.cmd_distance = 0
         self.cmd_angle = 0
@@ -47,12 +47,13 @@ class Ctrl_nav(Node):
 
 
 
-    #def my_publish_reached_pos(self): #A décommenter
-     #   reached = Int16()
-     #   reached = 0
-     #   if (self.index == 2):
-     #       reached = 1 #un pour dire qu'on a atteint la position
-     #   self.publisher.publish(reached)
+    def my_publish_reached_pos(self): #A décommenter
+
+        reached = Int16()
+        reached.data = 0
+        if (self.index == 2):
+            reached = 1 #un pour dire qu'on a atteint la position
+        self.publisher.publish(reached.data)
 
     def my_publish(self):
         msg = String()
@@ -62,22 +63,22 @@ class Ctrl_nav(Node):
                 #                           int(self.cmd_angle))
                 str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
                 str_var2 = f"{int(self.cmd_angle):03d}"  # Formatage sur 3 caractères
-                msg.data = f"D{str_var1}P{str_var2}F"
+                msg.data = f"D{str_var1}P{str_var2}"
                 if self.reculer == True :
                     str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
                     str_var2 = f"{int(self.cmd_angle):03d}"  # Formatage sur 3 caractères
-                    msg.data = f"R{str_var1}N{str_var2}F"
+                    msg.data = f"R{str_var1}N{str_var2}"
 
             else:
                 #msg.data = "D{}N{}F".format(int(self.cmd_distance),
                  #                          int(self.cmd_angle))
                 str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
                 str_var2 = f"{int(abs(self.cmd_angle)):03d}"  # Formatage sur 3 caractères
-                msg.data = f"D{str_var1}N{str_var2}F"
+                msg.data = f"D{str_var1}N{str_var2}"
                 if self.reculer == True :
                     str_var1 = f"{int(self.cmd_distance):04d}"  # Formatage sur 4 caractères
                     str_var2 = f"{int(abs(self.cmd_angle)):03d}"  # Formatage sur 3 caractères
-                    msg.data = f"R{str_var1}P{str_var2}F"
+                    msg.data = f"R{str_var1}P{str_var2}"
 
             print(msg.data)
             #self.last_msg = msg
@@ -268,9 +269,6 @@ class Ctrl_nav(Node):
 
             for i in range(len(self.angle_plante_3)):
                 self.angle_plante_3[i] = self.angle_plante_3[i] * angle_increment - 50
-
-
-
 
 
 def main(args=None):
