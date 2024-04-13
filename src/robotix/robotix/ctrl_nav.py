@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 import rclpy
 #import rospy
@@ -21,18 +22,20 @@ class Ctrl_nav(Node):
         self.subscriber_choice = self.create_subscription(Int16, "/robotix/choice", self.my_callback_choice, 10)
         self.subscriber_real_pos = self.create_subscription(Int16, "/robotix/real_pos", self.my_callback_real_pos, 10)
         self.subscriber_lidar_ = self.create_subscription(LaserScan, "/scan", self.my_callback_lidar, 10)
-        self.timer = self.create_timer(5, self.check_message_received)
+        #self.timer = self.create_timer(5, self.check_message_received)
         self.get_logger().info("Hello from ctrl_nav")
         self.angle_abs = 0
         self.cmd_distance = 0
         self.cmd_angle = 0
         self.index = 0
         self.distance_rel = 1
-        self.tab_cmd = ["D0380P090", "D0320N090", "D0000P180","D0000P180"]
+        self.tab_cmd = ["D0380P0900", "D0320N0900"]
         self.choice = 1
         self.msg = String()
         self.msg.data = self.tab_cmd[self.index]
         self.my_publish()
+        self.distance_plante = []
+        self.angle_plante = []
         self.distance_plante_1 = []
         self.distance_plante_2 = []
         self.distance_plante_3 = []
@@ -44,6 +47,12 @@ class Ctrl_nav(Node):
         self.determination = 0
         self.flag_lidar = True
         self.received_message = False
+        self.plante1 = False
+        self.plante2 = False
+        self.plante3 = False
+        self.min_plante1 = 0
+        self.min_plante2 = 0
+        self.min_plante3 = 0
 
     def my_publish(self):
         print(self.msg.data)
@@ -64,18 +73,54 @@ class Ctrl_nav(Node):
             self.rewind_after_lidar()
             self.my_publish()
         if self.index == 5:
-            i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante_2)
-            print("Indice tableau", i1)
-            self.plante_format((self.distance_plante_2[i1]) * 10 + 90, self.angle_plante_2[i1])
+            if self.plante1:
+                if self.min_plante2 < self.min_plante3 :
+                    self.distance_plante = self.distance_plante_2
+                    self.angle_plante = self.angle_plante_2
+                    self.plante2 = True
+                else :
+                    self.distance_plante = self.distance_plante_3
+                    self.angle_plante = self.angle_plante_3
+                    self.plante3 = True
+            elif self.plante2 :
+                if self.min_plante1 < self.min_plante3 :
+                    self.distance_plante = self.distance_plante_1
+                    self.angle_plante = self.angle_plante_1
+                    self.plante1 = True
+                else :
+                    self.distance_plante = self.distance_plante_3
+                    self.angle_plante = self.angle_plante_3
+                    self.plante3 = True
+            else :
+                if self.min_plante1 < self.min_plante2:
+                    self.distance_plante = self.distance_plante_1
+                    self.angle_plante = self.angle_plante_1
+                    self.plante1 = True
+                else :
+                    self.distance_plante = self.distance_plante_2
+                    self.angle_plante = self.angle_plante_2
+                    self.plante2 = True
+
+            i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante)
+            self.plante_format((self.distance_plante[i1]) * 1000, self.angle_plante[i1])
             self.my_publish()
         if self.index == 6:
             self.rewind_after_lidar()
             self.my_publish()
         if self.index == 7:
-            i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante_3)
-            self.plante_format((self.distance_plante_3[i1]) * 10 + 90, self.angle_plante_3[i1])
+            if self.plante1 and self.plante2 :
+                self.distance_plante = self.distance_plante_3
+                self.angle_plante = self.angle_plante_3
+            elif self.plante2 and self.plante3 :
+                self.distance_plante = self.distance_plante_1
+                self.angle_plante = self.angle_plante_1
+            else :
+                self.distance_plante = self.distance_plante_3
+                self.angle_plante = self.angle_plante_3
+            i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante)
+            self.plante_format((self.distance_plante[i1]) * 1000, self.angle_plante[i1])
             self.my_publish()
-        if self.index == 8:
+        if self.index == 8 :
             self.rewind_after_lidar()
             self.my_publish()
 
@@ -108,17 +153,30 @@ class Ctrl_nav(Node):
 
     def plante_format(self, distance, angle):
         #msg = String()
-        if angle >= 0:
-            str_var1 = f"{round(distance-40):04d}"  # Formatage sur 4 caractères
-            str_var2 = f"{round(angle*10):04d}"  # Formatage sur 3 caractères
+        if angle >= 10:
+            str_var1 = f"{round(distance-90):04d}"  # Formatage sur 4 caractères
+            str_var2 = f"{round(angle*0.8):03d}"  # Formatage sur 3 caractères
+            self.msg.data = f"D{str_var1}N{str_var2}"
+            print("negatif")
+        if angle < 10 and  angle > 0:
+            angle = angle - 2
+            str_var1 = f"{round(distance-90):04d}"  # Formatage sur 4 caractères
+            str_var2 = f"{round(angle):03d}"  # Formatage sur 3 caractères
+            self.msg.data = f"D{str_var1}N{str_var2}"
+            print("petit negatif")
+
+        if angle <= -10:
+            str_var1 = f"{round(distance-90):04d}"  # Formatage sur 4 caractères
+            str_var2 = f"{round(abs(angle*0.7)):03d}"  # Formatage sur 3 caractères
             self.msg.data = f"D{str_var1}P{str_var2}"
             print("positif")
 
-        else:
-            str_var1 = f"{round(distance-40):04d}"  # Formatage sur 4 caractères
-            str_var2 = f"{int(round(abs(angle*10))):04d}"  # Formatage sur 3 caractères
-            self.msg.data = f"D{str_var1}N{str_var2}"
-            print("negatif")
+        if angle > -10 and angle < 0:
+            angle = angle + 2
+            str_var1 = f"{round(distance-90):04d}"  # Formatage sur 4 caractères
+            str_var2 = f"{round(abs(angle)):03d}"  # Formatage sur 3 caractères
+            self.msg.data = f"D{str_var1}P{str_var2}"
+            print("petit positif")
         print("PLANTE FORMAT",self.msg.data)
 
 
@@ -127,7 +185,7 @@ class Ctrl_nav(Node):
             self.flag_lidar = False
             print("CallbackLIDAR")
             delay =0
-            while(delay<1800000):
+            while(delay<900000):
                 delay+=1
             self.extract_consecutive_nonzero_values(laser)
             #ranges = laser.ranges
@@ -154,9 +212,29 @@ class Ctrl_nav(Node):
             #self.angle_plante_2.clear()
             #self.angle_plante_3.clear()
             self.index+=1
-            i1=self.trouver_indice_plus_petite_valeur(self.distance_plante_1)
+### new code
+            # Calcul des minimums
+            self.min_plante1 = min(self.distance_plante_1)
+            self.min_plante2 = min(self.distance_plante_2)
+            self.min_plante3 = min(self.distance_plante_3)
+            # Détermination du tableau avec la valeur la plus petite
+            if self.min_plante1 < self.min_plante2 and self.min_plante1 < self.min_plante3:
+                self.distance_plante = self.distance_plante_1
+                self.angle_plante = self.angle_plante_1 
+                self.plante1 = True
+            elif self.min_plante2 < self.min_plante3:
+                self.distance_plante = self.distance_plante_2
+                self.angle_plante = self.angle_plante_2
+                self.plante2 = True
+            else:
+                self.distance_plante = self.distance_plante_3
+                self.angle_plante = self.angle_plante_3
+                self.plante3 = True 
+### end user code
+            i1=self.trouver_indice_plus_petite_valeur(self.distance_plante)
             print("Indice tableau",i1)
-            self.plante_format((self.distance_plante_1[i1])*1000-50, self.angle_plante_1[i1])
+            self.plante_format((self.distance_plante[i1])*1000, self.angle_plante[i1])
+            print(self.angle_plante[i1])
             self.my_publish()
 
     def extract_consecutive_nonzero_values(self, laser: LaserScan):
