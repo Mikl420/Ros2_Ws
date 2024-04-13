@@ -1,0 +1,6 @@
+[6.390s] Invoking command in '/home/robotix/ros2_ws/build/VL53L5CX': PYTHONPATH=/home/robotix/ros2_ws/build/VL53L5CX/prefix_override:/home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/VL53L5CX/build --no-deps
+[7.945s] Traceback (most recent call last):
+[7.947s]   File "/home/robotix/ros2_ws/build/VL53L5CX/setup.py", line 5, in <module>
+[7.948s]     with open("README.md", "r") as fh:
+[7.950s] FileNotFoundError: [Errno 2] No such file or directory: 'README.md'
+[8.082s] Invoked command in '/home/robotix/ros2_ws/build/VL53L5CX' returned '1': PYTHONPATH=/home/robotix/ros2_ws/build/VL53L5CX/prefix_override:/home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/VL53L5CX/build --no-deps

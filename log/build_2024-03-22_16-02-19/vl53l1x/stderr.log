@@ -1,0 +1,72 @@
+In file included from [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:32[m[K:
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:[m[K In constructor ‘[01m[KVl53l1x::Vl53l1x()[m[K’:
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:232:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KVl53l1x::io_timeout[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  232 |   uint16_t [01;35m[Kio_timeout[m[K;
+      |            [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:231:8:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool Vl53l1x::did_timeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  231 |   bool [01;35m[Kdid_timeout[m[K;
+      |        [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:35:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   35 | [01;35m[KVl53l1x[m[K::Vl53l1x()
+      | [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:32[m[K:
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:239:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KVl53l1x::saved_vhv_timeout[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  239 |   uint8_t [01;35m[Ksaved_vhv_timeout[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:229:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kuint8_t Vl53l1x::last_status[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  229 |   uint8_t [01;35m[Klast_status[m[K;
+      |           [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:35:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   35 | [01;35m[KVl53l1x[m[K::Vl53l1x()
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:[m[K In member function ‘[01m[Kuint8_t Vl53l1x::readReg(uint16_t)[m[K’:
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:513:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  513 |   if( [01;35m[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)[m[K) {
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:[m[K In member function ‘[01m[Kuint16_t Vl53l1x::readReg16Bit(uint16_t)[m[K’:
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:532:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  532 |   if( [01;35m[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)[m[K) {
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:539:48:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  539 |   if( [01;35m[Kread(fd, readBuffer, sizeof(readBuffer)) < sizeof(readBuffer)[m[K) {
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:[m[K In member function ‘[01m[Kvoid Vl53l1x::readResults()[m[K’:
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:637:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  637 |   if( [01;35m[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)[m[K) {
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:644:48:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  644 |   if( [01;35m[Kread(fd, readBuffer, sizeof(readBuffer)) < sizeof(readBuffer)[m[K) {
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:8[m[K:
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:[m[K In constructor ‘[01m[KVl53l1xPublisher::Vl53l1xPublisher()[m[K’:
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:26:13:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+   26 | RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+      |             [01;31m[K^~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:26:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   26 | [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:26:1:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   26 | [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:26:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   26 | [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:26:1:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   26 | [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:26:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   26 | [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+      | [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/vl53l1x_node.dir/build.make:76: CMakeFiles/vl53l1x_node.dir/src/vl53l1x_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/vl53l1x_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,548 @@
+[0.000000] (-) TimerEvent: {}
+[0.001726] (robotix) JobQueued: {'identifier': 'robotix', 'dependencies': OrderedDict()}
+[0.002381] (vl53l1x) JobQueued: {'identifier': 'vl53l1x', 'dependencies': OrderedDict()}
+[0.002685] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.002872] (robotix) JobStarted: {'identifier': 'robotix'}
+[0.098976] (-) TimerEvent: {}
+[0.203326] (-) TimerEvent: {}
+[0.304022] (-) TimerEvent: {}
+[0.400138] (vl53l1x) JobStarted: {'identifier': 'vl53l1x'}
+[0.404476] (-) TimerEvent: {}
+[0.505677] (-) TimerEvent: {}
+[0.606799] (-) TimerEvent: {}
+[0.704137] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.707106] (-) TimerEvent: {}
+[0.807875] (-) TimerEvent: {}
+[0.909115] (-) TimerEvent: {}
+[1.010872] (-) TimerEvent: {}
+[1.111961] (-) TimerEvent: {}
+[1.212771] (-) TimerEvent: {}
+[1.313522] (-) TimerEvent: {}
+[1.414305] (-) TimerEvent: {}
+[1.515093] (-) TimerEvent: {}
+[1.615894] (-) TimerEvent: {}
+[1.716639] (-) TimerEvent: {}
+[1.817344] (-) TimerEvent: {}
+[1.918142] (-) TimerEvent: {}
+[2.018954] (-) TimerEvent: {}
+[2.119702] (-) TimerEvent: {}
+[2.220572] (-) TimerEvent: {}
+[2.321933] (-) TimerEvent: {}
+[2.423206] (-) TimerEvent: {}
+[2.524259] (-) TimerEvent: {}
+[2.551762] (vl53l1x) JobProgress: {'identifier': 'vl53l1x', 'progress': 'cmake'}
+[2.555321] (vl53l1x) Command: {'cmd': ['/usr/bin/cmake', '/home/robotix/ros2_ws/src/ROS2-VL53L1X', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/src/install/vl53l1x'], 'cwd': '/home/robotix/ros2_ws/src/build/vl53l1x', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotix'), ('SSH_CLIENT', '172.30.40.34 58564 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robotix'), ('OLDPWD', '/home/robotix/ros2_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robotix/ros2_ws/install:/home/robotix/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robotix/ros2_ws/src/build/vl53l1x'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.30.40.34 58564 172.30.40.39 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/src/build/robotix:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/vl53l1x:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble')]), 'shell': False}
+[2.580793] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[2.585863] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[2.589424] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotix'), ('SSH_CLIENT', '172.30.40.34 58564 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robotix'), ('OLDPWD', '/home/robotix/ros2_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robotix/ros2_ws/install:/home/robotix/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.30.40.34 58564 172.30.40.39 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/src/build/robotix:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/vl53l1x:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble')]), 'shell': False}
+[2.624472] (-) TimerEvent: {}
+[2.654010] (vl53l1x) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.724663] (-) TimerEvent: {}
+[2.826509] (-) TimerEvent: {}
+[2.928927] (-) TimerEvent: {}
+[2.952365] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_client\n'}
+[2.963727] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_node\n'}
+[3.011932] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[3.029102] (-) TimerEvent: {}
+[3.129998] (-) TimerEvent: {}
+[3.178538] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[3.218159] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver'], 'cwd': '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotix'), ('SSH_CLIENT', '172.30.40.34 58564 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robotix'), ('OLDPWD', '/home/robotix/ros2_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robotix/ros2_ws/install:/home/robotix/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robotix/ros2_ws/src/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.30.40.34 58564 172.30.40.39 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/src/build/robotix:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/vl53l1x:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble')]), 'shell': False}
+[3.230189] (-) TimerEvent: {}
+[3.258578] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.261666] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.264745] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[3.266845] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[3.269494] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/.uuid\n'}
+[3.271531] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[3.273461] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[3.275349] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[3.277779] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/.uuid\n'}
+[3.279214] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml\n'}
+[3.280762] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml\n'}
+[3.283608] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml\n'}
+[3.284757] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml\n'}
+[3.286086] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml\n'}
+[3.288636] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TminiPro.yaml\n'}
+[3.289880] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml\n'}
+[3.291735] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml\n'}
+[3.293129] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml\n'}
+[3.294682] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[3.296649] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/.uuid\n'}
+[3.298197] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[3.300551] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/.uuid\n'}
+[3.303079] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[3.304863] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[3.307094] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[3.309108] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[3.310661] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[3.312708] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[3.313944] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[3.315749] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[3.317770] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[3.319585] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[3.320885] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[3.321975] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[3.330384] (-) TimerEvent: {}
+[3.375545] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[3.377993] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[3.379810] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[3.381251] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/robotix/ros2_ws/src/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[3.388735] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[3.430724] (-) TimerEvent: {}
+[3.532672] (-) TimerEvent: {}
+[3.596198] (vl53l1x) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.632865] (-) TimerEvent: {}
+[3.691847] (vl53l1x) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.733054] (-) TimerEvent: {}
+[3.833811] (-) TimerEvent: {}
+[3.934776] (-) TimerEvent: {}
+[3.967701] (vl53l1x) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.989428] (vl53l1x) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.035201] (-) TimerEvent: {}
+[4.038914] (vl53l1x) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.120825] (vl53l1x) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.136610] (-) TimerEvent: {}
+[4.235626] (vl53l1x) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.237538] (-) TimerEvent: {}
+[4.274870] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[4.337767] (-) TimerEvent: {}
+[4.438669] (-) TimerEvent: {}
+[4.541095] (-) TimerEvent: {}
+[4.621881] (vl53l1x) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.635588] (vl53l1x) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.641255] (-) TimerEvent: {}
+[4.742173] (-) TimerEvent: {}
+[4.843046] (-) TimerEvent: {}
+[4.944220] (-) TimerEvent: {}
+[5.045097] (-) TimerEvent: {}
+[5.146312] (-) TimerEvent: {}
+[5.214171] (robotix) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/robotix/ros2_ws/src/build/robotix/build', '--no-deps', 'install_data'], 'cwd': '/home/robotix/ros2_ws/src/build/robotix', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotix', 'SSH_CLIENT': '172.30.40.34 58564 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robotix', 'OLDPWD': '/home/robotix/ros2_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robotix/ros2_ws/install:/home/robotix/ros2_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'robotix', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/robotix/ros2_ws/src/build/robotix', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.30.40.34 58564 172.30.40.39 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotix/ros2_ws/src/build/robotix/prefix_override:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/src/build/robotix:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/vl53l1x:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x'}, 'shell': False}
+[5.246446] (-) TimerEvent: {}
+[5.347230] (-) TimerEvent: {}
+[5.380455] (vl53l1x) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.447421] (-) TimerEvent: {}
+[5.548218] (-) TimerEvent: {}
+[5.649003] (-) TimerEvent: {}
+[5.749819] (-) TimerEvent: {}
+[5.850888] (-) TimerEvent: {}
+[5.951630] (-) TimerEvent: {}
+[6.052389] (-) TimerEvent: {}
+[6.153248] (-) TimerEvent: {}
+[6.204060] (vl53l1x) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.253439] (-) TimerEvent: {}
+[6.354989] (-) TimerEvent: {}
+[6.458394] (-) TimerEvent: {}
+[6.558763] (robotix) StdoutLine: {'line': b'running develop\n'}
+[6.559660] (-) TimerEvent: {}
+[6.660315] (-) TimerEvent: {}
+[6.761069] (-) TimerEvent: {}
+[6.861814] (-) TimerEvent: {}
+[6.963155] (-) TimerEvent: {}
+[7.064939] (-) TimerEvent: {}
+[7.166627] (-) TimerEvent: {}
+[7.197063] (vl53l1x) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.266786] (-) TimerEvent: {}
+[7.274406] (vl53l1x) StdoutLine: {'line': b'-- Generating done\n'}
+[7.285034] (vl53l1x) StdoutLine: {'line': b'-- Build files have been written to: /home/robotix/ros2_ws/src/build/vl53l1x\n'}
+[7.313975] (vl53l1x) CommandEnded: {'returncode': 0}
+[7.316007] (vl53l1x) JobProgress: {'identifier': 'vl53l1x', 'progress': 'build'}
+[7.317203] (vl53l1x) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robotix/ros2_ws/src/build/vl53l1x', '--', '-j4', '-l4'], 'cwd': '/home/robotix/ros2_ws/src/build/vl53l1x', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotix'), ('SSH_CLIENT', '172.30.40.34 58564 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robotix'), ('OLDPWD', '/home/robotix/ros2_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robotix/ros2_ws/install:/home/robotix/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robotix/ros2_ws/src/build/vl53l1x'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.30.40.34 58564 172.30.40.39 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/src/build/robotix:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/vl53l1x:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble')]), 'shell': False}
+[7.366957] (-) TimerEvent: {}
+[7.391247] (robotix) StdoutLine: {'line': b'running egg_info\n'}
+[7.392090] (robotix) StdoutLine: {'line': b'writing robotix.egg-info/PKG-INFO\n'}
+[7.393304] (robotix) StdoutLine: {'line': b'writing dependency_links to robotix.egg-info/dependency_links.txt\n'}
+[7.394781] (robotix) StdoutLine: {'line': b'writing entry points to robotix.egg-info/entry_points.txt\n'}
+[7.395929] (robotix) StdoutLine: {'line': b'writing requirements to robotix.egg-info/requires.txt\n'}
+[7.397180] (robotix) StdoutLine: {'line': b'writing top-level names to robotix.egg-info/top_level.txt\n'}
+[7.405029] (robotix) StdoutLine: {'line': b"reading manifest file 'robotix.egg-info/SOURCES.txt'\n"}
+[7.409048] (robotix) StdoutLine: {'line': b"writing manifest file 'robotix.egg-info/SOURCES.txt'\n"}
+[7.416135] (robotix) StdoutLine: {'line': b'running build_ext\n'}
+[7.417374] (robotix) StdoutLine: {'line': b'Creating /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix.egg-link (link to .)\n'}
+[7.421701] (robotix) StdoutLine: {'line': b'Installing codeuse script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.423108] (robotix) StdoutLine: {'line': b'Installing controller script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.424026] (robotix) StdoutLine: {'line': b'Installing ctrl_claw script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.424791] (robotix) StdoutLine: {'line': b'Installing ctrl_nav script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.429315] (robotix) StdoutLine: {'line': b'Installing jetson script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.430531] (robotix) StdoutLine: {'line': b'Installing laser script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.431638] (robotix) StdoutLine: {'line': b'Installing lidar script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.432686] (robotix) StdoutLine: {'line': b'Installing motor script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.433736] (robotix) StdoutLine: {'line': b'Installing motor_claw script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.434810] (robotix) StdoutLine: {'line': b'Installing motor_plateau script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix\n'}
+[7.436575] (robotix) StdoutLine: {'line': b'\n'}
+[7.437711] (robotix) StdoutLine: {'line': b'Installed /home/robotix/ros2_ws/src/build/robotix\n'}
+[7.438466] (robotix) StdoutLine: {'line': b'running install_data\n'}
+[7.439003] (robotix) StdoutLine: {'line': b'copying package.xml -> /home/robotix/ros2_ws/src/install/robotix/share/robotix\n'}
+[7.467242] (-) TimerEvent: {}
+[7.531175] (vl53l1x) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vl53l1x_node\x1b[0m\n'}
+[7.567491] (-) TimerEvent: {}
+[7.606254] (robotix) CommandEnded: {'returncode': 0}
+[7.659877] (vl53l1x) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/vl53l1x_node.dir/src/vl53l1x_node.cpp.o\x1b[0m\n'}
+[7.668016] (-) TimerEvent: {}
+[7.769207] (-) TimerEvent: {}
+[7.870747] (-) TimerEvent: {}
+[7.972279] (-) TimerEvent: {}
+[8.073213] (-) TimerEvent: {}
+[8.135138] (robotix) JobEnded: {'identifier': 'robotix', 'rc': 0}
+[8.173414] (-) TimerEvent: {}
+[8.274243] (-) TimerEvent: {}
+[8.375401] (-) TimerEvent: {}
+[8.476299] (-) TimerEvent: {}
+[8.577291] (-) TimerEvent: {}
+[8.678122] (-) TimerEvent: {}
+[8.779107] (-) TimerEvent: {}
+[8.879854] (-) TimerEvent: {}
+[8.980591] (-) TimerEvent: {}
+[9.081346] (-) TimerEvent: {}
+[9.182132] (-) TimerEvent: {}
+[9.282880] (-) TimerEvent: {}
+[9.383686] (-) TimerEvent: {}
+[9.484499] (-) TimerEvent: {}
+[9.585279] (-) TimerEvent: {}
+[9.686076] (-) TimerEvent: {}
+[9.786864] (-) TimerEvent: {}
+[9.887653] (-) TimerEvent: {}
+[9.988435] (-) TimerEvent: {}
+[10.089209] (-) TimerEvent: {}
+[10.190122] (-) TimerEvent: {}
+[10.290914] (-) TimerEvent: {}
+[10.391778] (-) TimerEvent: {}
+[10.492667] (-) TimerEvent: {}
+[10.593619] (-) TimerEvent: {}
+[10.694588] (-) TimerEvent: {}
+[10.795481] (-) TimerEvent: {}
+[10.896430] (-) TimerEvent: {}
+[10.997301] (-) TimerEvent: {}
+[11.098211] (-) TimerEvent: {}
+[11.199007] (-) TimerEvent: {}
+[11.299884] (-) TimerEvent: {}
+[11.400878] (-) TimerEvent: {}
+[11.501818] (-) TimerEvent: {}
+[11.602745] (-) TimerEvent: {}
+[11.703639] (-) TimerEvent: {}
+[11.804430] (-) TimerEvent: {}
+[11.905216] (-) TimerEvent: {}
+[12.006146] (-) TimerEvent: {}
+[12.106982] (-) TimerEvent: {}
+[12.207774] (-) TimerEvent: {}
+[12.308615] (-) TimerEvent: {}
+[12.409429] (-) TimerEvent: {}
+[12.510309] (-) TimerEvent: {}
+[12.611119] (-) TimerEvent: {}
+[12.712026] (-) TimerEvent: {}
+[12.812838] (-) TimerEvent: {}
+[12.913762] (-) TimerEvent: {}
+[13.014762] (-) TimerEvent: {}
+[13.115560] (-) TimerEvent: {}
+[13.216365] (-) TimerEvent: {}
+[13.317154] (-) TimerEvent: {}
+[13.418043] (-) TimerEvent: {}
+[13.518875] (-) TimerEvent: {}
+[13.620102] (-) TimerEvent: {}
+[13.720949] (-) TimerEvent: {}
+[13.821877] (-) TimerEvent: {}
+[13.922686] (-) TimerEvent: {}
+[14.023511] (-) TimerEvent: {}
+[14.124367] (-) TimerEvent: {}
+[14.225313] (-) TimerEvent: {}
+[14.326325] (-) TimerEvent: {}
+[14.427201] (-) TimerEvent: {}
+[14.528020] (-) TimerEvent: {}
+[14.628864] (-) TimerEvent: {}
+[14.729714] (-) TimerEvent: {}
+[14.830528] (-) TimerEvent: {}
+[14.931358] (-) TimerEvent: {}
+[15.032158] (-) TimerEvent: {}
+[15.133040] (-) TimerEvent: {}
+[15.234020] (-) TimerEvent: {}
+[15.334859] (-) TimerEvent: {}
+[15.435674] (-) TimerEvent: {}
+[15.536696] (-) TimerEvent: {}
+[15.637536] (-) TimerEvent: {}
+[15.738379] (-) TimerEvent: {}
+[15.839206] (-) TimerEvent: {}
+[15.940044] (-) TimerEvent: {}
+[16.040900] (-) TimerEvent: {}
+[16.141922] (-) TimerEvent: {}
+[16.242827] (-) TimerEvent: {}
+[16.343652] (-) TimerEvent: {}
+[16.444539] (-) TimerEvent: {}
+[16.545495] (-) TimerEvent: {}
+[16.646916] (-) TimerEvent: {}
+[16.747869] (-) TimerEvent: {}
+[16.851059] (-) TimerEvent: {}
+[16.951883] (-) TimerEvent: {}
+[17.052725] (-) TimerEvent: {}
+[17.153766] (-) TimerEvent: {}
+[17.254947] (-) TimerEvent: {}
+[17.356074] (-) TimerEvent: {}
+[17.456895] (-) TimerEvent: {}
+[17.557849] (-) TimerEvent: {}
+[17.659210] (-) TimerEvent: {}
+[17.760532] (-) TimerEvent: {}
+[17.861465] (-) TimerEvent: {}
+[17.962545] (-) TimerEvent: {}
+[18.063518] (-) TimerEvent: {}
+[18.165640] (-) TimerEvent: {}
+[18.267192] (-) TimerEvent: {}
+[18.368802] (-) TimerEvent: {}
+[18.474092] (-) TimerEvent: {}
+[18.576748] (-) TimerEvent: {}
+[18.679425] (-) TimerEvent: {}
+[18.781839] (-) TimerEvent: {}
+[18.884049] (-) TimerEvent: {}
+[18.993368] (-) TimerEvent: {}
+[19.095763] (-) TimerEvent: {}
+[19.198453] (-) TimerEvent: {}
+[19.300653] (-) TimerEvent: {}
+[19.409617] (-) TimerEvent: {}
+[19.521104] (-) TimerEvent: {}
+[19.631251] (-) TimerEvent: {}
+[19.733396] (-) TimerEvent: {}
+[19.835315] (-) TimerEvent: {}
+[19.936530] (-) TimerEvent: {}
+[20.038164] (-) TimerEvent: {}
+[20.140293] (-) TimerEvent: {}
+[20.249646] (-) TimerEvent: {}
+[20.351797] (-) TimerEvent: {}
+[20.486601] (-) TimerEvent: {}
+[20.588799] (-) TimerEvent: {}
+[20.691615] (-) TimerEvent: {}
+[20.793696] (-) TimerEvent: {}
+[20.895212] (-) TimerEvent: {}
+[20.996573] (-) TimerEvent: {}
+[21.098151] (-) TimerEvent: {}
+[21.200289] (-) TimerEvent: {}
+[21.303789] (-) TimerEvent: {}
+[21.406937] (-) TimerEvent: {}
+[21.508861] (-) TimerEvent: {}
+[21.611692] (-) TimerEvent: {}
+[21.713679] (-) TimerEvent: {}
+[21.816229] (-) TimerEvent: {}
+[21.918803] (-) TimerEvent: {}
+[22.020753] (-) TimerEvent: {}
+[22.122853] (-) TimerEvent: {}
+[22.385610] (-) TimerEvent: {}
+[22.511473] (-) TimerEvent: {}
+[22.613149] (-) TimerEvent: {}
+[22.714508] (-) TimerEvent: {}
+[22.830641] (-) TimerEvent: {}
+[22.931837] (-) TimerEvent: {}
+[23.033026] (-) TimerEvent: {}
+[23.134234] (-) TimerEvent: {}
+[23.236925] (-) TimerEvent: {}
+[23.338402] (-) TimerEvent: {}
+[23.439373] (-) TimerEvent: {}
+[23.541685] (-) TimerEvent: {}
+[23.644209] (-) TimerEvent: {}
+[23.778001] (-) TimerEvent: {}
+[23.879432] (-) TimerEvent: {}
+[23.981158] (-) TimerEvent: {}
+[24.082616] (-) TimerEvent: {}
+[24.183589] (-) TimerEvent: {}
+[24.284364] (-) TimerEvent: {}
+[24.385251] (-) TimerEvent: {}
+[24.486310] (-) TimerEvent: {}
+[24.587533] (-) TimerEvent: {}
+[24.689690] (-) TimerEvent: {}
+[24.791026] (-) TimerEvent: {}
+[24.893943] (-) TimerEvent: {}
+[24.996225] (-) TimerEvent: {}
+[25.099618] (-) TimerEvent: {}
+[25.205760] (-) TimerEvent: {}
+[25.308135] (-) TimerEvent: {}
+[25.410931] (-) TimerEvent: {}
+[25.514210] (-) TimerEvent: {}
+[25.616568] (-) TimerEvent: {}
+[25.719408] (-) TimerEvent: {}
+[25.821627] (-) TimerEvent: {}
+[25.924322] (-) TimerEvent: {}
+[26.029880] (-) TimerEvent: {}
+[26.136300] (-) TimerEvent: {}
+[26.237763] (-) TimerEvent: {}
+[26.339094] (-) TimerEvent: {}
+[26.440077] (-) TimerEvent: {}
+[26.542924] (-) TimerEvent: {}
+[26.672787] (-) TimerEvent: {}
+[26.852306] (-) TimerEvent: {}
+[26.953366] (-) TimerEvent: {}
+[27.054688] (-) TimerEvent: {}
+[27.157171] (-) TimerEvent: {}
+[27.259515] (-) TimerEvent: {}
+[27.362384] (-) TimerEvent: {}
+[27.467924] (-) TimerEvent: {}
+[27.570954] (-) TimerEvent: {}
+[27.672881] (-) TimerEvent: {}
+[27.774234] (-) TimerEvent: {}
+[27.877061] (-) TimerEvent: {}
+[27.979389] (-) TimerEvent: {}
+[28.081426] (-) TimerEvent: {}
+[28.183845] (-) TimerEvent: {}
+[28.286052] (-) TimerEvent: {}
+[28.387655] (-) TimerEvent: {}
+[28.488950] (-) TimerEvent: {}
+[28.591080] (-) TimerEvent: {}
+[28.693175] (-) TimerEvent: {}
+[28.795118] (-) TimerEvent: {}
+[28.898817] (-) TimerEvent: {}
+[29.001404] (-) TimerEvent: {}
+[29.103311] (-) TimerEvent: {}
+[29.204544] (-) TimerEvent: {}
+[29.307649] (-) TimerEvent: {}
+[29.415052] (-) TimerEvent: {}
+[29.517988] (-) TimerEvent: {}
+[29.621778] (-) TimerEvent: {}
+[29.725378] (-) TimerEvent: {}
+[29.827895] (-) TimerEvent: {}
+[29.929466] (-) TimerEvent: {}
+[30.031282] (-) TimerEvent: {}
+[30.133011] (-) TimerEvent: {}
+[30.235535] (-) TimerEvent: {}
+[30.338247] (-) TimerEvent: {}
+[30.471937] (-) TimerEvent: {}
+[30.573518] (-) TimerEvent: {}
+[30.674888] (-) TimerEvent: {}
+[30.776112] (-) TimerEvent: {}
+[30.877741] (-) TimerEvent: {}
+[30.980441] (-) TimerEvent: {}
+[31.082863] (-) TimerEvent: {}
+[31.184539] (-) TimerEvent: {}
+[31.286240] (-) TimerEvent: {}
+[31.387409] (-) TimerEvent: {}
+[31.488975] (-) TimerEvent: {}
+[31.591129] (-) TimerEvent: {}
+[31.693050] (-) TimerEvent: {}
+[31.795307] (-) TimerEvent: {}
+[31.897342] (-) TimerEvent: {}
+[31.999827] (-) TimerEvent: {}
+[32.100870] (-) TimerEvent: {}
+[32.202346] (-) TimerEvent: {}
+[32.304019] (-) TimerEvent: {}
+[32.406284] (-) TimerEvent: {}
+[32.509039] (-) TimerEvent: {}
+[32.611436] (-) TimerEvent: {}
+[32.713228] (-) TimerEvent: {}
+[32.815388] (-) TimerEvent: {}
+[32.916882] (-) TimerEvent: {}
+[33.018472] (-) TimerEvent: {}
+[33.120548] (-) TimerEvent: {}
+[33.222494] (-) TimerEvent: {}
+[33.324212] (-) TimerEvent: {}
+[33.426444] (-) TimerEvent: {}
+[33.528762] (-) TimerEvent: {}
+[33.630900] (-) TimerEvent: {}
+[33.807653] (-) TimerEvent: {}
+[34.049975] (-) TimerEvent: {}
+[34.151945] (-) TimerEvent: {}
+[34.254058] (-) TimerEvent: {}
+[34.356105] (-) TimerEvent: {}
+[34.457687] (-) TimerEvent: {}
+[34.558939] (-) TimerEvent: {}
+[34.660538] (-) TimerEvent: {}
+[34.763124] (-) TimerEvent: {}
+[34.865200] (-) TimerEvent: {}
+[34.967323] (-) TimerEvent: {}
+[35.069415] (-) TimerEvent: {}
+[35.172177] (-) TimerEvent: {}
+[35.274298] (-) TimerEvent: {}
+[35.381950] (-) TimerEvent: {}
+[35.486355] (-) TimerEvent: {}
+[35.588555] (-) TimerEvent: {}
+[35.690763] (-) TimerEvent: {}
+[35.792583] (-) TimerEvent: {}
+[35.894731] (-) TimerEvent: {}
+[35.996726] (-) TimerEvent: {}
+[36.099223] (-) TimerEvent: {}
+[36.200515] (-) TimerEvent: {}
+[36.301761] (-) TimerEvent: {}
+[36.403221] (-) TimerEvent: {}
+[36.504773] (-) TimerEvent: {}
+[36.606974] (-) TimerEvent: {}
+[36.709096] (-) TimerEvent: {}
+[36.811294] (-) TimerEvent: {}
+[36.913286] (-) TimerEvent: {}
+[37.014747] (-) TimerEvent: {}
+[37.116485] (-) TimerEvent: {}
+[37.217964] (-) TimerEvent: {}
+[37.320036] (-) TimerEvent: {}
+[37.422060] (-) TimerEvent: {}
+[37.524246] (-) TimerEvent: {}
+[37.626429] (-) TimerEvent: {}
+[37.728423] (-) TimerEvent: {}
+[37.830405] (-) TimerEvent: {}
+[37.941189] (-) TimerEvent: {}
+[38.050612] (-) TimerEvent: {}
+[38.152961] (-) TimerEvent: {}
+[38.266739] (-) TimerEvent: {}
+[38.368087] (-) TimerEvent: {}
+[38.469746] (-) TimerEvent: {}
+[38.571611] (-) TimerEvent: {}
+[38.673419] (-) TimerEvent: {}
+[38.776107] (-) TimerEvent: {}
+[38.877418] (-) TimerEvent: {}
+[38.980845] (-) TimerEvent: {}
+[39.083268] (-) TimerEvent: {}
+[39.235628] (-) TimerEvent: {}
+[39.364286] (-) TimerEvent: {}
+[39.466503] (-) TimerEvent: {}
+[39.567725] (-) TimerEvent: {}
+[39.669478] (-) TimerEvent: {}
+[39.772374] (-) TimerEvent: {}
+[39.874292] (-) TimerEvent: {}
+[39.976746] (-) TimerEvent: {}
+[40.078912] (-) TimerEvent: {}
+[40.181307] (-) TimerEvent: {}
+[40.283967] (-) TimerEvent: {}
+[40.385576] (-) TimerEvent: {}
+[40.487398] (-) TimerEvent: {}
+[40.606036] (-) TimerEvent: {}
+[40.708321] (-) TimerEvent: {}
+[40.810489] (-) TimerEvent: {}
+[40.912379] (-) TimerEvent: {}
+[41.014509] (-) TimerEvent: {}
+[41.116597] (-) TimerEvent: {}
+[41.219226] (-) TimerEvent: {}
+[41.320887] (-) TimerEvent: {}
+[41.422708] (-) TimerEvent: {}
+[41.524453] (-) TimerEvent: {}
+[41.626608] (-) TimerEvent: {}
+[41.850916] (-) TimerEvent: {}
+[42.017152] (-) TimerEvent: {}
+[42.387540] (-) TimerEvent: {}
+[42.940902] (-) TimerEvent: {}
+[43.056072] (-) TimerEvent: {}
+[43.158439] (-) TimerEvent: {}
+[43.260707] (-) TimerEvent: {}
+[43.362833] (-) TimerEvent: {}
+[43.464233] (-) TimerEvent: {}
+[43.565700] (-) TimerEvent: {}
+[43.667331] (-) TimerEvent: {}
+[43.769346] (-) TimerEvent: {}
+[43.871263] (-) TimerEvent: {}
+[43.973454] (-) TimerEvent: {}
+[44.094326] (-) TimerEvent: {}
+[44.196343] (-) TimerEvent: {}
+[44.298268] (-) TimerEvent: {}
+[44.399760] (-) TimerEvent: {}
+[44.501389] (-) TimerEvent: {}
+[44.603365] (-) TimerEvent: {}
+[44.705209] (-) TimerEvent: {}
+[44.807342] (-) TimerEvent: {}
+[44.909527] (-) TimerEvent: {}
+[45.011639] (-) TimerEvent: {}
+[45.155069] (-) TimerEvent: {}
+[45.257143] (-) TimerEvent: {}
+[45.384930] (-) TimerEvent: {}
+[45.487015] (-) TimerEvent: {}
+[45.588929] (-) TimerEvent: {}
+[45.690746] (-) TimerEvent: {}
+[45.793124] (-) TimerEvent: {}
+[45.894712] (-) TimerEvent: {}
+[46.044160] (-) TimerEvent: {}
+[47.531425] (-) TimerEvent: {}
+[49.274915] (-) TimerEvent: {}
+[56.141329] (-) TimerEvent: {}
+[59.021152] (-) TimerEvent: {}
+[60.986063] (-) TimerEvent: {}
+[65.992251] (-) TimerEvent: {}
+[68.310732] (-) TimerEvent: {}
+[75.141223] (-) TimerEvent: {}

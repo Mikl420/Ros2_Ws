@@ -1,0 +1,37 @@
+[2.159s] Invoking command in '/home/robotix/ros2_ws/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/build/vl53l1x -- -j4 -l4
+[2.387s] [35m[1mConsolidate compiler generated dependencies of target vl53l1x_node[0m
+[2.566s] [ 33%] [32mBuilding CXX object CMakeFiles/vl53l1x_node.dir/src/vl53l1x_node.cpp.o[0m
+[13.944s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[13.945s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[13.945s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[13.945s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[13.946s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[13.946s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[13.947s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[13.947s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[13.948s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[13.948s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[13.948s]                  from [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:8[m[K:
+[13.949s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[13.949s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:94:14:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+[13.950s]    94 |  RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+[13.950s]       |              [01;31m[K^~~~[m[K
+[13.951s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:94:2:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.951s]    94 |  [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+[13.951s]       |  [01;31m[K^~~~~~~~~~~[m[K
+[13.952s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:94:2:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.952s]    94 |  [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+[13.953s]       |  [01;31m[K^~~~~~~~~~~[m[K
+[13.953s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:94:2:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.954s]    94 |  [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+[13.954s]       |  [01;31m[K^~~~~~~~~~~[m[K
+[13.954s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:94:2:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.955s]    94 |  [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+[13.955s]       |  [01;31m[K^~~~~~~~~~~[m[K
+[13.956s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x_node.cpp:94:2:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.956s]    94 |  [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[YDLIDAR INFO] Current ROS Driver Version: \n");
+[13.957s]       |  [01;31m[K^~~~~~~~~~~[m[K
+[17.182s] gmake[2]: *** [CMakeFiles/vl53l1x_node.dir/build.make:76: CMakeFiles/vl53l1x_node.dir/src/vl53l1x_node.cpp.o] Error 1
+[17.182s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/vl53l1x_node.dir/all] Error 2
+[17.184s] gmake: *** [Makefile:146: all] Error 2
+[17.191s] Invoked command in '/home/robotix/ros2_ws/build/vl53l1x' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/build/vl53l1x -- -j4 -l4

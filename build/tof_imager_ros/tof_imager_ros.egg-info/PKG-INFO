@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tof-imager-ros
+Version: 0.0.0
+Summary: ROS 2 package for the VL53L5CX and VL53L7CX ToF Imagers
+Home-page: UNKNOWN
+Maintainer: Aditya Kamath
+Maintainer-email: adityakamath@live.com
+License: Apache License 2.0
+Platform: UNKNOWN
+
+UNKNOWN
+

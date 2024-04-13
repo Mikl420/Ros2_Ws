@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tof_imager_ros" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ydlidar_ros2_driver" vcs="Git" />
   </component>
 </project>

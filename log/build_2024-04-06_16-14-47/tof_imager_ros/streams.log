@@ -1,0 +1,27 @@
+[3.598s] Invoking command in '/home/robotix/ros2_ws/src/tof_imager_ros': PYTHONPATH=/home/robotix/ros2_ws/build/tof_imager_ros/prefix_override:/home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tof_imager_ros build --build-base /home/robotix/ros2_ws/build/tof_imager_ros/build install --record /home/robotix/ros2_ws/build/tof_imager_ros/install.log --single-version-externally-managed
+[4.735s] running egg_info
+[4.737s] writing ../../build/tof_imager_ros/tof_imager_ros.egg-info/PKG-INFO
+[4.738s] writing dependency_links to ../../build/tof_imager_ros/tof_imager_ros.egg-info/dependency_links.txt
+[4.739s] writing entry points to ../../build/tof_imager_ros/tof_imager_ros.egg-info/entry_points.txt
+[4.740s] writing requirements to ../../build/tof_imager_ros/tof_imager_ros.egg-info/requires.txt
+[4.741s] writing top-level names to ../../build/tof_imager_ros/tof_imager_ros.egg-info/top_level.txt
+[4.748s] reading manifest file '../../build/tof_imager_ros/tof_imager_ros.egg-info/SOURCES.txt'
+[4.750s] adding license file 'LICENSE'
+[4.753s] writing manifest file '../../build/tof_imager_ros/tof_imager_ros.egg-info/SOURCES.txt'
+[4.754s] running build
+[4.754s] running build_py
+[4.755s] copying tof_imager_ros/tof_imager_publisher.py -> /home/robotix/ros2_ws/build/tof_imager_ros/build/lib/tof_imager_ros
+[4.756s] running install
+[4.757s] running install_lib
+[4.761s] copying /home/robotix/ros2_ws/build/tof_imager_ros/build/lib/tof_imager_ros/tof_imager_publisher.py -> /home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros
+[4.764s] byte-compiling /home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros/tof_imager_publisher.py to tof_imager_publisher.cpython-310.pyc
+[4.766s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (tof_imager_publisher.py, line 69)
+[4.767s] running install_data
+[4.769s] running install_egg_info
+[4.778s] removing '/home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros-0.0.0-py3.10.egg-info' (and everything under it)
+[4.780s] Copying ../../build/tof_imager_ros/tof_imager_ros.egg-info to /home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros-0.0.0-py3.10.egg-info
+[4.785s] running install_scripts
+[4.866s] Installing tof_imager_node script to /home/robotix/ros2_ws/install/tof_imager_ros/lib/tof_imager_ros
+[4.867s] Installing tof_imager_publisher script to /home/robotix/ros2_ws/install/tof_imager_ros/lib/tof_imager_ros
+[4.869s] writing list of installed files to '/home/robotix/ros2_ws/build/tof_imager_ros/install.log'
+[4.987s] Invoked command in '/home/robotix/ros2_ws/src/tof_imager_ros' returned '0': PYTHONPATH=/home/robotix/ros2_ws/build/tof_imager_ros/prefix_override:/home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tof_imager_ros build --build-base /home/robotix/ros2_ws/build/tof_imager_ros/build install --record /home/robotix/ros2_ws/build/tof_imager_ros/install.log --single-version-externally-managed

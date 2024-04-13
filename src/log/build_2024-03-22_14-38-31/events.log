@@ -1,0 +1,433 @@
+[0.000000] (-) TimerEvent: {}
+[0.002039] (-) JobUnselected: {'identifier': 'robotix'}
+[0.002425] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.002621] (vl53l1x) JobQueued: {'identifier': 'vl53l1x', 'dependencies': OrderedDict()}
+[0.003065] (vl53l1x) JobStarted: {'identifier': 'vl53l1x'}
+[0.098926] (-) TimerEvent: {}
+[0.200012] (-) TimerEvent: {}
+[0.281421] (vl53l1x) JobProgress: {'identifier': 'vl53l1x', 'progress': 'cmake'}
+[0.282723] (vl53l1x) Command: {'cmd': ['/usr/bin/cmake', '/home/robotix/ros2_ws/src/ROS2-VL53L1X', '-DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/src/install/vl53l1x'], 'cwd': '/home/robotix/ros2_ws/src/build/vl53l1x', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotix'), ('SSH_CLIENT', '172.30.40.34 55204 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robotix'), ('OLDPWD', '/home/robotix/ros2_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robotix/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '13'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robotix/ros2_ws/src/build/vl53l1x'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.30.40.34 55204 172.30.40.39 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble')]), 'shell': False}
+[0.302066] (-) TimerEvent: {}
+[0.404458] (-) TimerEvent: {}
+[0.505484] (-) TimerEvent: {}
+[0.606598] (-) TimerEvent: {}
+[0.707547] (-) TimerEvent: {}
+[0.808498] (-) TimerEvent: {}
+[0.909580] (-) TimerEvent: {}
+[1.010827] (-) TimerEvent: {}
+[1.111880] (-) TimerEvent: {}
+[1.212954] (-) TimerEvent: {}
+[1.313954] (-) TimerEvent: {}
+[1.378441] (vl53l1x) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.414152] (-) TimerEvent: {}
+[1.515066] (-) TimerEvent: {}
+[1.616179] (-) TimerEvent: {}
+[1.717187] (-) TimerEvent: {}
+[1.818096] (-) TimerEvent: {}
+[1.919088] (-) TimerEvent: {}
+[2.020055] (-) TimerEvent: {}
+[2.120895] (-) TimerEvent: {}
+[2.130628] (vl53l1x) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.182352] (vl53l1x) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.221102] (-) TimerEvent: {}
+[2.321994] (-) TimerEvent: {}
+[2.422912] (-) TimerEvent: {}
+[2.523739] (-) TimerEvent: {}
+[2.566487] (vl53l1x) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.598030] (vl53l1x) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.602930] (vl53l1x) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.606140] (vl53l1x) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.623954] (-) TimerEvent: {}
+[2.625163] (vl53l1x) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.724136] (-) TimerEvent: {}
+[2.824985] (-) TimerEvent: {}
+[2.925833] (-) TimerEvent: {}
+[3.009140] (vl53l1x) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.025969] (-) TimerEvent: {}
+[3.039957] (vl53l1x) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.041072] (vl53l1x) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.043178] (vl53l1x) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.087072] (vl53l1x) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.126148] (-) TimerEvent: {}
+[3.226881] (-) TimerEvent: {}
+[3.327654] (-) TimerEvent: {}
+[3.428527] (-) TimerEvent: {}
+[3.529588] (-) TimerEvent: {}
+[3.630615] (-) TimerEvent: {}
+[3.731846] (-) TimerEvent: {}
+[3.833221] (-) TimerEvent: {}
+[3.933991] (-) TimerEvent: {}
+[4.010846] (vl53l1x) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[4.034420] (-) TimerEvent: {}
+[4.135341] (-) TimerEvent: {}
+[4.236020] (-) TimerEvent: {}
+[4.336747] (-) TimerEvent: {}
+[4.437500] (-) TimerEvent: {}
+[4.538286] (-) TimerEvent: {}
+[4.639038] (-) TimerEvent: {}
+[4.705875] (vl53l1x) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.739206] (-) TimerEvent: {}
+[4.839939] (-) TimerEvent: {}
+[4.940692] (-) TimerEvent: {}
+[5.041421] (-) TimerEvent: {}
+[5.089387] (vl53l1x) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.140948] (vl53l1x) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.141548] (-) TimerEvent: {}
+[5.215305] (vl53l1x) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.241735] (-) TimerEvent: {}
+[5.323581] (vl53l1x) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.341917] (-) TimerEvent: {}
+[5.442663] (-) TimerEvent: {}
+[5.469865] (vl53l1x) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.542844] (-) TimerEvent: {}
+[5.643568] (-) TimerEvent: {}
+[5.744293] (-) TimerEvent: {}
+[5.845056] (-) TimerEvent: {}
+[5.945048] (vl53l1x) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.945690] (-) TimerEvent: {}
+[5.974851] (vl53l1x) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.045890] (-) TimerEvent: {}
+[6.146719] (-) TimerEvent: {}
+[6.247556] (-) TimerEvent: {}
+[6.348428] (-) TimerEvent: {}
+[6.449969] (-) TimerEvent: {}
+[6.550887] (-) TimerEvent: {}
+[6.588378] (vl53l1x) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.651061] (-) TimerEvent: {}
+[6.726192] (vl53l1x) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.751243] (-) TimerEvent: {}
+[6.852000] (-) TimerEvent: {}
+[6.952914] (-) TimerEvent: {}
+[6.971008] (vl53l1x) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.053084] (-) TimerEvent: {}
+[7.062349] (vl53l1x) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.153299] (-) TimerEvent: {}
+[7.254167] (-) TimerEvent: {}
+[7.355042] (-) TimerEvent: {}
+[7.451360] (vl53l1x) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.454640] (vl53l1x) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.455593] (-) TimerEvent: {}
+[7.557109] (-) TimerEvent: {}
+[7.658090] (-) TimerEvent: {}
+[7.758897] (-) TimerEvent: {}
+[7.815588] (vl53l1x) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.820035] (vl53l1x) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.859092] (-) TimerEvent: {}
+[7.959901] (-) TimerEvent: {}
+[8.060685] (-) TimerEvent: {}
+[8.161499] (-) TimerEvent: {}
+[8.262512] (-) TimerEvent: {}
+[8.363425] (-) TimerEvent: {}
+[8.464272] (-) TimerEvent: {}
+[8.565139] (-) TimerEvent: {}
+[8.665914] (-) TimerEvent: {}
+[8.676081] (vl53l1x) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[8.766090] (-) TimerEvent: {}
+[8.866904] (-) TimerEvent: {}
+[8.967789] (-) TimerEvent: {}
+[9.068840] (-) TimerEvent: {}
+[9.169686] (-) TimerEvent: {}
+[9.270445] (-) TimerEvent: {}
+[9.371238] (-) TimerEvent: {}
+[9.472102] (-) TimerEvent: {}
+[9.572994] (-) TimerEvent: {}
+[9.640842] (vl53l1x) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.673168] (-) TimerEvent: {}
+[9.708495] (vl53l1x) StdoutLine: {'line': b'-- Generating done\n'}
+[9.716911] (vl53l1x) StdoutLine: {'line': b'-- Build files have been written to: /home/robotix/ros2_ws/src/build/vl53l1x\n'}
+[9.751472] (vl53l1x) CommandEnded: {'returncode': 0}
+[9.753745] (vl53l1x) JobProgress: {'identifier': 'vl53l1x', 'progress': 'build'}
+[9.756956] (vl53l1x) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robotix/ros2_ws/src/build/vl53l1x', '--', '-j4', '-l4'], 'cwd': '/home/robotix/ros2_ws/src/build/vl53l1x', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotix'), ('SSH_CLIENT', '172.30.40.34 55204 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robotix'), ('OLDPWD', '/home/robotix/ros2_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robotix/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '13'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robotix/ros2_ws/src/build/vl53l1x'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.30.40.34 55204 172.30.40.39 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble')]), 'shell': False}
+[9.773372] (-) TimerEvent: {}
+[9.874288] (-) TimerEvent: {}
+[9.974376] (vl53l1x) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/vl53l1x_node.dir/src/vl53l1x_node.cpp.o\x1b[0m\n'}
+[9.975209] (-) TimerEvent: {}
+[9.977677] (vl53l1x) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/vl53l1x_node.dir/src/vl53l1x.cpp.o\x1b[0m\n'}
+[10.075408] (-) TimerEvent: {}
+[10.176244] (-) TimerEvent: {}
+[10.276958] (-) TimerEvent: {}
+[10.377792] (-) TimerEvent: {}
+[10.478547] (-) TimerEvent: {}
+[10.579895] (-) TimerEvent: {}
+[10.680645] (-) TimerEvent: {}
+[10.781371] (-) TimerEvent: {}
+[10.882112] (-) TimerEvent: {}
+[10.982952] (-) TimerEvent: {}
+[11.085160] (-) TimerEvent: {}
+[11.186935] (-) TimerEvent: {}
+[11.288816] (-) TimerEvent: {}
+[11.390813] (-) TimerEvent: {}
+[11.492726] (-) TimerEvent: {}
+[11.593649] (-) TimerEvent: {}
+[11.694520] (-) TimerEvent: {}
+[11.795498] (-) TimerEvent: {}
+[11.896384] (-) TimerEvent: {}
+[11.997374] (-) TimerEvent: {}
+[12.073873] (vl53l1x) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:32\x1b[m\x1b[K:\n'}
+[12.075543] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KVl53l1x::Vl53l1x()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.076231] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:232:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVl53l1x::io_timeout\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.077011] (vl53l1x) StderrLine: {'line': b'  232 |   uint16_t \x1b[01;35m\x1b[Kio_timeout\x1b[m\x1b[K;\n'}
+[12.077768] (vl53l1x) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.078421] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:231:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool Vl53l1x::did_timeout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.079115] (vl53l1x) StderrLine: {'line': b'  231 |   bool \x1b[01;35m\x1b[Kdid_timeout\x1b[m\x1b[K;\n'}
+[12.079913] (vl53l1x) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.080675] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:35:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.081523] (vl53l1x) StderrLine: {'line': b'   35 | \x1b[01;35m\x1b[KVl53l1x\x1b[m\x1b[K::Vl53l1x()\n'}
+[12.082198] (vl53l1x) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.083215] (vl53l1x) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:32\x1b[m\x1b[K:\n'}
+[12.083813] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:239:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVl53l1x::saved_vhv_timeout\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.084400] (vl53l1x) StderrLine: {'line': b'  239 |   uint8_t \x1b[01;35m\x1b[Ksaved_vhv_timeout\x1b[m\x1b[K;\n'}
+[12.084905] (vl53l1x) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.085471] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:229:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kuint8_t Vl53l1x::last_status\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.086140] (vl53l1x) StderrLine: {'line': b'  229 |   uint8_t \x1b[01;35m\x1b[Klast_status\x1b[m\x1b[K;\n'}
+[12.086892] (vl53l1x) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.087569] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:35:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.088225] (vl53l1x) StderrLine: {'line': b'   35 | \x1b[01;35m\x1b[KVl53l1x\x1b[m\x1b[K::Vl53l1x()\n'}
+[12.088727] (vl53l1x) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.092520] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint8_t Vl53l1x::readReg(uint16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.093256] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:513:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kssize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.093946] (vl53l1x) StderrLine: {'line': b'  513 |   if( \x1b[01;35m\x1b[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)\x1b[m\x1b[K) {\n'}
+[12.094570] (vl53l1x) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.095937] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint16_t Vl53l1x::readReg16Bit(uint16_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.096732] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:532:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kssize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.097760] (-) TimerEvent: {}
+[12.098474] (vl53l1x) StderrLine: {'line': b'  532 |   if( \x1b[01;35m\x1b[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)\x1b[m\x1b[K) {\n'}
+[12.099381] (vl53l1x) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.100050] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:539:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kssize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.100740] (vl53l1x) StderrLine: {'line': b'  539 |   if( \x1b[01;35m\x1b[Kread(fd, readBuffer, sizeof(readBuffer)) < sizeof(readBuffer)\x1b[m\x1b[K) {\n'}
+[12.101298] (vl53l1x) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.108126] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Vl53l1x::readResults()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.108825] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:637:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kssize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.109565] (vl53l1x) StderrLine: {'line': b'  637 |   if( \x1b[01;35m\x1b[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)\x1b[m\x1b[K) {\n'}
+[12.110092] (vl53l1x) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.110876] (vl53l1x) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:644:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kssize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.111393] (vl53l1x) StderrLine: {'line': b'  644 |   if( \x1b[01;35m\x1b[Kread(fd, readBuffer, sizeof(readBuffer)) < sizeof(readBuffer)\x1b[m\x1b[K) {\n'}
+[12.111811] (vl53l1x) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.197987] (-) TimerEvent: {}
+[12.299026] (-) TimerEvent: {}
+[12.400094] (-) TimerEvent: {}
+[12.501024] (-) TimerEvent: {}
+[12.602091] (-) TimerEvent: {}
+[12.703027] (-) TimerEvent: {}
+[12.803828] (-) TimerEvent: {}
+[12.904656] (-) TimerEvent: {}
+[13.005441] (-) TimerEvent: {}
+[13.106302] (-) TimerEvent: {}
+[13.207107] (-) TimerEvent: {}
+[13.307948] (-) TimerEvent: {}
+[13.409027] (-) TimerEvent: {}
+[13.509944] (-) TimerEvent: {}
+[13.610796] (-) TimerEvent: {}
+[13.711710] (-) TimerEvent: {}
+[13.812673] (-) TimerEvent: {}
+[13.913501] (-) TimerEvent: {}
+[14.014416] (-) TimerEvent: {}
+[14.115234] (-) TimerEvent: {}
+[14.216282] (-) TimerEvent: {}
+[14.317208] (-) TimerEvent: {}
+[14.418073] (-) TimerEvent: {}
+[14.519097] (-) TimerEvent: {}
+[14.619993] (-) TimerEvent: {}
+[14.720899] (-) TimerEvent: {}
+[14.821711] (-) TimerEvent: {}
+[14.922541] (-) TimerEvent: {}
+[15.023469] (-) TimerEvent: {}
+[15.124298] (-) TimerEvent: {}
+[15.225226] (-) TimerEvent: {}
+[15.326100] (-) TimerEvent: {}
+[15.427071] (-) TimerEvent: {}
+[15.527860] (-) TimerEvent: {}
+[15.628679] (-) TimerEvent: {}
+[15.729473] (-) TimerEvent: {}
+[15.830315] (-) TimerEvent: {}
+[15.931101] (-) TimerEvent: {}
+[16.031926] (-) TimerEvent: {}
+[16.132715] (-) TimerEvent: {}
+[16.233514] (-) TimerEvent: {}
+[16.334435] (-) TimerEvent: {}
+[16.435238] (-) TimerEvent: {}
+[16.536060] (-) TimerEvent: {}
+[16.636891] (-) TimerEvent: {}
+[16.737706] (-) TimerEvent: {}
+[16.838641] (-) TimerEvent: {}
+[16.939438] (-) TimerEvent: {}
+[17.040249] (-) TimerEvent: {}
+[17.141053] (-) TimerEvent: {}
+[17.241858] (-) TimerEvent: {}
+[17.342757] (-) TimerEvent: {}
+[17.443573] (-) TimerEvent: {}
+[17.544380] (-) TimerEvent: {}
+[17.645177] (-) TimerEvent: {}
+[17.746036] (-) TimerEvent: {}
+[17.846883] (-) TimerEvent: {}
+[17.947700] (-) TimerEvent: {}
+[18.048562] (-) TimerEvent: {}
+[18.149356] (-) TimerEvent: {}
+[18.250163] (-) TimerEvent: {}
+[18.351043] (-) TimerEvent: {}
+[18.451868] (-) TimerEvent: {}
+[18.552653] (-) TimerEvent: {}
+[18.653503] (-) TimerEvent: {}
+[18.754348] (-) TimerEvent: {}
+[18.855180] (-) TimerEvent: {}
+[18.956075] (-) TimerEvent: {}
+[19.056969] (-) TimerEvent: {}
+[19.157841] (-) TimerEvent: {}
+[19.258893] (-) TimerEvent: {}
+[19.359727] (-) TimerEvent: {}
+[19.460538] (-) TimerEvent: {}
+[19.561399] (-) TimerEvent: {}
+[19.662396] (-) TimerEvent: {}
+[19.763193] (-) TimerEvent: {}
+[19.863996] (-) TimerEvent: {}
+[19.964840] (-) TimerEvent: {}
+[20.065743] (-) TimerEvent: {}
+[20.166595] (-) TimerEvent: {}
+[20.267448] (-) TimerEvent: {}
+[20.368246] (-) TimerEvent: {}
+[20.469071] (-) TimerEvent: {}
+[20.569935] (-) TimerEvent: {}
+[20.670793] (-) TimerEvent: {}
+[20.771625] (-) TimerEvent: {}
+[20.872422] (-) TimerEvent: {}
+[20.973254] (-) TimerEvent: {}
+[21.074125] (-) TimerEvent: {}
+[21.175028] (-) TimerEvent: {}
+[21.275855] (-) TimerEvent: {}
+[21.376674] (-) TimerEvent: {}
+[21.477480] (-) TimerEvent: {}
+[21.578359] (-) TimerEvent: {}
+[21.679149] (-) TimerEvent: {}
+[21.780006] (-) TimerEvent: {}
+[21.880805] (-) TimerEvent: {}
+[21.981635] (-) TimerEvent: {}
+[22.082665] (-) TimerEvent: {}
+[22.183840] (-) TimerEvent: {}
+[22.284638] (-) TimerEvent: {}
+[22.385806] (-) TimerEvent: {}
+[22.486692] (-) TimerEvent: {}
+[22.587519] (-) TimerEvent: {}
+[22.688342] (-) TimerEvent: {}
+[22.789651] (-) TimerEvent: {}
+[22.890498] (-) TimerEvent: {}
+[22.991320] (-) TimerEvent: {}
+[23.092111] (-) TimerEvent: {}
+[23.192915] (-) TimerEvent: {}
+[23.293727] (-) TimerEvent: {}
+[23.394558] (-) TimerEvent: {}
+[23.495359] (-) TimerEvent: {}
+[23.596639] (-) TimerEvent: {}
+[23.697443] (-) TimerEvent: {}
+[23.798286] (-) TimerEvent: {}
+[23.899085] (-) TimerEvent: {}
+[23.999930] (-) TimerEvent: {}
+[24.100733] (-) TimerEvent: {}
+[24.201556] (-) TimerEvent: {}
+[24.302515] (-) TimerEvent: {}
+[24.403383] (-) TimerEvent: {}
+[24.504296] (-) TimerEvent: {}
+[24.605113] (-) TimerEvent: {}
+[24.706053] (-) TimerEvent: {}
+[24.807143] (-) TimerEvent: {}
+[24.908581] (-) TimerEvent: {}
+[25.009378] (-) TimerEvent: {}
+[25.110300] (-) TimerEvent: {}
+[25.211305] (-) TimerEvent: {}
+[25.312095] (-) TimerEvent: {}
+[25.412895] (-) TimerEvent: {}
+[25.513704] (-) TimerEvent: {}
+[25.614546] (-) TimerEvent: {}
+[25.715399] (-) TimerEvent: {}
+[25.816182] (-) TimerEvent: {}
+[25.917031] (-) TimerEvent: {}
+[26.017897] (-) TimerEvent: {}
+[26.118766] (-) TimerEvent: {}
+[26.219603] (-) TimerEvent: {}
+[26.320409] (-) TimerEvent: {}
+[26.421232] (-) TimerEvent: {}
+[26.522036] (-) TimerEvent: {}
+[26.622920] (-) TimerEvent: {}
+[26.723767] (-) TimerEvent: {}
+[26.825485] (-) TimerEvent: {}
+[26.926322] (-) TimerEvent: {}
+[27.027100] (-) TimerEvent: {}
+[27.128090] (-) TimerEvent: {}
+[27.228881] (-) TimerEvent: {}
+[27.329664] (-) TimerEvent: {}
+[27.430484] (-) TimerEvent: {}
+[27.531276] (-) TimerEvent: {}
+[27.632085] (-) TimerEvent: {}
+[27.732878] (-) TimerEvent: {}
+[27.833682] (-) TimerEvent: {}
+[27.934476] (-) TimerEvent: {}
+[28.035291] (-) TimerEvent: {}
+[28.136105] (-) TimerEvent: {}
+[28.236877] (-) TimerEvent: {}
+[28.337669] (-) TimerEvent: {}
+[28.438511] (-) TimerEvent: {}
+[28.539294] (-) TimerEvent: {}
+[28.640101] (-) TimerEvent: {}
+[28.740915] (-) TimerEvent: {}
+[28.841787] (-) TimerEvent: {}
+[28.942793] (-) TimerEvent: {}
+[29.044055] (-) TimerEvent: {}
+[29.144787] (-) TimerEvent: {}
+[29.245595] (-) TimerEvent: {}
+[29.346509] (-) TimerEvent: {}
+[29.447409] (-) TimerEvent: {}
+[29.548191] (-) TimerEvent: {}
+[29.648978] (-) TimerEvent: {}
+[29.749730] (-) TimerEvent: {}
+[29.850631] (-) TimerEvent: {}
+[29.952013] (-) TimerEvent: {}
+[30.052972] (-) TimerEvent: {}
+[30.153757] (-) TimerEvent: {}
+[30.173184] (vl53l1x) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable vl53l1x_node\x1b[0m\n'}
+[30.253956] (-) TimerEvent: {}
+[30.355232] (-) TimerEvent: {}
+[30.456091] (-) TimerEvent: {}
+[30.557152] (-) TimerEvent: {}
+[30.658091] (-) TimerEvent: {}
+[30.759135] (-) TimerEvent: {}
+[30.860261] (-) TimerEvent: {}
+[30.961687] (-) TimerEvent: {}
+[31.062632] (-) TimerEvent: {}
+[31.163695] (-) TimerEvent: {}
+[31.266513] (-) TimerEvent: {}
+[31.368553] (-) TimerEvent: {}
+[31.470371] (-) TimerEvent: {}
+[31.487385] (vl53l1x) StdoutLine: {'line': b'[100%] Built target vl53l1x_node\n'}
+[31.542746] (vl53l1x) CommandEnded: {'returncode': 0}
+[31.570547] (-) TimerEvent: {}
+[31.671382] (-) TimerEvent: {}
+[31.710921] (vl53l1x) JobProgress: {'identifier': 'vl53l1x', 'progress': 'install'}
+[31.751249] (vl53l1x) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robotix/ros2_ws/src/build/vl53l1x'], 'cwd': '/home/robotix/ros2_ws/src/build/vl53l1x', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robotix'), ('SSH_CLIENT', '172.30.40.34 55204 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robotix'), ('OLDPWD', '/home/robotix/ros2_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robotix/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robotix'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '13'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robotix/ros2_ws/src/build/vl53l1x'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.30.40.34 55204 172.30.40.39 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble')]), 'shell': False}
+[31.771702] (-) TimerEvent: {}
+[31.797876] (vl53l1x) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.803490] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/lib/vl53l1x/vl53l1x_node\n'}
+[31.817793] (vl53l1x) StdoutLine: {'line': b'-- Set runtime path of "/home/robotix/ros2_ws/src/install/vl53l1x/lib/vl53l1x/vl53l1x_node" to ""\n'}
+[31.819282] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/package_run_dependencies/vl53l1x\n'}
+[31.821692] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/parent_prefix_path/vl53l1x\n'}
+[31.824100] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/ament_prefix_path.sh\n'}
+[31.825611] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/ament_prefix_path.dsv\n'}
+[31.827398] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/path.sh\n'}
+[31.829081] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/path.dsv\n'}
+[31.831221] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.bash\n'}
+[31.832978] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.sh\n'}
+[31.834859] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.zsh\n'}
+[31.836516] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.dsv\n'}
+[31.838423] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/package.dsv\n'}
+[31.840960] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/packages/vl53l1x\n'}
+[31.843410] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/cmake/vl53l1xConfig.cmake\n'}
+[31.845257] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/cmake/vl53l1xConfig-version.cmake\n'}
+[31.846847] (vl53l1x) StdoutLine: {'line': b'-- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/package.xml\n'}
+[31.856536] (vl53l1x) CommandEnded: {'returncode': 0}
+[31.872416] (-) TimerEvent: {}
+[31.974588] (-) TimerEvent: {}
+[32.075382] (-) TimerEvent: {}
+[32.178129] (-) TimerEvent: {}
+[32.279310] (-) TimerEvent: {}
+[32.380110] (-) TimerEvent: {}
+[32.481419] (-) TimerEvent: {}
+[32.568710] (vl53l1x) JobEnded: {'identifier': 'vl53l1x', 'rc': 0}
+[32.572066] (-) EventReactorShutdown: {}

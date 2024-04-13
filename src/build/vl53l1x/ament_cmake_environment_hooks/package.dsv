@@ -1,0 +1,4 @@
+source;share/vl53l1x/local_setup.bash
+source;share/vl53l1x/local_setup.dsv
+source;share/vl53l1x/local_setup.sh
+source;share/vl53l1x/local_setup.zsh

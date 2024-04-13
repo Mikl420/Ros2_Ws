@@ -1,0 +1,13 @@
+[4.054s] Invoking command in '/home/robotix/ros2_ws/build/VL53L5CX': PYTHONPATH=/home/robotix/ros2_ws/build/VL53L5CX/prefix_override:/home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/VL53L5CX/build --no-deps
+[5.576s] running develop
+[6.432s] running egg_info
+[6.432s] writing VL53L5CX.egg-info/PKG-INFO
+[6.433s] writing dependency_links to VL53L5CX.egg-info/dependency_links.txt
+[6.435s] writing top-level names to VL53L5CX.egg-info/top_level.txt
+[6.443s] reading manifest file 'VL53L5CX.egg-info/SOURCES.txt'
+[6.446s] writing manifest file 'VL53L5CX.egg-info/SOURCES.txt'
+[6.453s] running build_ext
+[6.454s] Creating /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/VL53L5CX.egg-link (link to .)
+[6.458s] 
+[6.460s] Installed /home/robotix/ros2_ws/build/VL53L5CX
+[6.614s] Invoked command in '/home/robotix/ros2_ws/build/VL53L5CX' returned '0': PYTHONPATH=/home/robotix/ros2_ws/build/VL53L5CX/prefix_override:/home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/VL53L5CX/build --no-deps

@@ -1,0 +1,3 @@
+setuptools
+numpy
+vl53l5cx

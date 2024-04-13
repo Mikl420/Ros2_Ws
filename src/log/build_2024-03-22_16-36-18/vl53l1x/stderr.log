@@ -1,0 +1,4 @@
+gmake[2]: *** Deleting file 'vl53l1x_node'
+gmake[2]: *** [CMakeFiles/vl53l1x_node.dir/build.make:191: vl53l1x_node] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/vl53l1x_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

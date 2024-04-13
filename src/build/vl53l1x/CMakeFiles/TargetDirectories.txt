@@ -1,0 +1,10 @@
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/uninstall.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/vl53l1x_uninstall.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/vl53l1x_node.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/test.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/edit_cache.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/rebuild_cache.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/list_install_components.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/install.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/install/local.dir
+/home/robotix/ros2_ws/src/build/vl53l1x/CMakeFiles/install/strip.dir

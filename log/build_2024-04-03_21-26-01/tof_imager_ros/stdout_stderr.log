@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing tof_imager_ros.egg-info/PKG-INFO
+writing dependency_links to tof_imager_ros.egg-info/dependency_links.txt
+writing entry points to tof_imager_ros.egg-info/entry_points.txt
+writing requirements to tof_imager_ros.egg-info/requires.txt
+writing top-level names to tof_imager_ros.egg-info/top_level.txt
+reading manifest file 'tof_imager_ros.egg-info/SOURCES.txt'
+writing manifest file 'tof_imager_ros.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof-imager-ros.egg-link (link to .)
+Installing tof_imager_node script to /home/robotix/ros2_ws/install/tof_imager_ros/lib/tof_imager_ros
+Installing tof_imager_publisher script to /home/robotix/ros2_ws/install/tof_imager_ros/lib/tof_imager_ros
+
+Installed /home/robotix/ros2_ws/build/tof_imager_ros
+running install_data
+copying resource/tof_imager_ros -> /home/robotix/ros2_ws/install/tof_imager_ros/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotix/ros2_ws/install/tof_imager_ros/share/tof_imager_ros
+copying launch/tof_imager_launch.py -> /home/robotix/ros2_ws/install/tof_imager_ros/share/tof_imager_ros/launch
+copying config/sensor_params.yaml -> /home/robotix/ros2_ws/install/tof_imager_ros/share/tof_imager_ros/config

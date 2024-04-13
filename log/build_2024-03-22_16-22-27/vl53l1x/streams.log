@@ -1,0 +1,26 @@
+[4.306s] Invoking command in '/home/robotix/ros2_ws/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/build/vl53l1x -- -j4 -l4
+[4.517s] [35m[1mConsolidate compiler generated dependencies of target vl53l1x_node[0m
+[4.634s] [ 33%] [32mBuilding CXX object CMakeFiles/vl53l1x_node.dir/src/vl53l1x_node.cpp.o[0m
+[35.558s] [ 66%] [32m[1mLinking CXX executable vl53l1x_node[0m
+[38.762s] [100%] Built target vl53l1x_node
+[38.849s] Invoked command in '/home/robotix/ros2_ws/build/vl53l1x' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/build/vl53l1x -- -j4 -l4
+[39.782s] Invoking command in '/home/robotix/ros2_ws/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --install /home/robotix/ros2_ws/build/vl53l1x
+[39.891s] -- Install configuration: ""
+[39.897s] -- Execute custom install script
+[39.900s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/lib/vl53l1x/vl53l1x_node
+[39.903s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/ament_index/resource_index/package_run_dependencies/vl53l1x
+[39.911s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/ament_index/resource_index/parent_prefix_path/vl53l1x
+[39.919s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/environment/ament_prefix_path.sh
+[39.922s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/environment/ament_prefix_path.dsv
+[39.925s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/environment/path.sh
+[39.928s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/environment/path.dsv
+[39.932s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/local_setup.bash
+[39.938s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/local_setup.sh
+[39.941s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/local_setup.zsh
+[39.944s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/local_setup.dsv
+[39.946s] -- Symlinking: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.dsv
+[40.026s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/ament_index/resource_index/packages/vl53l1x
+[40.029s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/cmake/vl53l1xConfig.cmake
+[40.031s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/cmake/vl53l1xConfig-version.cmake
+[40.033s] -- Up-to-date symlink: /home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.xml
+[40.050s] Invoked command in '/home/robotix/ros2_ws/build/vl53l1x' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/src/install/robotix:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --install /home/robotix/ros2_ws/build/vl53l1x

@@ -1,0 +1,30 @@
+[8.218s] Invoking command in '/home/robotix/ros2_ws/src/robotix': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robotix build --build-base /home/robotix/ros2_ws/build/robotix/build install --record /home/robotix/ros2_ws/build/robotix/install.log --single-version-externally-managed
+[10.162s] running egg_info
+[10.165s] writing ../../build/robotix/robotix.egg-info/PKG-INFO
+[10.167s] writing dependency_links to ../../build/robotix/robotix.egg-info/dependency_links.txt
+[10.168s] writing entry points to ../../build/robotix/robotix.egg-info/entry_points.txt
+[10.170s] writing requirements to ../../build/robotix/robotix.egg-info/requires.txt
+[10.171s] writing top-level names to ../../build/robotix/robotix.egg-info/top_level.txt
+[10.184s] reading manifest file '../../build/robotix/robotix.egg-info/SOURCES.txt'
+[10.190s] writing manifest file '../../build/robotix/robotix.egg-info/SOURCES.txt'
+[10.191s] running build
+[10.192s] running build_py
+[10.197s] running install
+[10.200s] running install_lib
+[10.210s] running install_data
+[10.213s] running install_egg_info
+[10.224s] removing '/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix-0.0.0-py3.10.egg-info' (and everything under it)
+[10.227s] Copying ../../build/robotix/robotix.egg-info to /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix-0.0.0-py3.10.egg-info
+[10.238s] running install_scripts
+[10.352s] Installing codeuse script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.354s] Installing controller script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.355s] Installing ctrl_claw script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.356s] Installing ctrl_nav script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.358s] Installing jetson script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.359s] Installing laser script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.361s] Installing lidar script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.364s] Installing motor script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.368s] Installing motor_claw script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.372s] Installing motor_plateau script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[10.374s] writing list of installed files to '/home/robotix/ros2_ws/build/robotix/install.log'
+[10.967s] Invoked command in '/home/robotix/ros2_ws/src/robotix' returned '0': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robotix build --build-base /home/robotix/ros2_ws/build/robotix/build install --record /home/robotix/ros2_ws/build/robotix/install.log --single-version-externally-managed

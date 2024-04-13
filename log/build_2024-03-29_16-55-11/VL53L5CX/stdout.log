@@ -1,0 +1,33 @@
+running egg_info
+creating ../build/VL53L5CX/VL53L5CX.egg-info
+writing ../build/VL53L5CX/VL53L5CX.egg-info/PKG-INFO
+writing dependency_links to ../build/VL53L5CX/VL53L5CX.egg-info/dependency_links.txt
+writing top-level names to ../build/VL53L5CX/VL53L5CX.egg-info/top_level.txt
+writing manifest file '../build/VL53L5CX/VL53L5CX.egg-info/SOURCES.txt'
+reading manifest file '../build/VL53L5CX/VL53L5CX.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/VL53L5CX/VL53L5CX.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robotix/ros2_ws/build/VL53L5CX/build
+creating /home/robotix/ros2_ws/build/VL53L5CX/build/lib
+creating /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx
+copying vl53l5cx/buffers.py -> /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx
+copying vl53l5cx/api.py -> /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx
+copying vl53l5cx/__init__.py -> /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx
+copying vl53l5cx/vl53l5cx.py -> /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx
+running install
+running install_lib
+creating /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx
+copying /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx/buffers.py -> /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx
+copying /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx/api.py -> /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx
+copying /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx/__init__.py -> /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx
+copying /home/robotix/ros2_ws/build/VL53L5CX/build/lib/vl53l5cx/vl53l5cx.py -> /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx
+byte-compiling /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx/buffers.py to buffers.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx/api.py to api.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/vl53l5cx/vl53l5cx.py to vl53l5cx.cpython-310.pyc
+running install_egg_info
+Copying ../build/VL53L5CX/VL53L5CX.egg-info to /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/VL53L5CX-1.0.1-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/robotix/ros2_ws/build/VL53L5CX/install.log'

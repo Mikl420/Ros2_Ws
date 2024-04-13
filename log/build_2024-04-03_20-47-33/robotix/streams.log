@@ -1,0 +1,70 @@
+[7.037s] Invoking command in '/home/robotix/ros2_ws/build/robotix': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robotix/ros2_ws/build/robotix/build
+[8.568s] running develop
+[9.461s] Removing /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix.egg-link (link to .)
+[9.613s] Invoked command in '/home/robotix/ros2_ws/build/robotix' returned '0': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robotix/ros2_ws/build/robotix/build
+[9.624s] Invoking command in '/home/robotix/ros2_ws/src/robotix': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robotix build --build-base /home/robotix/ros2_ws/build/robotix/build install --record /home/robotix/ros2_ws/build/robotix/install.log --single-version-externally-managed
+[10.948s] running egg_info
+[10.951s] writing ../../build/robotix/robotix.egg-info/PKG-INFO
+[10.952s] writing dependency_links to ../../build/robotix/robotix.egg-info/dependency_links.txt
+[10.953s] writing entry points to ../../build/robotix/robotix.egg-info/entry_points.txt
+[10.953s] writing requirements to ../../build/robotix/robotix.egg-info/requires.txt
+[10.954s] writing top-level names to ../../build/robotix/robotix.egg-info/top_level.txt
+[10.969s] reading manifest file '../../build/robotix/robotix.egg-info/SOURCES.txt'
+[10.979s] writing manifest file '../../build/robotix/robotix.egg-info/SOURCES.txt'
+[10.979s] running build
+[10.980s] running build_py
+[10.981s] creating /home/robotix/ros2_ws/build/robotix/build
+[10.982s] creating /home/robotix/ros2_ws/build/robotix/build/lib
+[10.982s] creating /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.983s] copying robotix/lidar.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.984s] copying robotix/motor.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.985s] copying robotix/controller.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.987s] copying robotix/laser.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.988s] copying robotix/motor_plateau.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.990s] copying robotix/jetson.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.991s] copying robotix/ctrl_nav.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.993s] copying robotix/codeuse.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[10.996s] copying robotix/ctrl_claw.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[11.001s] copying robotix/__init__.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[11.002s] copying robotix/motor_claw.py -> /home/robotix/ros2_ws/build/robotix/build/lib/robotix
+[11.006s] running install
+[11.008s] running install_lib
+[11.051s] creating /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.052s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/lidar.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.053s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/motor.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.053s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/controller.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.054s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/laser.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.055s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/motor_plateau.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.056s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/jetson.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.057s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/ctrl_nav.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.057s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/codeuse.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.059s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/ctrl_claw.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.059s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/__init__.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.060s] copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/motor_claw.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+[11.065s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/lidar.py to lidar.cpython-310.pyc
+[11.069s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/motor.py to motor.cpython-310.pyc
+[11.072s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/controller.py to controller.cpython-310.pyc
+[11.079s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/laser.py to laser.cpython-310.pyc
+[11.083s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/motor_plateau.py to motor_plateau.cpython-310.pyc
+[11.083s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/jetson.py to jetson.cpython-310.pyc
+[11.084s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/ctrl_nav.py to ctrl_nav.cpython-310.pyc
+[11.087s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/codeuse.py to codeuse.cpython-310.pyc
+[11.090s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/ctrl_claw.py to ctrl_claw.cpython-310.pyc
+[11.092s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/__init__.py to __init__.cpython-310.pyc
+[11.094s] byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/motor_claw.py to motor_claw.cpython-310.pyc
+[11.096s] running install_data
+[11.100s] running install_egg_info
+[11.109s] Copying ../../build/robotix/robotix.egg-info to /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix-0.0.0-py3.10.egg-info
+[11.122s] running install_scripts
+[11.215s] Installing codeuse script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.216s] Installing controller script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.217s] Installing ctrl_claw script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.218s] Installing ctrl_nav script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.219s] Installing jetson script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.220s] Installing laser script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.221s] Installing lidar script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.224s] Installing motor script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.225s] Installing motor_claw script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.230s] Installing motor_plateau script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+[11.231s] writing list of installed files to '/home/robotix/ros2_ws/build/robotix/install.log'
+[11.373s] Invoked command in '/home/robotix/ros2_ws/src/robotix' returned '0': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robotix build --build-base /home/robotix/ros2_ws/build/robotix/build install --record /home/robotix/ros2_ws/build/robotix/install.log --single-version-externally-managed

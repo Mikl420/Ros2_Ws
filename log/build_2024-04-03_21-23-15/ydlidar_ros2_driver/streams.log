@@ -1,0 +1,31 @@
+[5.249s] Invoking command in '/home/robotix/ros2_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/vl53l5cx:/home/robotix/ros2_ws/install/tof_imager_ros:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/install/alextropfort:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake /home/robotix/ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/install/ydlidar_ros2_driver
+[5.609s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.760s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[6.910s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[7.205s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.228s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.285s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.380s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.486s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.995s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.009s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.725s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.512s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.090s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[10.613s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[10.734s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[11.184s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.274s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.276s] -- Configured cppcheck include dirs: /home/robotix/ros2_ws/src/ydlidar_ros2_driver/src
+[11.276s] -- Configured cppcheck exclude dirs and/or files: 
+[11.333s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[11.333s] -- Configured cpplint exclude dirs and/or files: 
+[11.342s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.359s] -- Added test 'lint_cmake' to check CMake code style
+[11.368s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.425s] -- Added test 'uncrustify' to check C / C++ code style
+[11.425s] -- Configured uncrustify additional arguments: 
+[11.434s] -- Added test 'xmllint' to check XML markup files
+[11.444s] -- Configuring done
+[11.579s] -- Generating done
+[11.590s] -- Build files have been written to: /home/robotix/ros2_ws/build/ydlidar_ros2_driver

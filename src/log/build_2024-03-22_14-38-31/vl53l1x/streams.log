@@ -1,0 +1,101 @@
+[0.289s] Invoking command in '/home/robotix/ros2_ws/src/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake /home/robotix/ros2_ws/src/ROS2-VL53L1X -DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/src/install/vl53l1x
+[1.376s] -- The C compiler identification is GNU 11.4.0
+[2.128s] -- The CXX compiler identification is GNU 11.4.0
+[2.180s] -- Detecting C compiler ABI info
+[2.564s] -- Detecting C compiler ABI info - done
+[2.595s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.600s] -- Detecting C compile features
+[2.604s] -- Detecting C compile features - done
+[2.623s] -- Detecting CXX compiler ABI info
+[3.007s] -- Detecting CXX compiler ABI info - done
+[3.037s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.038s] -- Detecting CXX compile features
+[3.040s] -- Detecting CXX compile features - done
+[3.085s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.009s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.703s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[5.087s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.138s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.213s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.321s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.467s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.942s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.972s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.586s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.724s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.968s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.060s] -- Looking for pthread.h
+[7.449s] -- Looking for pthread.h - found
+[7.452s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.813s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.817s] -- Found Threads: TRUE  
+[8.673s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[9.638s] -- Configuring done
+[9.706s] -- Generating done
+[9.714s] -- Build files have been written to: /home/robotix/ros2_ws/src/build/vl53l1x
+[9.749s] Invoked command in '/home/robotix/ros2_ws/src/build/vl53l1x' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake /home/robotix/ros2_ws/src/ROS2-VL53L1X -DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/src/install/vl53l1x
+[9.760s] Invoking command in '/home/robotix/ros2_ws/src/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/src/build/vl53l1x -- -j4 -l4
+[9.972s] [ 33%] [32mBuilding CXX object CMakeFiles/vl53l1x_node.dir/src/vl53l1x_node.cpp.o[0m
+[9.975s] [ 66%] [32mBuilding CXX object CMakeFiles/vl53l1x_node.dir/src/vl53l1x.cpp.o[0m
+[12.072s] In file included from [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:32[m[K:
+[12.073s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:[m[K In constructor ‘[01m[KVl53l1x::Vl53l1x()[m[K’:
+[12.074s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:232:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KVl53l1x::io_timeout[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[12.074s]   232 |   uint16_t [01;35m[Kio_timeout[m[K;
+[12.075s]       |            [01;35m[K^~~~~~~~~~[m[K
+[12.076s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:231:8:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool Vl53l1x::did_timeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[12.076s]   231 |   bool [01;35m[Kdid_timeout[m[K;
+[12.077s]       |        [01;35m[K^~~~~~~~~~~[m[K
+[12.078s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:35:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[12.079s]    35 | [01;35m[KVl53l1x[m[K::Vl53l1x()
+[12.080s]       | [01;35m[K^~~~~~~[m[K
+[12.080s] In file included from [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:32[m[K:
+[12.081s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:239:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KVl53l1x::saved_vhv_timeout[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[12.082s]   239 |   uint8_t [01;35m[Ksaved_vhv_timeout[m[K;
+[12.082s]       |           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[12.083s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/include/vl53l1x.h:229:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kuint8_t Vl53l1x::last_status[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[12.084s]   229 |   uint8_t [01;35m[Klast_status[m[K;
+[12.084s]       |           [01;35m[K^~~~~~~~~~~[m[K
+[12.085s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:35:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[12.085s]    35 | [01;35m[KVl53l1x[m[K::Vl53l1x()
+[12.086s]       | [01;35m[K^~~~~~~[m[K
+[12.090s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:[m[K In member function ‘[01m[Kuint8_t Vl53l1x::readReg(uint16_t)[m[K’:
+[12.091s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:513:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[12.091s]   513 |   if( [01;35m[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)[m[K) {
+[12.092s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.093s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:[m[K In member function ‘[01m[Kuint16_t Vl53l1x::readReg16Bit(uint16_t)[m[K’:
+[12.094s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:532:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[12.096s]   532 |   if( [01;35m[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)[m[K) {
+[12.097s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.097s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:539:48:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[12.098s]   539 |   if( [01;35m[Kread(fd, readBuffer, sizeof(readBuffer)) < sizeof(readBuffer)[m[K) {
+[12.099s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[12.105s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:[m[K In member function ‘[01m[Kvoid Vl53l1x::readResults()[m[K’:
+[12.106s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:637:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[12.107s]   637 |   if( [01;35m[Kwrite(fd, writeBuffer, sizeof(writeBuffer)) < sizeof(writeBuffer)[m[K) {
+[12.108s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.108s] [01m[K/home/robotix/ros2_ws/src/ROS2-VL53L1X/src/vl53l1x.cpp:644:48:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kssize_t[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[12.109s]   644 |   if( [01;35m[Kread(fd, readBuffer, sizeof(readBuffer)) < sizeof(readBuffer)[m[K) {
+[12.109s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[30.172s] [100%] [32m[1mLinking CXX executable vl53l1x_node[0m
+[31.485s] [100%] Built target vl53l1x_node
+[31.542s] Invoked command in '/home/robotix/ros2_ws/src/build/vl53l1x' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/src/build/vl53l1x -- -j4 -l4
+[31.755s] Invoking command in '/home/robotix/ros2_ws/src/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --install /home/robotix/ros2_ws/src/build/vl53l1x
+[31.795s] -- Install configuration: ""
+[31.801s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/lib/vl53l1x/vl53l1x_node
+[31.815s] -- Set runtime path of "/home/robotix/ros2_ws/src/install/vl53l1x/lib/vl53l1x/vl53l1x_node" to ""
+[31.817s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/package_run_dependencies/vl53l1x
+[31.819s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/parent_prefix_path/vl53l1x
+[31.821s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/ament_prefix_path.sh
+[31.823s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/ament_prefix_path.dsv
+[31.825s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/path.sh
+[31.827s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/path.dsv
+[31.829s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.bash
+[31.831s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.sh
+[31.832s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.zsh
+[31.834s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.dsv
+[31.836s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/package.dsv
+[31.839s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/packages/vl53l1x
+[31.841s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/cmake/vl53l1xConfig.cmake
+[31.843s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/cmake/vl53l1xConfig-version.cmake
+[31.844s] -- Installing: /home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/package.xml
+[31.855s] Invoked command in '/home/robotix/ros2_ws/src/build/vl53l1x' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/opt/ros/humble /usr/bin/cmake --install /home/robotix/ros2_ws/src/build/vl53l1x

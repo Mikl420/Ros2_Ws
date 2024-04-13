@@ -1,0 +1,273 @@
+[11.386s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[11.390s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff948b65c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff94a52920>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff94a52920>>)
+[11.924s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[11.925s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[11.926s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[11.926s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[11.926s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[11.927s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[11.927s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robotix/ros2_ws'
+[11.929s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[11.929s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[11.930s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[11.931s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[11.932s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[11.932s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[11.933s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[11.933s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[11.934s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[12.023s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[12.023s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[12.024s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[12.025s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[12.025s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[12.027s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[12.028s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[12.029s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[12.031s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[12.032s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[12.033s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[12.034s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[12.035s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[12.036s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[12.037s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[12.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[12.039s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[12.039s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[12.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[12.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[12.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[12.042s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[12.042s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[12.043s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[12.044s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[12.044s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[12.045s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[12.045s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[12.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extensions ['ignore', 'ignore_ament_install']
+[12.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extension 'ignore'
+[12.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extension 'ignore_ament_install'
+[12.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extensions ['colcon_pkg']
+[12.050s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extension 'colcon_pkg'
+[12.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extensions ['colcon_meta']
+[12.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extension 'colcon_meta'
+[12.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extensions ['ros']
+[12.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2-VL53L1X) by extension 'ros'
+[12.070s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ROS2-VL53L1X' with type 'ros.ament_cmake' and name 'vl53l1x'
+[12.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[12.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[12.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[12.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[12.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[12.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[12.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[12.078s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[12.079s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[12.080s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extensions ['ignore', 'ignore_ament_install']
+[12.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'ignore'
+[12.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'ignore_ament_install'
+[12.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extensions ['colcon_pkg']
+[12.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'colcon_pkg'
+[12.083s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extensions ['colcon_meta']
+[12.084s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'colcon_meta'
+[12.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extensions ['ros']
+[12.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/robotix) by extension 'ros'
+[12.091s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robotix' with type 'ros.ament_python' and name 'robotix'
+[12.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[12.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[12.094s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[12.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[12.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[12.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[12.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[12.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[12.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ros'
+[12.102s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[12.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[12.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[12.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[12.103s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[12.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[13.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[13.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[13.875s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/robotix/ros2_ws/install
+[14.256s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/robotix/ros2_ws/src/install
+[14.525s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 180 installed packages in /opt/ros/humble
+[14.533s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[15.246s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_args' from command line to 'None'
+[15.247s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_target' from command line to 'None'
+[15.247s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[15.248s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_clean_cache' from command line to 'False'
+[15.248s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_clean_first' from command line to 'False'
+[15.248s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'cmake_force_configure' from command line to 'False'
+[15.249s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'ament_cmake_args' from command line to 'None'
+[15.249s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'catkin_cmake_args' from command line to 'None'
+[15.249s] Level 5:colcon.colcon_core.verb:set package 'robotix' build argument 'catkin_skip_building_tests' from command line to 'False'
+[15.250s] DEBUG:colcon.colcon_core.verb:Building package 'robotix' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotix/ros2_ws/build/robotix', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotix/ros2_ws/install/robotix', 'merge_install': False, 'path': '/home/robotix/ros2_ws/src/robotix', 'symlink_install': True, 'test_result_base': None}
+[15.462s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'cmake_args' from command line to 'None'
+[15.463s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'cmake_target' from command line to 'None'
+[15.463s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[15.463s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'cmake_clean_cache' from command line to 'False'
+[15.464s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'cmake_clean_first' from command line to 'False'
+[15.464s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'cmake_force_configure' from command line to 'False'
+[15.464s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'ament_cmake_args' from command line to 'None'
+[15.465s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'catkin_cmake_args' from command line to 'None'
+[15.465s] Level 5:colcon.colcon_core.verb:set package 'vl53l1x' build argument 'catkin_skip_building_tests' from command line to 'False'
+[15.465s] DEBUG:colcon.colcon_core.verb:Building package 'vl53l1x' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotix/ros2_ws/build/vl53l1x', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotix/ros2_ws/install/vl53l1x', 'merge_install': False, 'path': '/home/robotix/ros2_ws/src/ROS2-VL53L1X', 'symlink_install': True, 'test_result_base': None}
+[15.627s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[15.628s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[15.629s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[15.629s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[15.630s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[15.630s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[15.630s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[15.631s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[15.631s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[15.632s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robotix/ros2_ws/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robotix/ros2_ws/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/robotix/ros2_ws/src/ydlidar_ros2_driver', 'symlink_install': True, 'test_result_base': None}
+[15.813s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[16.015s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[16.016s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robotix/ros2_ws/src/robotix' with build type 'ament_python'
+[16.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotix', 'ament_prefix_path')
+[16.193s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[16.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/ament_prefix_path.ps1'
+[16.200s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/ament_prefix_path.dsv'
+[16.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/ament_prefix_path.sh'
+[16.363s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.363s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.029s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robotix/ros2_ws/src/ROS2-VL53L1X' with build type 'ament_cmake'
+[17.030s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robotix/ros2_ws/src/ROS2-VL53L1X'
+[17.225s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.226s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.867s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robotix/ros2_ws/src/ydlidar_ros2_driver' with build type 'ament_cmake'
+[17.868s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robotix/ros2_ws/src/ydlidar_ros2_driver'
+[18.059s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.060s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[21.753s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robotix/ros2_ws/src/robotix'
+[21.914s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[21.916s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotix/ros2_ws/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake /home/robotix/ros2_ws/src/ROS2-VL53L1X -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/install/vl53l1x
+[22.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotix/ros2_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[24.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotix/ros2_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[24.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotix/ros2_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake --install /home/robotix/ros2_ws/build/ydlidar_ros2_driver
+[24.938s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[24.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotix/ros2_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake --install /home/robotix/ros2_ws/build/ydlidar_ros2_driver
+[25.406s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver' for CMake module files
+[25.411s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver' for CMake config files
+[25.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[25.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[25.678s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[25.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[25.694s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/lib'
+[25.696s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/bin'
+[25.696s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[25.699s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[25.703s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/bin'
+[25.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[25.934s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[25.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[25.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[25.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[25.976s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[26.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[26.998s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver' for CMake module files
+[27.007s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver' for CMake config files
+[27.011s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[27.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[27.250s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[27.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[27.260s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/lib'
+[27.261s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/bin'
+[27.262s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[27.263s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[27.264s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/bin'
+[27.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[27.514s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[27.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[27.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[27.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[27.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotix/ros2_ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[27.567s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotix/ros2_ws/build/robotix': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/robotix/build --no-deps install_data
+[31.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotix/ros2_ws/build/vl53l1x' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake /home/robotix/ros2_ws/src/ROS2-VL53L1X -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/robotix/ros2_ws/install/vl53l1x
+[31.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotix/ros2_ws/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/build/vl53l1x -- -j4 -l4
+[32.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotix', 'pythonpath_develop')
+[32.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotix/ros2_ws/build/robotix' returned '0': PYTHONPATH=/home/robotix/ros2_ws/build/robotix/prefix_override:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/robotix/build --no-deps install_data
+[32.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/build/robotix/share/robotix/hook/pythonpath_develop.ps1'
+[32.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/build/robotix/share/robotix/hook/pythonpath_develop.dsv'
+[32.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/build/robotix/share/robotix/hook/pythonpath_develop.sh'
+[33.019s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix' for CMake module files
+[33.033s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix' for CMake config files
+[33.051s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/lib'
+[33.056s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/bin'
+[33.056s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/lib/pkgconfig/robotix.pc'
+[33.063s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages'
+[33.067s] Level 1:colcon.colcon_core.shell:create_environment_hook('robotix', 'pythonpath')
+[33.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/pythonpath.ps1'
+[33.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/pythonpath.dsv'
+[33.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/robotix/share/robotix/hook/pythonpath.sh'
+[33.301s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/robotix/bin'
+[33.301s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robotix)
+[33.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/robotix/share/robotix/package.ps1'
+[33.466s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotix/ros2_ws/install/robotix/share/robotix/package.dsv'
+[33.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/robotix/share/robotix/package.sh'
+[33.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/robotix/share/robotix/package.bash'
+[33.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/robotix/share/robotix/package.zsh'
+[33.479s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotix/ros2_ws/install/robotix/share/colcon-core/packages/robotix)
+[65.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotix/ros2_ws/build/vl53l1x' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake --build /home/robotix/ros2_ws/build/vl53l1x -- -j4 -l4
+[65.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robotix/ros2_ws/build/vl53l1x': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake --install /home/robotix/ros2_ws/build/vl53l1x
+[65.728s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vl53l1x)
+[65.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robotix/ros2_ws/build/vl53l1x' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble /usr/bin/cmake --install /home/robotix/ros2_ws/build/vl53l1x
+[65.973s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x' for CMake module files
+[65.980s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x' for CMake config files
+[65.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('vl53l1x', 'cmake_prefix_path')
+[66.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/hook/cmake_prefix_path.ps1'
+[66.126s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/hook/cmake_prefix_path.dsv'
+[66.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/hook/cmake_prefix_path.sh'
+[66.135s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/lib'
+[66.136s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/bin'
+[66.136s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/lib/pkgconfig/vl53l1x.pc'
+[66.138s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/lib/python3.10/site-packages'
+[66.141s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/bin'
+[66.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.ps1'
+[66.294s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.dsv'
+[66.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.sh'
+[66.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.bash'
+[66.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.zsh'
+[66.307s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotix/ros2_ws/install/vl53l1x/share/colcon-core/packages/vl53l1x)
+[66.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vl53l1x)
+[67.044s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x' for CMake module files
+[67.050s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x' for CMake config files
+[67.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('vl53l1x', 'cmake_prefix_path')
+[67.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/hook/cmake_prefix_path.ps1'
+[67.340s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/hook/cmake_prefix_path.dsv'
+[67.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/hook/cmake_prefix_path.sh'
+[67.347s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/lib'
+[67.348s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/bin'
+[67.349s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/lib/pkgconfig/vl53l1x.pc'
+[67.350s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/lib/python3.10/site-packages'
+[67.352s] Level 1:colcon.colcon_core.environment:checking '/home/robotix/ros2_ws/install/vl53l1x/bin'
+[67.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.ps1'
+[67.591s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.dsv'
+[67.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.sh'
+[67.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.bash'
+[67.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/robotix/ros2_ws/install/vl53l1x/share/vl53l1x/package.zsh'
+[67.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robotix/ros2_ws/install/vl53l1x/share/colcon-core/packages/vl53l1x)
+[67.610s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[67.616s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[67.621s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[67.622s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[68.019s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[68.020s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[68.020s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[68.021s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[68.026s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[68.027s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[68.239s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotix/ros2_ws/install/local_setup.ps1'
+[68.250s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotix/ros2_ws/install/_local_setup_util_ps1.py'
+[68.260s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotix/ros2_ws/install/setup.ps1'
+[68.449s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotix/ros2_ws/install/local_setup.sh'
+[68.454s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robotix/ros2_ws/install/_local_setup_util_sh.py'
+[68.458s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotix/ros2_ws/install/setup.sh'
+[68.628s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotix/ros2_ws/install/local_setup.bash'
+[68.633s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotix/ros2_ws/install/setup.bash'
+[68.764s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robotix/ros2_ws/install/local_setup.zsh'
+[68.768s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robotix/ros2_ws/install/setup.zsh'

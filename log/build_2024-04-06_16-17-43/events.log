@@ -1,0 +1,85 @@
+[0.000000] (-) TimerEvent: {}
+[0.001259] (-) JobUnselected: {'identifier': 'robotix'}
+[0.001507] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.001880] (tof_imager_ros) JobQueued: {'identifier': 'tof_imager_ros', 'dependencies': OrderedDict()}
+[0.002000] (tof_imager_ros) JobStarted: {'identifier': 'tof_imager_ros'}
+[0.097933] (-) TimerEvent: {}
+[0.199803] (-) TimerEvent: {}
+[0.300589] (-) TimerEvent: {}
+[0.401329] (-) TimerEvent: {}
+[0.502112] (-) TimerEvent: {}
+[0.602715] (-) TimerEvent: {}
+[0.703356] (-) TimerEvent: {}
+[0.804045] (-) TimerEvent: {}
+[0.904758] (-) TimerEvent: {}
+[1.005368] (-) TimerEvent: {}
+[1.105961] (-) TimerEvent: {}
+[1.206575] (-) TimerEvent: {}
+[1.307308] (-) TimerEvent: {}
+[1.408136] (-) TimerEvent: {}
+[1.508785] (-) TimerEvent: {}
+[1.609596] (-) TimerEvent: {}
+[1.710323] (-) TimerEvent: {}
+[1.811294] (-) TimerEvent: {}
+[1.912399] (-) TimerEvent: {}
+[2.014353] (-) TimerEvent: {}
+[2.115107] (-) TimerEvent: {}
+[2.215812] (-) TimerEvent: {}
+[2.316744] (-) TimerEvent: {}
+[2.417376] (-) TimerEvent: {}
+[2.517982] (-) TimerEvent: {}
+[2.618580] (-) TimerEvent: {}
+[2.719211] (-) TimerEvent: {}
+[2.819871] (-) TimerEvent: {}
+[2.920516] (-) TimerEvent: {}
+[3.021136] (-) TimerEvent: {}
+[3.121789] (-) TimerEvent: {}
+[3.222554] (-) TimerEvent: {}
+[3.323212] (-) TimerEvent: {}
+[3.423826] (-) TimerEvent: {}
+[3.524577] (-) TimerEvent: {}
+[3.613041] (tof_imager_ros) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/tof_imager_ros', 'build', '--build-base', '/home/robotix/ros2_ws/build/tof_imager_ros/build', 'install', '--record', '/home/robotix/ros2_ws/build/tof_imager_ros/install.log', '--single-version-externally-managed'], 'cwd': '/home/robotix/ros2_ws/src/tof_imager_ros', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robotix', 'SSH_CLIENT': '192.168.1.4 57965 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robotix', 'OLDPWD': '/home/robotix', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robotix/ros2_ws/install:/home/robotix/ros2_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'robotix', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/install/tof_imager_ros:/home/robotix/ros2_ws/install/robotix:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x:/home/robotix/ros2_ws/src/install/tof_imager_ros:/home/robotix/ros2_ws/src/install/robotix:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/robotix/ros2_ws/build/tof_imager_ros', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.4 57965 192.168.1.36 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotix/ros2_ws/build/tof_imager_ros/prefix_override:/home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages:/home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages:/home/robotix/ros2_ws/build/robotix:/home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages:/home/robotix/ros2_ws/src/install/tof_imager_ros/lib/python3.10/site-packages:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/robotix/ros2_ws/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/ydlidar_ros2_driver:/home/robotix/ros2_ws/src/install/vl53l1x'}, 'shell': False}
+[3.626031] (-) TimerEvent: {}
+[3.731075] (-) TimerEvent: {}
+[3.831736] (-) TimerEvent: {}
+[3.932458] (-) TimerEvent: {}
+[4.033081] (-) TimerEvent: {}
+[4.133695] (-) TimerEvent: {}
+[4.234285] (-) TimerEvent: {}
+[4.334871] (-) TimerEvent: {}
+[4.435498] (-) TimerEvent: {}
+[4.536128] (-) TimerEvent: {}
+[4.636794] (-) TimerEvent: {}
+[4.737408] (-) TimerEvent: {}
+[4.756336] (tof_imager_ros) StdoutLine: {'line': b'running egg_info\n'}
+[4.758961] (tof_imager_ros) StdoutLine: {'line': b'writing ../../build/tof_imager_ros/tof_imager_ros.egg-info/PKG-INFO\n'}
+[4.760025] (tof_imager_ros) StdoutLine: {'line': b'writing dependency_links to ../../build/tof_imager_ros/tof_imager_ros.egg-info/dependency_links.txt\n'}
+[4.760947] (tof_imager_ros) StdoutLine: {'line': b'writing entry points to ../../build/tof_imager_ros/tof_imager_ros.egg-info/entry_points.txt\n'}
+[4.761656] (tof_imager_ros) StdoutLine: {'line': b'writing requirements to ../../build/tof_imager_ros/tof_imager_ros.egg-info/requires.txt\n'}
+[4.762227] (tof_imager_ros) StdoutLine: {'line': b'writing top-level names to ../../build/tof_imager_ros/tof_imager_ros.egg-info/top_level.txt\n'}
+[4.769846] (tof_imager_ros) StdoutLine: {'line': b"reading manifest file '../../build/tof_imager_ros/tof_imager_ros.egg-info/SOURCES.txt'\n"}
+[4.771483] (tof_imager_ros) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.774387] (tof_imager_ros) StdoutLine: {'line': b"writing manifest file '../../build/tof_imager_ros/tof_imager_ros.egg-info/SOURCES.txt'\n"}
+[4.775052] (tof_imager_ros) StdoutLine: {'line': b'running build\n'}
+[4.775688] (tof_imager_ros) StdoutLine: {'line': b'running build_py\n'}
+[4.776185] (tof_imager_ros) StdoutLine: {'line': b'copying tof_imager_ros/tof_imager_publisher.py -> /home/robotix/ros2_ws/build/tof_imager_ros/build/lib/tof_imager_ros\n'}
+[4.777585] (tof_imager_ros) StdoutLine: {'line': b'running install\n'}
+[4.778882] (tof_imager_ros) StdoutLine: {'line': b'running install_lib\n'}
+[4.782597] (tof_imager_ros) StdoutLine: {'line': b'copying /home/robotix/ros2_ws/build/tof_imager_ros/build/lib/tof_imager_ros/tof_imager_publisher.py -> /home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros\n'}
+[4.785781] (tof_imager_ros) StdoutLine: {'line': b'byte-compiling /home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros/tof_imager_publisher.py to tof_imager_publisher.cpython-310.pyc\n'}
+[4.787480] (tof_imager_ros) StderrLine: {'line': b'Sorry: TabError: inconsistent use of tabs and spaces in indentation (tof_imager_publisher.py, line 71)\n'}
+[4.788096] (tof_imager_ros) StdoutLine: {'line': b'running install_data\n'}
+[4.790764] (tof_imager_ros) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.799293] (tof_imager_ros) StdoutLine: {'line': b"removing '/home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.801133] (tof_imager_ros) StdoutLine: {'line': b'Copying ../../build/tof_imager_ros/tof_imager_ros.egg-info to /home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros-0.0.0-py3.10.egg-info\n'}
+[4.806834] (tof_imager_ros) StdoutLine: {'line': b'running install_scripts\n'}
+[4.837589] (-) TimerEvent: {}
+[4.887905] (tof_imager_ros) StdoutLine: {'line': b'Installing tof_imager_node script to /home/robotix/ros2_ws/install/tof_imager_ros/lib/tof_imager_ros\n'}
+[4.888807] (tof_imager_ros) StdoutLine: {'line': b'Installing tof_imager_publisher script to /home/robotix/ros2_ws/install/tof_imager_ros/lib/tof_imager_ros\n'}
+[4.890463] (tof_imager_ros) StdoutLine: {'line': b"writing list of installed files to '/home/robotix/ros2_ws/build/tof_imager_ros/install.log'\n"}
+[4.937821] (-) TimerEvent: {}
+[5.009580] (tof_imager_ros) CommandEnded: {'returncode': 0}
+[5.037946] (-) TimerEvent: {}
+[5.138906] (-) TimerEvent: {}
+[5.232635] (tof_imager_ros) JobEnded: {'identifier': 'tof_imager_ros', 'rc': 0}
+[5.235605] (-) EventReactorShutdown: {}

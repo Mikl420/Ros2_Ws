@@ -1,6 +1,14 @@
 package.xml
 setup.cfg
 setup.py
+../../build/robotix/robotix.egg-info/.uuid
+../../build/robotix/robotix.egg-info/PKG-INFO
+../../build/robotix/robotix.egg-info/SOURCES.txt
+../../build/robotix/robotix.egg-info/dependency_links.txt
+../../build/robotix/robotix.egg-info/entry_points.txt
+../../build/robotix/robotix.egg-info/requires.txt
+../../build/robotix/robotix.egg-info/top_level.txt
+../../build/robotix/robotix.egg-info/zip-safe
 resource/robotix
 robotix/__init__.py
 robotix/codeuse.py

@@ -1,0 +1,13 @@
+running develop
+running egg_info
+creating VL53L5CX.egg-info
+writing VL53L5CX.egg-info/PKG-INFO
+writing dependency_links to VL53L5CX.egg-info/dependency_links.txt
+writing top-level names to VL53L5CX.egg-info/top_level.txt
+writing manifest file 'VL53L5CX.egg-info/SOURCES.txt'
+reading manifest file 'VL53L5CX.egg-info/SOURCES.txt'
+writing manifest file 'VL53L5CX.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robotix/ros2_ws/install/VL53L5CX/lib/python3.10/site-packages/VL53L5CX.egg-link (link to .)
+
+Installed /home/robotix/ros2_ws/build/VL53L5CX

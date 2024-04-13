@@ -1,0 +1,52 @@
+running develop
+Removing /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix.egg-link (link to .)
+running egg_info
+writing ../../build/robotix/robotix.egg-info/PKG-INFO
+writing dependency_links to ../../build/robotix/robotix.egg-info/dependency_links.txt
+writing entry points to ../../build/robotix/robotix.egg-info/entry_points.txt
+writing requirements to ../../build/robotix/robotix.egg-info/requires.txt
+writing top-level names to ../../build/robotix/robotix.egg-info/top_level.txt
+reading manifest file '../../build/robotix/robotix.egg-info/SOURCES.txt'
+writing manifest file '../../build/robotix/robotix.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/lidar.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/motor.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/controller.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/laser.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/motor_plateau.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/jetson.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/ctrl_nav.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/codeuse.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/ctrl_claw.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/__init__.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+copying /home/robotix/ros2_ws/build/robotix/build/lib/robotix/motor_claw.py -> /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/lidar.py to lidar.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/motor.py to motor.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/controller.py to controller.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/laser.py to laser.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/motor_plateau.py to motor_plateau.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/jetson.py to jetson.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/ctrl_nav.py to ctrl_nav.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/codeuse.py to codeuse.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/ctrl_claw.py to ctrl_claw.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix/motor_claw.py to motor_claw.cpython-310.pyc
+running install_data
+running install_egg_info
+Copying ../../build/robotix/robotix.egg-info to /home/robotix/ros2_ws/install/robotix/lib/python3.10/site-packages/robotix-0.0.0-py3.10.egg-info
+running install_scripts
+Installing codeuse script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing controller script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing ctrl_claw script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing ctrl_nav script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing jetson script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing laser script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing lidar script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing motor script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing motor_claw script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+Installing motor_plateau script to /home/robotix/ros2_ws/install/robotix/lib/robotix
+writing list of installed files to '/home/robotix/ros2_ws/build/robotix/install.log'

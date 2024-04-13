@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/tof_imager_ros/tof_imager_ros.egg-info/PKG-INFO
+writing dependency_links to ../../build/tof_imager_ros/tof_imager_ros.egg-info/dependency_links.txt
+writing entry points to ../../build/tof_imager_ros/tof_imager_ros.egg-info/entry_points.txt
+writing requirements to ../../build/tof_imager_ros/tof_imager_ros.egg-info/requires.txt
+writing top-level names to ../../build/tof_imager_ros/tof_imager_ros.egg-info/top_level.txt
+reading manifest file '../../build/tof_imager_ros/tof_imager_ros.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/tof_imager_ros/tof_imager_ros.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/tof_imager_launch.py -> /home/robotix/ros2_ws/install/tof_imager_ros/share/tof_imager_ros/launch
+running install_egg_info
+removing '/home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/tof_imager_ros/tof_imager_ros.egg-info to /home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros-0.0.0-py3.10.egg-info
+running install_scripts
+Installing tof_imager_node script to /home/robotix/ros2_ws/install/tof_imager_ros/lib/tof_imager_ros
+Installing tof_imager_publisher script to /home/robotix/ros2_ws/install/tof_imager_ros/lib/tof_imager_ros
+writing list of installed files to '/home/robotix/ros2_ws/build/tof_imager_ros/install.log'

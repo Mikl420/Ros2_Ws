@@ -1,0 +1,23 @@
+[8.063s] Invoking command in '/home/robotix/ros2_ws/build/alextropfort': PYTHONPATH=/home/robotix/ros2_ws/build/alextropfort/prefix_override:/home/robotix/ros2_ws/install/alextropfort/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/alextropfort/build --no-deps install_data
+[9.564s] running develop
+[10.295s] running egg_info
+[10.295s] creating alextropfort.egg-info
+[10.296s] writing alextropfort.egg-info/PKG-INFO
+[10.297s] writing dependency_links to alextropfort.egg-info/dependency_links.txt
+[10.298s] writing entry points to alextropfort.egg-info/entry_points.txt
+[10.299s] writing requirements to alextropfort.egg-info/requires.txt
+[10.300s] writing top-level names to alextropfort.egg-info/top_level.txt
+[10.300s] writing manifest file 'alextropfort.egg-info/SOURCES.txt'
+[10.307s] reading manifest file 'alextropfort.egg-info/SOURCES.txt'
+[10.310s] writing manifest file 'alextropfort.egg-info/SOURCES.txt'
+[10.317s] running build_ext
+[10.318s] Creating /home/robotix/ros2_ws/install/alextropfort/lib/python3.10/site-packages/alextropfort.egg-link (link to .)
+[10.325s] 
+[10.326s] Installed /home/robotix/ros2_ws/build/alextropfort
+[10.327s] running install_data
+[10.327s] creating /home/robotix/ros2_ws/install/alextropfort/share/ament_index
+[10.328s] creating /home/robotix/ros2_ws/install/alextropfort/share/ament_index/resource_index
+[10.329s] creating /home/robotix/ros2_ws/install/alextropfort/share/ament_index/resource_index/packages
+[10.330s] copying resource/alextropfort -> /home/robotix/ros2_ws/install/alextropfort/share/ament_index/resource_index/packages
+[10.333s] copying package.xml -> /home/robotix/ros2_ws/install/alextropfort/share/alextropfort
+[10.534s] Invoked command in '/home/robotix/ros2_ws/build/alextropfort' returned '0': PYTHONPATH=/home/robotix/ros2_ws/build/alextropfort/prefix_override:/home/robotix/ros2_ws/install/alextropfort/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/build/alextropfort/build --no-deps install_data

@@ -1,0 +1,16 @@
+/home/robotix/ros2_ws/src/install/vl53l1x/lib/vl53l1x/vl53l1x_node
+/home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/package_run_dependencies/vl53l1x
+/home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/parent_prefix_path/vl53l1x
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/ament_prefix_path.sh
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/ament_prefix_path.dsv
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/path.sh
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/environment/path.dsv
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.bash
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.sh
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.zsh
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/local_setup.dsv
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/package.dsv
+/home/robotix/ros2_ws/src/install/vl53l1x/share/ament_index/resource_index/packages/vl53l1x
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/cmake/vl53l1xConfig.cmake
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/cmake/vl53l1xConfig-version.cmake
+/home/robotix/ros2_ws/src/install/vl53l1x/share/vl53l1x/package.xml
