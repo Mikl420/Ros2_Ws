@@ -1,0 +1,19 @@
+[6.004s] Invoking command in '/home/robotix/ros2_ws/src/build/tof_imager_ros': PYTHONPATH=/home/robotix/ros2_ws/src/build/tof_imager_ros/prefix_override:/home/robotix/ros2_ws/src/install/tof_imager_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/src/build/tof_imager_ros/build --no-deps install_data
+[7.364s] running develop
+[8.117s] running egg_info
+[8.119s] writing tof_imager_ros.egg-info/PKG-INFO
+[8.120s] writing dependency_links to tof_imager_ros.egg-info/dependency_links.txt
+[8.120s] writing entry points to tof_imager_ros.egg-info/entry_points.txt
+[8.121s] writing requirements to tof_imager_ros.egg-info/requires.txt
+[8.122s] writing top-level names to tof_imager_ros.egg-info/top_level.txt
+[8.129s] reading manifest file 'tof_imager_ros.egg-info/SOURCES.txt'
+[8.133s] writing manifest file 'tof_imager_ros.egg-info/SOURCES.txt'
+[8.140s] running build_ext
+[8.142s] Creating /home/robotix/ros2_ws/src/install/tof_imager_ros/lib/python3.10/site-packages/tof-imager-ros.egg-link (link to .)
+[8.146s] Installing tof_imager_node script to /home/robotix/ros2_ws/src/install/tof_imager_ros/lib/tof_imager_ros
+[8.147s] Installing tof_imager_publisher script to /home/robotix/ros2_ws/src/install/tof_imager_ros/lib/tof_imager_ros
+[8.150s] 
+[8.151s] Installed /home/robotix/ros2_ws/src/build/tof_imager_ros
+[8.152s] running install_data
+[8.154s] error: can't copy 'launch/vl53_launch.py': doesn't exist or not a regular file
+[8.371s] Invoked command in '/home/robotix/ros2_ws/src/build/tof_imager_ros' returned '1': PYTHONPATH=/home/robotix/ros2_ws/src/build/tof_imager_ros/prefix_override:/home/robotix/ros2_ws/src/install/tof_imager_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/src/build/tof_imager_ros/build --no-deps install_data

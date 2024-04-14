@@ -13,6 +13,7 @@ robotix/lidar.py
 robotix/motor.py
 robotix/motor_claw.py
 robotix/motor_plateau.py
+robotix/serial_pince.py
 robotix.egg-info/PKG-INFO
 robotix.egg-info/SOURCES.txt
 robotix.egg-info/dependency_links.txt

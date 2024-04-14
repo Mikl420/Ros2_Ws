@@ -1,0 +1,27 @@
+[6.386s] Invoking command in '/home/robotix/ros2_ws/src/build/robotix': PYTHONPATH=/home/robotix/ros2_ws/src/build/robotix/prefix_override:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/src/build/robotix/build --no-deps install_data
+[7.758s] running develop
+[8.512s] running egg_info
+[8.512s] writing robotix.egg-info/PKG-INFO
+[8.513s] writing dependency_links to robotix.egg-info/dependency_links.txt
+[8.515s] writing entry points to robotix.egg-info/entry_points.txt
+[8.516s] writing requirements to robotix.egg-info/requires.txt
+[8.517s] writing top-level names to robotix.egg-info/top_level.txt
+[8.526s] reading manifest file 'robotix.egg-info/SOURCES.txt'
+[8.531s] writing manifest file 'robotix.egg-info/SOURCES.txt'
+[8.539s] running build_ext
+[8.540s] Creating /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix.egg-link (link to .)
+[8.546s] Installing codeuse script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.547s] Installing controller script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.548s] Installing ctrl_claw script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.548s] Installing ctrl_nav script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.549s] Installing jetson script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.550s] Installing laser script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.552s] Installing lidar script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.553s] Installing motor script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.554s] Installing motor_claw script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.555s] Installing motor_plateau script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.555s] Installing serial_pince script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.558s] 
+[8.559s] Installed /home/robotix/ros2_ws/src/build/robotix
+[8.560s] running install_data
+[8.771s] Invoked command in '/home/robotix/ros2_ws/src/build/robotix' returned '0': PYTHONPATH=/home/robotix/ros2_ws/src/build/robotix/prefix_override:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/src/build/robotix/build --no-deps install_data

@@ -1,0 +1,26 @@
+[6.364s] Invoking command in '/home/robotix/ros2_ws/src/build/robotix': PYTHONPATH=/home/robotix/ros2_ws/src/build/robotix/prefix_override:/home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/src/build/robotix/build --no-deps install_data
+[7.735s] running develop
+[8.496s] running egg_info
+[8.496s] writing robotix.egg-info/PKG-INFO
+[8.497s] writing dependency_links to robotix.egg-info/dependency_links.txt
+[8.499s] writing entry points to robotix.egg-info/entry_points.txt
+[8.500s] writing requirements to robotix.egg-info/requires.txt
+[8.502s] writing top-level names to robotix.egg-info/top_level.txt
+[8.511s] reading manifest file 'robotix.egg-info/SOURCES.txt'
+[8.515s] writing manifest file 'robotix.egg-info/SOURCES.txt'
+[8.524s] running build_ext
+[8.525s] Creating /home/robotix/ros2_ws/src/install/robotix/lib/python3.10/site-packages/robotix.egg-link (link to .)
+[8.531s] Installing codeuse script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.532s] Installing controller script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.535s] Installing ctrl_claw script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.538s] Installing ctrl_nav script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.539s] Installing jetson script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.541s] Installing laser script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.542s] Installing lidar script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.543s] Installing motor script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.544s] Installing motor_claw script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.545s] Installing motor_plateau script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.547s] Installing serial_pince script to /home/robotix/ros2_ws/src/install/robotix/lib/robotix
+[8.550s] 
+[8.551s] Installed /home/robotix/ros2_ws/src/build/robotix
+[8.553s] running install_data

@@ -1,0 +1,87 @@
+[4.181s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[4.181s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffbd3ff490>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbd6e5810>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbd6e5810>>)
+[4.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.467s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robotix/ros2_ws/src'
+[4.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.550s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.550s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.550s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.552s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.552s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.552s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.553s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.553s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.553s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.555s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.555s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.555s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.557s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extensions ['ignore', 'ignore_ament_install']
+[4.557s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extension 'ignore'
+[4.557s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extension 'ignore_ament_install'
+[4.558s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extensions ['colcon_pkg']
+[4.558s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extension 'colcon_pkg'
+[4.558s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extensions ['colcon_meta']
+[4.558s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extension 'colcon_meta'
+[4.558s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extensions ['ros']
+[4.558s] Level 1:colcon.colcon_core.package_identification:_identify(robotix) by extension 'ros'
+[4.575s] DEBUG:colcon.colcon_core.package_identification:Package 'robotix' with type 'ros.ament_python' and name 'robotix'
+[4.576s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extensions ['ignore', 'ignore_ament_install']
+[4.576s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extension 'ignore'
+[4.577s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extension 'ignore_ament_install'
+[4.577s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extensions ['colcon_pkg']
+[4.577s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extension 'colcon_pkg'
+[4.577s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extensions ['colcon_meta']
+[4.578s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extension 'colcon_meta'
+[4.578s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extensions ['ros']
+[4.578s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros) by extension 'ros'
+[4.581s] DEBUG:colcon.colcon_core.package_identification:Package 'tof_imager_ros' with type 'ros.ament_python' and name 'tof_imager_ros'
+[4.582s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extensions ['ignore', 'ignore_ament_install']
+[4.582s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extension 'ignore'
+[4.583s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extension 'ignore_ament_install'
+[4.583s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extensions ['colcon_pkg']
+[4.583s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extension 'colcon_pkg'
+[4.583s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extensions ['colcon_meta']
+[4.583s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extension 'colcon_meta'
+[4.584s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extensions ['ros']
+[4.584s] Level 1:colcon.colcon_core.package_identification:_identify(tof_imager_ros_2) by extension 'ros'
+[4.587s] DEBUG:colcon.colcon_core.package_identification:Package 'tof_imager_ros_2' with type 'ros.ament_python' and name 'tof_imager_ros'
+[4.589s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[4.589s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extension 'ignore'
+[4.589s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[4.590s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[4.590s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extension 'colcon_pkg'
+[4.590s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extensions ['colcon_meta']
+[4.590s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extension 'colcon_meta'
+[4.590s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extensions ['ros']
+[4.591s] Level 1:colcon.colcon_core.package_identification:_identify(ydlidar_ros2_driver) by extension 'ros'
+[4.594s] DEBUG:colcon.colcon_core.package_identification:Package 'ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[4.594s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.594s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.594s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.595s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.595s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.022s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.022s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.153s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/robotix/ros2_ws/install
+[5.213s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/robotix/ros2_ws/src/install
+[5.279s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 180 installed packages in /opt/ros/humble
+[5.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.565s] ERROR:colcon:colcon build: Duplicate package names not supported:
+- tof_imager_ros:
+  - tof_imager_ros
+  - tof_imager_ros_2

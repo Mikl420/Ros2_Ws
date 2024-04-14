@@ -15,7 +15,7 @@ class Ctrl_claw(Node):
         #self.publisher_ = self.create_publisher(Twist, "/robotix/topic", 10)
         self.subscriber_ = self.create_subscription(String, "/robotix/ctrl_claw", self.my_callback, 10)
         #self.timer_ = self.create_timer(5.0, self.my_publish)
-        self.ser_ = serial.Serial("/dev/ttyUSB1", 9600)
+        self.ser_ = serial.Serial("/dev/ttyUSB2", 9600)
         self.get_logger().info("Hello from ctrl_claw")
 
     def my_callback(self, pos: String):
@@ -50,4 +50,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-

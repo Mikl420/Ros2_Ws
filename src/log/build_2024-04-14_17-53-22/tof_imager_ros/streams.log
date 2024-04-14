@@ -1,0 +1,18 @@
+[6.536s] Invoking command in '/home/robotix/ros2_ws/src/build/tof_imager_ros': PYTHONPATH=/home/robotix/ros2_ws/src/build/tof_imager_ros/prefix_override:/home/robotix/ros2_ws/src/install/tof_imager_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/src/build/tof_imager_ros/build --no-deps install_data
+[7.912s] running develop
+[8.690s] running egg_info
+[8.692s] writing tof_imager_ros.egg-info/PKG-INFO
+[8.693s] writing dependency_links to tof_imager_ros.egg-info/dependency_links.txt
+[8.694s] writing entry points to tof_imager_ros.egg-info/entry_points.txt
+[8.695s] writing requirements to tof_imager_ros.egg-info/requires.txt
+[8.696s] writing top-level names to tof_imager_ros.egg-info/top_level.txt
+[8.702s] reading manifest file 'tof_imager_ros.egg-info/SOURCES.txt'
+[8.706s] writing manifest file 'tof_imager_ros.egg-info/SOURCES.txt'
+[8.715s] running build_ext
+[8.716s] Creating /home/robotix/ros2_ws/src/install/tof_imager_ros/lib/python3.10/site-packages/tof-imager-ros.egg-link (link to .)
+[8.720s] Installing tof_imager_node script to /home/robotix/ros2_ws/src/install/tof_imager_ros/lib/tof_imager_ros
+[8.721s] Installing tof_imager_publisher script to /home/robotix/ros2_ws/src/install/tof_imager_ros/lib/tof_imager_ros
+[8.726s] 
+[8.727s] Installed /home/robotix/ros2_ws/src/build/tof_imager_ros
+[8.727s] running install_data
+[8.941s] Invoked command in '/home/robotix/ros2_ws/src/build/tof_imager_ros' returned '0': PYTHONPATH=/home/robotix/ros2_ws/src/build/tof_imager_ros/prefix_override:/home/robotix/ros2_ws/src/install/tof_imager_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robotix/ros2_ws/src/build/tof_imager_ros/build --no-deps install_data
