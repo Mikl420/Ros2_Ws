@@ -1,5 +1,0 @@
-  File "/home/robotix/ros2_ws/install/tof_imager_ros/lib/python3.10/site-packages/tof_imager_ros/tof_imager_publisher.py", line 31
-    self._timer: # Optional[Timer] = None   
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax
-
