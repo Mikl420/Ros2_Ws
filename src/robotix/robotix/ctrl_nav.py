@@ -22,14 +22,14 @@ class Ctrl_nav(Node):
         self.subscriber_choice = self.create_subscription(Int16, "/robotix/choice", self.my_callback_choice, 10)
         self.subscriber_real_pos = self.create_subscription(Int16, "/robotix/real_pos", self.my_callback_real_pos, 10)
         self.subscriber_lidar_ = self.create_subscription(LaserScan, "/scan", self.my_callback_lidar, 10)
-        #self.timer = self.create_timer(5, self.check_message_received)
+        self.timer = self.create_timer(3.0, self.check_message_received)
         self.get_logger().info("Hello from ctrl_nav")
         self.angle_abs = 0
         self.cmd_distance = 0
         self.cmd_angle = 0
         self.index = 0
         self.distance_rel = 1
-        self.tab_cmd = ["D0380P0900", "D0320N0900"]
+        self.tab_cmd = ["D0001P00","D0380P0900", "D0320N0900"]
         self.choice = 1
         self.msg = String()
         self.msg.data = self.tab_cmd[self.index]
@@ -63,11 +63,13 @@ class Ctrl_nav(Node):
         self.choice = choice
 
     def my_callback_real_pos(self, arrived:Int16):
-        self.received_message = True
+        if self.received_message == False:
+            print('Message RECEIVED')
+            self.received_message = True
         self.index += 1
         print("INDEX", self.index)
         if self.index == 1:
-            self.msg.data = self.tab_cmd[self.index]
+            self.msg.data = self.tab_cmd[self.index + 1]
             self.my_publish()
         if self.index == 4:
             self.rewind_after_lidar()

@@ -39,17 +39,17 @@ def run_nodes():
 
     # Lancer le noeud B dans un processus séparé sans surveillance spéciale
     print("Démarrage du noeud B...")
-    node_motor_process = subprocess.Popen(node_motor_command)
+    #node_motor_process = subprocess.Popen(node_motor_command)
 
     # Gérer et potentiellement relancer le noeud A
     run_node(node_ctrl_nav_command)
 
     # Nettoyage: Assurez-vous que le noeud B est également arrêté lorsque le script se termine
-    node_motor_process.terminate()
-    try:
-        node_motor_process.wait(timeout=5)
-    except subprocess.TimeoutExpired:
-        node_motor_process.kill()
+   # node_motor_process.terminate()
+   # try:
+        #node_motor_process.wait(timeout=5)
+   # except subprocess.TimeoutExpired:
+        #node_motor_process.kill()
 
 if __name__ == '__main__':
     run_nodes()

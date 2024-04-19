@@ -9,20 +9,62 @@ class SimplePointCloudSubscriber(Node):
         super().__init__('simple_pc2_subscriber')
         self.subscription = self.create_subscription(
             PointCloud2,
-            '/pointcloud',
+            '/tof_1',
             self.listener_callback,
             10)
-        self.subscription  # prevent unused variable warning
 
+        self.subscription2 = self.create_subscription(
+            PointCloud2,
+            '/tof_2',
+            self.listener_callback_2,
+            10)
+
+        self.subscription3 = self.create_subscription(
+            PointCloud2,
+            '/tof_3',
+            self.listener_callback_3,
+            10)
+
+        self.subscription4 = self.create_subscription(
+            PointCloud2,
+            '/tof_4',
+            self.listener_callback_4,
+            10)
     def listener_callback(self, msg):
         # Parse the point cloud data
         assert isinstance(msg, PointCloud2)
         points = self.read_points(msg)
-        print("New point cloud data received:")
+        print("111111111111 New point cloud data received: 1111111111111111111111111111")
         for point in points:
-            if point[0] < 0 :
+            if point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
+                print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
+  
+    def listener_callback_2(self, msg):
+        # Parse the point cloud data
+        assert isinstance(msg, PointCloud2)
+        points = self.read_points(msg)
+        print("222222222222222 New point cloud data received:      2222222222222")
+        for point in points:
+            if point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
 
+    def listener_callback_3(self, msg):
+        # Parse the point cloud data
+        assert isinstance(msg, PointCloud2)
+        points = self.read_points(msg)
+        print("3333333333333333 New point cloud data received:   3333333333333333333333333333333")
+        for point in points:
+            if point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
+                print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
+
+    def listener_callback_4(self, msg):
+        # Parse the point cloud data
+        assert isinstance(msg, PointCloud2)
+        points = self.read_points(msg)
+        print("44444444444444444 New point cloud data received: 4444444444444444")
+        for point in points:
+            if point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
+                print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
 
     def read_points(self, cloud, field_names=None, skip_nans=False, uvs=[]):
         fmt = self._get_struct_fmt(cloud.is_bigendian, cloud.fields, field_names)
