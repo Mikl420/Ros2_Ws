@@ -18,25 +18,30 @@ class Ctrl_nav(Node):
     def __init__(self):
         super().__init__("ctrl_nav")
         self.publisher_cmd_pos = self.create_publisher(String, "/robotix/cmd_pos", 10)
+        self.publisher_claw = self.create_publisher(String, "/robotix/ctrl_claw", 10)
         #self.timer_ = self.create_timer(3.0, self.my_publish)
         self.subscriber_choice = self.create_subscription(Int16, "/robotix/choice", self.my_callback_choice, 10)
         self.subscriber_real_pos = self.create_subscription(Int16, "/robotix/real_pos", self.my_callback_real_pos, 10)
         self.subscriber_lidar_ = self.create_subscription(LaserScan, "/scan", self.my_callback_lidar, 10)
-        self.timer = self.create_timer(3.0, self.check_message_received)
+        self.subscriber_claw = self.create_subscription(Int16, "/robotix/serial_pince", self.my_callback_real_pos, 10)
+        self.timer = self.create_timer(5.0, self.check_message_received)
         self.get_logger().info("Hello from ctrl_nav")
         self.angle_abs = 0
         self.cmd_distance = 0
         self.cmd_angle = 0
         self.index = 0
         self.distance_rel = 1
-        self.tab_cmd = ["D0001P00","D0380P0900", "D0320N0900"]
+        self.tab_cmd = ["D0380P090", "D0320N090"]
         self.choice = 1
         self.msg = String()
-        self.msg.data = self.tab_cmd[self.index]
+        self.msg.data = "D0001P000"
+        self.msg_claw = String()
+        self.last_msg = String()
+        #self.msg.data = self.tab_cmd[self.index]
         self.my_publish()
         self.distance_plante = []
         self.angle_plante = []
-        self.distance_plante_1 = []
+        self.distance_plante_1 = []         
         self.distance_plante_2 = []
         self.distance_plante_3 = []
         self.angle_plante_1 = []
@@ -58,6 +63,9 @@ class Ctrl_nav(Node):
         print(self.msg.data)
         self.publisher_cmd_pos.publish(self.msg)
 
+    def my_publish_claw(self):
+        print(self.msg_claw.data)
+        self.publisher_claw.publish(self.msg_claw)
 
     def my_callback_choice(self, choice:Int16):
         self.choice = choice
@@ -69,47 +77,94 @@ class Ctrl_nav(Node):
         self.index += 1
         print("INDEX", self.index)
         if self.index == 1:
-            self.msg.data = self.tab_cmd[self.index + 1]
+            self.msg.data = self.tab_cmd[self.index-1]
             self.my_publish()
+
+        if self.index == 2:
+            self.msg.data = self.tab_cmd[self.index-1]
+            self.my_publish()
+
         if self.index == 4:
+            self.msg_claw.data = 'PF1'
+            self.my_publish_claw()
+
+        if self.index == 5:
+            self.last_msg.data = self.msg.data
+            self.msg.data = "D0120P000"
+            self.my_publish()
+        
+        if self.index == 6:
+            self.msg_claw.data = 'PF2'
+            self.my_publish_claw()
+        
+        if self.index == 7:
+            self.msg_claw.data = 'DP'
+            self.my_publish_claw()
+        
+        if self.index == 7:
+            self.msg.data = "R0120P000"
+            self.my_publish()
+
+        if self.index == 9:
+            self.msg.data = self.last_msg.data
             self.rewind_after_lidar()
             self.my_publish()
-        if self.index == 5:
+
+        if self.index == 10:
             if self.plante1:
-                if self.min_plante2 < self.min_plante3 :
+                if self.min_plante2 < self.min_plante3:
                     self.distance_plante = self.distance_plante_2
                     self.angle_plante = self.angle_plante_2
-                    self.plante2 = True
-                else :
+                else:
                     self.distance_plante = self.distance_plante_3
                     self.angle_plante = self.angle_plante_3
-                    self.plante3 = True
-            elif self.plante2 :
-                if self.min_plante1 < self.min_plante3 :
-                    self.distance_plante = self.distance_plante_1
-                    self.angle_plante = self.angle_plante_1
-                    self.plante1 = True
-                else :
-                    self.distance_plante = self.distance_plante_3
-                    self.angle_plante = self.angle_plante_3
-                    self.plante3 = True
-            else :
+            
+            if self.plante2:
                 if self.min_plante1 < self.min_plante2:
                     self.distance_plante = self.distance_plante_1
                     self.angle_plante = self.angle_plante_1
-                    self.plante1 = True
-                else :
+                else:
+                    self.distance_plante = self.distance_plante_3
+                    self.angle_plante = self.angle_plante_3
+            
+            if self.plante3:
+                if self.min_plante1 < self.min_plante2:
+                    self.distance_plante = self.distance_plante_1
+                    self.angle_plante = self.angle_plante_1
+                else:
                     self.distance_plante = self.distance_plante_2
                     self.angle_plante = self.angle_plante_2
-                    self.plante2 = True
-
             i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante)
             self.plante_format((self.distance_plante[i1]) * 1000, self.angle_plante[i1])
             self.my_publish()
-        if self.index == 6:
+        
+        if self.index == 11:
+            self.msg_claw.data = 'PF1'
+            self.my_publish_claw()
+
+        if self.index == 12:
+            self.last_msg.data = self.msg.data
+            self.msg.data = "D0120P000"
+            self.my_publish()
+                
+        if self.index == 13:
+            self.msg_claw.data = 'PF2'
+            self.my_publish_claw()
+        
+        if self.index == 14:
+            self.msg_claw.data = 'DP'
+            self.my_publish_claw()
+        
+        if self.index == 15:
+            self.msg.data = "R0120P000"
+            self.my_publish()
+
+        if self.index == 15:
+            self.msg.data = self.last_msg.data
             self.rewind_after_lidar()
             self.my_publish()
-        if self.index == 7:
+        
+        if self.index == 16:
             if self.plante1 and self.plante2 :
                 self.distance_plante = self.distance_plante_3
                 self.angle_plante = self.angle_plante_3
@@ -117,16 +172,52 @@ class Ctrl_nav(Node):
                 self.distance_plante = self.distance_plante_1
                 self.angle_plante = self.angle_plante_1
             else :
-                self.distance_plante = self.distance_plante_3
-                self.angle_plante = self.angle_plante_3
+                self.distance_plante = self.distance_plante_2
+                self.angle_plante = self.angle_plante_2
             i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante)
             self.plante_format((self.distance_plante[i1]) * 1000, self.angle_plante[i1])
             self.my_publish()
+        
+        if self.index == 17:
+            self.msg_claw.data = 'PF1'
+            self.my_publish_claw()
+
+        if self.index == 18:
+            self.last_msg.data = self.msg.data
+            self.msg.data = "D0120P000"
+            self.my_publish()
+                
+        if self.index == 19:
+            self.msg_claw.data = 'PF2'
+            self.my_publish_claw()
+        
+        if self.index == 20:
+            self.msg_claw.data = 'DP'
+            self.my_publish_claw()
+        
+        if self.index == 21:
+            self.msg.data = "R0120P000"
+            self.my_publish()
+
+        if self.index == 22:
+            self.msg.data = self.last_msg.data
+            self.rewind_after_lidar()
+            self.my_publish()
+
+        """"
+
+
+        if self.index == 6:
+            self.rewind_after_lidar()
+            self.my_publish()
+
+        
+
         if self.index == 8 :
             self.rewind_after_lidar()
             self.my_publish()
 
-
+        """
 
     def rewind_after_lidar(self):
         if self.msg.data[5] == "N":
@@ -156,26 +247,26 @@ class Ctrl_nav(Node):
     def plante_format(self, distance, angle):
         #msg = String()
         if angle >= 10:
-            str_var1 = f"{round(distance-90):04d}"  # Formatage sur 4 caractères
+            str_var1 = f"{round(distance-195):04d}"  # Formatage sur 4 caractères
             str_var2 = f"{round(angle*0.8):03d}"  # Formatage sur 3 caractères
             self.msg.data = f"D{str_var1}N{str_var2}"
             print("negatif")
         if angle < 10 and  angle > 0:
             angle = angle - 2
-            str_var1 = f"{round(distance-90):04d}"  # Formatage sur 4 caractères
+            str_var1 = f"{round(distance-195):04d}"  # Formatage sur 4 caractères
             str_var2 = f"{round(angle):03d}"  # Formatage sur 3 caractères
             self.msg.data = f"D{str_var1}N{str_var2}"
             print("petit negatif")
 
         if angle <= -10:
-            str_var1 = f"{round(distance-90):04d}"  # Formatage sur 4 caractères
+            str_var1 = f"{round(distance-195):04d}"  # Formatage sur 4 caractères
             str_var2 = f"{round(abs(angle*0.7)):03d}"  # Formatage sur 3 caractères
             self.msg.data = f"D{str_var1}P{str_var2}"
             print("positif")
 
         if angle > -10 and angle < 0:
             angle = angle + 2
-            str_var1 = f"{round(distance-90):04d}"  # Formatage sur 4 caractères
+            str_var1 = f"{round(distance-195):04d}"  # Formatage sur 4 caractères
             str_var2 = f"{round(abs(angle)):03d}"  # Formatage sur 3 caractères
             self.msg.data = f"D{str_var1}P{str_var2}"
             print("petit positif")
@@ -183,7 +274,7 @@ class Ctrl_nav(Node):
 
 
     def my_callback_lidar(self, laser: LaserScan):
-        if self.index == 2 and self.flag_lidar :
+        if self.index == 3 and self.flag_lidar :
             self.flag_lidar = False
             print("CallbackLIDAR")
             delay =0
@@ -213,7 +304,6 @@ class Ctrl_nav(Node):
             #self.angle_plante_1.clear()
             #self.angle_plante_2.clear()
             #self.angle_plante_3.clear()
-            self.index+=1
 ### new code
             # Calcul des minimums
             self.min_plante1 = min(self.distance_plante_1)
@@ -273,13 +363,13 @@ class Ctrl_nav(Node):
         number_samples = len(ranges)
         angle_increment = 100 / (number_samples - 1)
         for i in range(len(self.angle_plante_1)):
-            self.angle_plante_1[i] = self.angle_plante_1[i] * angle_increment - 63
+            self.angle_plante_1[i] = self.angle_plante_1[i] * angle_increment -63
 
         for i in range(len(self.angle_plante_2)):
-            self.angle_plante_2[i] = self.angle_plante_2[i] * angle_increment - 63
+            self.angle_plante_2[i] = self.angle_plante_2[i] * angle_increment -63
 
         for i in range(len(self.angle_plante_3)):
-            self.angle_plante_3[i] = self.angle_plante_3[i] * angle_increment - 63
+            self.angle_plante_3[i] = self.angle_plante_3[i] * angle_increment -63
 
 
     def check_message_received(self):
