@@ -1,12 +1,18 @@
 import subprocess
 import time
+import os
 
 def run_node(command):
     """Exécute un noeud et le relance en cas d'arrêt inattendu."""
     while True:
         print(f"Démarrage du noeud avec la commande : {' '.join(command)}")
-        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-        
+        #process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        env = os.environ.copy()
+        env["PATH"] = "/opt/ros/humble/bin:" + env["PATH"]
+        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, env=env)
+        print('ok')
+        time.sleep(5)
+        #os.system("ros2 run robotix ctrl_nav")
         try:
             output = ""
             while True:
@@ -53,4 +59,3 @@ def run_nodes():
 
 if __name__ == '__main__':
     run_nodes()
-
