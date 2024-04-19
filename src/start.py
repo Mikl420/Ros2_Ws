@@ -12,7 +12,7 @@ GPIO.setup(BOUTON_GPIO, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # On met en pull-do
 # Fonction à appeler lors de l'interruption du bouton
 def bouton_interruption(channel):
     print('interrupt ok')
-    os.system("sudo python3 supervisor.py") # Ici, il faut lancer le démarrage de la séquence
+    os.system("sudo python3 /home/robotix/ros2_ws/src/supervisor.py") # Ici, il faut lancer le démarrage de la séquence
 # Ajouter une interruption pour le bouton
 GPIO.add_event_detect(BOUTON_GPIO, GPIO.RISING, callback=bouton_interruption, bouncetime=300) # Vu l condig en pull-up, c'est une détection de front montant
 try:
