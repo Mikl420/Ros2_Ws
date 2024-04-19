@@ -6,13 +6,11 @@ def run_node(command):
     """Exécute un noeud et le relance en cas d'arrêt inattendu."""
     while True:
         print(f"Démarrage du noeud avec la commande : {' '.join(command)}")
-        #process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-        env = os.environ.copy()
+        env = os.environ.copy()  # Create a copy of the environment variables
         env["PATH"] = "/opt/ros/humble/bin:" + env["PATH"]
-        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, env=env)
-        print('ok')
-        time.sleep(5)
+        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
         #os.system("ros2 run robotix ctrl_nav")
+        """
         try:
             output = ""
             while True:
@@ -35,7 +33,7 @@ def run_node(command):
             break
 
         time.sleep(1)  # Un court délai avant de relancer
-
+        """
 
 def run_nodes():
     """Lance et gère plusieurs noeuds, en s'assurant de relancer le noeud A si nécessaire."""
@@ -56,6 +54,25 @@ def run_nodes():
         #node_motor_process.wait(timeout=5)
    # except subprocess.TimeoutExpired:
         #node_motor_process.kill()
+def bouton_interruption(channel):
+    print('interrupt ok')
+    global go
+    go = True
+    # command = ['ros2', 'run', 'robotix', 'motor']
+    # process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+    # os.system("sudo python3 /home/robotix/ros2_ws/src/supervisor.py") # Ici, il faut lancer le démarrage de la séquence
 
 if __name__ == '__main__':
+    import RPi.GPIO as GPIO
+    import time
+    import subprocess
+    # Définir le numéro du GPIO pour le bouton
+    go = False
+    BOUTON_GPIO = 18
+    # Initialiser GPIO
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(BOUTON_GPIO, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+    GPIO.add_event_detect(BOUTON_GPIO, GPIO.RISING, callback=bouton_interruption, bouncetime=300)
+    while not go :
+        pass
     run_nodes()
