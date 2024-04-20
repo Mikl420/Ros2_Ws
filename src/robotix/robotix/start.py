@@ -4,6 +4,8 @@ import time
 import os
 import subprocess
 import supervisor
+import ctrl_nav
+
 # Définir le numéro du GPIO pour le bouton
 BOUTON_GPIO = 18
 # Initialiser GPIO
@@ -26,6 +28,7 @@ try:
         print(GPIO.input(18))
         time.sleep(0.1)
     print("I run nodes")
+    ctrl_nav.Ctrl_nav.setEndTime(time.time())
     supervisor.run_nodes()
 except KeyboardInterrupt:
     GPIO.cleanup()

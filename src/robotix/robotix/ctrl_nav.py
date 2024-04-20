@@ -12,6 +12,7 @@ from std_msgs.msg import Int32MultiArray
 from rclpy.executors import ExternalShutdownException
 import subprocess
 import math
+import time
 
 class Ctrl_nav(Node):
 
@@ -59,7 +60,7 @@ class Ctrl_nav(Node):
         self.min_plante1 = 0
         self.min_plante2 = 0
         self.min_plante3 = 0
-        self.startTime= time.time()
+        self.startTime= 0
 
     def my_publish(self):
         print(self.msg.data)
@@ -442,6 +443,9 @@ class Ctrl_nav(Node):
             raise ExternalShutdownException('ExternalShutdownException')  # Ceci va arrêter le nœud
         else:
             self.get_logger().info('Message reçu, exécution normale.')
+    
+    def setEndTime(self, time):
+        self.startTime = time + 95 
 
 def main(args=None):
     rclpy.init(args=args)
