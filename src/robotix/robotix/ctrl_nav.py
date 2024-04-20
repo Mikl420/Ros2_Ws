@@ -31,9 +31,10 @@ class Ctrl_nav(Node):
         self.cmd_angle = 0
         self.index = 0
         self.distance_rel = 1
-        self.tab_cmd = ["D0380P090", "D0320N090"]
+        self.tab_cmd = ["D0100P000", "D0100N000"] #["D0380P090", "D0320N090"]
         self.choice = 1
         self.msg = String()
+        self.extracted_angle = 0
         self.msg.data = "D0001P000"
         self.msg_claw = String()
         self.last_msg = String()
@@ -58,6 +59,7 @@ class Ctrl_nav(Node):
         self.min_plante1 = 0
         self.min_plante2 = 0
         self.min_plante3 = 0
+        self.startTime= time.time()
 
     def my_publish(self):
         print(self.msg.data)
@@ -71,34 +73,35 @@ class Ctrl_nav(Node):
         self.choice = choice
 
     def my_callback_real_pos(self, arrived:Int16):
+        print("TIME ====" + str(time.time()))
         if self.received_message == False:
             print('Message RECEIVED')
             self.received_message = True
         self.index += 1
         print("INDEX", self.index)
-        if self.index == 1:
+        if self.index == 1 and (time.time()-self.startTime<100):
             self.msg.data = self.tab_cmd[self.index-1]
             self.my_publish()
 
-        if self.index == 2:
+        if self.index == 2 and (time.time()-self.startTime<100):
             self.msg.data = self.tab_cmd[self.index-1]
             self.my_publish()
 
-        if self.index == 4:
+        if self.index == 4 and (time.time()-self.startTime<100):
             self.flag_lidar == True
             self.msg_claw.data = 'PF1'
             self.my_publish_claw()
 
-        if self.index == 5:
+        if self.index == 5 and (time.time()-self.startTime<100):
             self.last_msg.data = self.msg.data
             self.msg.data = "D0120P000"
             self.my_publish()
         
-        if self.index == 6:
+        if self.index == 6 and (time.time()-self.startTime<100):
             self.msg_claw.data = 'PF2'
             self.my_publish_claw()
         
-        if self.index == 7:
+        if self.index == 7 and (time.time()-self.startTime<100):
             self.msg_claw.data = 'DP'
             self.my_publish_claw()
         
@@ -116,6 +119,8 @@ class Ctrl_nav(Node):
             self.flag_lidar = True
             self.msg.data = self.last_msg.data
             self.rewind_after_lidar()
+            self.my_publish()
+            self.msg.data = "D0000" + self.extracted_angle
             self.my_publish()
         """"
         if self.index == 10:
@@ -146,20 +151,20 @@ class Ctrl_nav(Node):
             self.plante_format((self.distance_plante[i1]) * 1000, self.angle_plante[i1])
             self.my_publish()
         """
-        if self.index == 11:
+        if self.index == 12 and (time.time()-self.startTime<100):
             self.msg_claw.data = 'PF1'
             self.my_publish_claw()
         
-        if self.index == 12:
+        if self.index == 13 and (time.time()-self.startTime<100):
             self.last_msg.data = self.msg.data
             self.msg.data = "D0120P000"
             self.my_publish()
                 
-        if self.index == 13:
+        if self.index == 14 and (time.time()-self.startTime<100):
             self.msg_claw.data = 'PF2'
             self.my_publish_claw()
         
-        if self.index == 14:
+        if self.index == 15 and (time.time()-self.startTime<100):
             self.msg.data = "R0120P000"
             self.my_publish()
             self.msg_claw.data = 'DP'
@@ -180,21 +185,23 @@ class Ctrl_nav(Node):
             self.msg.data = self.last_msg.data
             self.rewind_after_lidar()
             self.my_publish()
+            self.msg.data = "D0000" + self.extracted_angle
+            self.my_publish()
 
-        if self.index == 18:
+        if self.index == 20 and (time.time()-self.startTime<100):
             self.msg_claw.data = 'PF1'
             self.my_publish_claw()
 
-        if self.index == 19:
+        if self.index == 21 and (time.time()-self.startTime<100):
             self.last_msg.data = self.msg.data
             self.msg.data = "D0120P000"
             self.my_publish()
                 
-        if self.index == 20:
+        if self.index == 22 and (time.time()-self.startTime<100):
             self.msg_claw.data = 'PF2'
             self.my_publish_claw()
         
-        if self.index == 21:
+        if self.index == 23 and (time.time()-self.startTime<100):
             self.msg_claw.data = 'DP'
             self.my_publish_claw()
             self.msg.data = "R0120P000"
@@ -207,6 +214,8 @@ class Ctrl_nav(Node):
             self.angle_plante_2 = [50]
             self.angle_plante_3 = [50]
             self.rewind_after_lidar()
+            self.my_publish()
+            self.msg.data = "D0000" + self.extracted_angle
             self.my_publish()
         
         #if self.index == 20:
@@ -224,11 +233,11 @@ class Ctrl_nav(Node):
         #    self.rewind_after_lidar()
         #    self.my_publish()
 
-        if self.index == 24:
+        if self.index == 27 and (time.time()-self.startTime<100):
             self.msg.data = "R0320P000"
             self.my_publish()
         
-        if self.index == 25:
+        if self.index == 28 and (time.time()-self.startTime<100):
             self.msg.data = "D0380N090"
             self.my_publish()
         
@@ -236,31 +245,31 @@ class Ctrl_nav(Node):
             self.msg_claw.data = "RP"
             self.my_publish_claw()
         
-        if self.index == 27:
+        if self.index == 29 and (time.time()-self.startTime<100):
             self.msg.data = "R0100P000"
             self.my_publish()
 
-        if self.index == 28:
+        if self.index == 30 and (time.time()-self.startTime<100):
             self.msg_claw.data = "DF2"
             self.my_publish_claw()
 
-        if self.index == 29:
+        if self.index == 31 and (time.time()-self.startTime<100):
             self.msg_claw.data = "RP"
             self.my_publish_claw()
 
-        if self.index == 30:
+        if self.index == 32 and (time.time()-self.startTime<100):
             self.msg.data = "R0100P000"
             self.my_publish()
 
-        if self.index == 31:
+        if self.index == 33 and (time.time()-self.startTime<100):
             self.msg_claw.data = "DF2"
             self.my_publish_claw()
         
-        if self.index == 32:
+        if self.index == 34 and (time.time()-self.startTime<100):
             self.msg_claw.data = "RP"
             self.my_publish_claw()
 
-        if self.index == 33:
+        if self.index == 35 and (time.time()-self.startTime<100):
             self.msg.data = "R0100P000"
             self.my_publish()
 
@@ -277,7 +286,8 @@ class Ctrl_nav(Node):
             modified_data = self.msg.data.replace("D", "R")
             modified_data2 = modified_data.replace("N", "P")
             self.msg.data = modified_data2
-
+            self.extracted_angle = String(self.msg.data[5:9])
+            self.msg.data = self.msg.data[:5] + "P000"
             print("Modified data", modified_data2)
             #self.msg.data.replace("D", "R")
             #self.msg.data.replace("N", "P")
@@ -328,7 +338,7 @@ class Ctrl_nav(Node):
 
 
     def my_callback_lidar(self, laser: LaserScan):
-        if (self.index == 3 or self.index == 10 or self.index == 17) and self.flag_lidar:
+        if (self.index == 3 or self.index == 10 or self.index == 18) and self.flag_lidar:
             self.flag_lidar = False
             print("CallbackLIDAR")
             delay =0
