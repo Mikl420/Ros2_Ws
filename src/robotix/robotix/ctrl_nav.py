@@ -41,12 +41,12 @@ class Ctrl_nav(Node):
         self.my_publish()
         self.distance_plante = []
         self.angle_plante = []
-        self.distance_plante_1 = []         
-        self.distance_plante_2 = []
-        self.distance_plante_3 = []
-        self.angle_plante_1 = []
-        self.angle_plante_2 = []
-        self.angle_plante_3 = []
+        self.distance_plante_1 = [50]         
+        self.distance_plante_2 = [50]
+        self.distance_plante_3 = [50]
+        self.angle_plante_1 = [50]         
+        self.angle_plante_2 = [50]
+        self.angle_plante_3 = [50]
         self.distance_plantes = []
         self.angle_plantes = []
         self.determination = 0
@@ -85,6 +85,7 @@ class Ctrl_nav(Node):
             self.my_publish()
 
         if self.index == 4:
+            self.flag_lidar == True
             self.msg_claw.data = 'PF1'
             self.my_publish_claw()
 
@@ -101,15 +102,22 @@ class Ctrl_nav(Node):
             self.msg_claw.data = 'DP'
             self.my_publish_claw()
         
-        if self.index == 7:
-            self.msg.data = "R0120P000"
+        #if self.index == 7:
+            self.msg.data = "R0120N000"
             self.my_publish()
 
-        if self.index == 9:
+        #if self.index == 8:
+            self.distance_plante_1 = [50]         
+            self.distance_plante_2 = [50]
+            self.distance_plante_3 = [50]
+            self.angle_plante_1 = [50]         
+            self.angle_plante_2 = [50]
+            self.angle_plante_3 = [50]
+            self.flag_lidar = True
             self.msg.data = self.last_msg.data
             self.rewind_after_lidar()
             self.my_publish()
-
+        """"
         if self.index == 10:
             if self.plante1:
                 if self.min_plante2 < self.min_plante3:
@@ -137,11 +145,11 @@ class Ctrl_nav(Node):
             i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante)
             self.plante_format((self.distance_plante[i1]) * 1000, self.angle_plante[i1])
             self.my_publish()
-        
+        """
         if self.index == 11:
             self.msg_claw.data = 'PF1'
             self.my_publish_claw()
-
+        
         if self.index == 12:
             self.last_msg.data = self.msg.data
             self.msg.data = "D0120P000"
@@ -152,78 +160,124 @@ class Ctrl_nav(Node):
             self.my_publish_claw()
         
         if self.index == 14:
+            self.msg.data = "R0120P000"
+            self.my_publish()
             self.msg_claw.data = 'DP'
             self.my_publish_claw()
         
-        if self.index == 15:
-            self.msg.data = "R0120P000"
-            self.my_publish()
+        #if self.index == 15:
+            #self.msg.data = "R0120P000"
+            #self.my_publish()
 
-        if self.index == 15:
+        #if self.index == 15:
+            self.distance_plante_1 = [50]         
+            self.distance_plante_2 = [50]
+            self.distance_plante_3 = [50]
+            self.angle_plante_1 = [50]         
+            self.angle_plante_2 = [50]
+            self.angle_plante_3 = [50]
+            self.flag_lidar = True
             self.msg.data = self.last_msg.data
             self.rewind_after_lidar()
             self.my_publish()
-        
-        if self.index == 16:
-            if self.plante1 and self.plante2 :
-                self.distance_plante = self.distance_plante_3
-                self.angle_plante = self.angle_plante_3
-            elif self.plante2 and self.plante3 :
-                self.distance_plante = self.distance_plante_1
-                self.angle_plante = self.angle_plante_1
-            else :
-                self.distance_plante = self.distance_plante_2
-                self.angle_plante = self.angle_plante_2
-            i1 = self.trouver_indice_plus_petite_valeur(self.distance_plante)
-            self.plante_format((self.distance_plante[i1]) * 1000, self.angle_plante[i1])
-            self.my_publish()
-        
-        if self.index == 17:
+
+        if self.index == 18:
             self.msg_claw.data = 'PF1'
             self.my_publish_claw()
 
-        if self.index == 18:
+        if self.index == 19:
             self.last_msg.data = self.msg.data
             self.msg.data = "D0120P000"
             self.my_publish()
                 
-        if self.index == 19:
+        if self.index == 20:
             self.msg_claw.data = 'PF2'
             self.my_publish_claw()
         
-        if self.index == 20:
+        if self.index == 21:
             self.msg_claw.data = 'DP'
             self.my_publish_claw()
-        
-        if self.index == 21:
             self.msg.data = "R0120P000"
             self.my_publish()
-
-        if self.index == 22:
             self.msg.data = self.last_msg.data
+            self.distance_plante_1 = [50]         
+            self.distance_plante_2 = [50]
+            self.distance_plante_3 = [50]
+            self.angle_plante_1 = [50]         
+            self.angle_plante_2 = [50]
+            self.angle_plante_3 = [50]
             self.rewind_after_lidar()
             self.my_publish()
-
-        """"
-
-
-        if self.index == 6:
-            self.rewind_after_lidar()
-            self.my_publish()
-
         
+        #if self.index == 20:
+        #    self.msg.data = "R0120P000"
+        #    self.my_publish()
 
-        if self.index == 8 :
-            self.rewind_after_lidar()
+        #if self.index == 22:
+        #    self.msg.data = self.last_msg.data
+        #    self.distance_plante_1 = [50]         
+        #    self.distance_plante_2 = [50]
+        #    self.distance_plante_3 = [50]
+        #    self.angle_plante_1 = [50]         
+        #    self.angle_plante_2 = [50]
+        #    self.angle_plante_3 = [50]
+        #    self.rewind_after_lidar()
+        #    self.my_publish()
+
+        if self.index == 24:
+            self.msg.data = "R0320P000"
+            self.my_publish()
+        
+        if self.index == 25:
+            self.msg.data = "D0380N090"
+            self.my_publish()
+        
+        #if self.index == 24:
+            self.msg_claw.data = "RP"
+            self.my_publish_claw()
+        
+        if self.index == 27:
+            self.msg.data = "R0100P000"
             self.my_publish()
 
-        """
+        if self.index == 28:
+            self.msg_claw.data = "DF2"
+            self.my_publish_claw()
+
+        if self.index == 29:
+            self.msg_claw.data = "RP"
+            self.my_publish_claw()
+
+        if self.index == 30:
+            self.msg.data = "R0100P000"
+            self.my_publish()
+
+        if self.index == 31:
+            self.msg_claw.data = "DF2"
+            self.my_publish_claw()
+        
+        if self.index == 32:
+            self.msg_claw.data = "RP"
+            self.my_publish_claw()
+
+        if self.index == 33:
+            self.msg.data = "R0100P000"
+            self.my_publish()
+
+        #if self.index == 33:
+            self.msg_claw.data = "DF2"
+            self.my_publish_claw()
+
+        #if self.index == 34:
+            self.msg.data = "R1040P000"
+            self.my_publish()  
 
     def rewind_after_lidar(self):
         if self.msg.data[5] == "N":
             modified_data = self.msg.data.replace("D", "R")
             modified_data2 = modified_data.replace("N", "P")
             self.msg.data = modified_data2
+
             print("Modified data", modified_data2)
             #self.msg.data.replace("D", "R")
             #self.msg.data.replace("N", "P")
@@ -246,7 +300,7 @@ class Ctrl_nav(Node):
 
     def plante_format(self, distance, angle):
         #msg = String()
-        if angle >= 10:
+        if angle >= 10 :
             str_var1 = f"{round(distance-195):04d}"  # Formatage sur 4 caractères
             str_var2 = f"{round(angle*0.8):03d}"  # Formatage sur 3 caractères
             self.msg.data = f"D{str_var1}N{str_var2}"
@@ -274,7 +328,7 @@ class Ctrl_nav(Node):
 
 
     def my_callback_lidar(self, laser: LaserScan):
-        if self.index == 3 and self.flag_lidar :
+        if (self.index == 3 or self.index == 10 or self.index == 17) and self.flag_lidar:
             self.flag_lidar = False
             print("CallbackLIDAR")
             delay =0

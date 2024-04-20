@@ -16,7 +16,7 @@ class Motor(Node):
         self.subscriber_ = self.create_subscription(String, "/robotix/cmd_pos", self.my_callback, 10)
         self.subscriber_emergency = self.create_subscription(String, "/robotix/stop", self.my_callback_stop, 10)
         #self.timer_ = self.create_timer(5.0, self.my_publish)
-        self.ser_ = serial.Serial("/dev/ttyACM0", 9600)
+        self.ser_ = serial.Serial("/dev/ttyACM0", 115200)
         self.get_logger().info("Hello from motor")
 
     def my_callback(self, pos: String):
