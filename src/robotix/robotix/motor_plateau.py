@@ -46,7 +46,7 @@ class SimplePointCloudSubscriber(Node):
         points = self.read_points(msg)
         print("111111111111 New point cloud data received: 1111111111111111111111111111")
         for point in points:
-            if  point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
+            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.15:
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
                 self.my_publish()
   
@@ -56,7 +56,7 @@ class SimplePointCloudSubscriber(Node):
         points = self.read_points(msg)
         print("222222222222222 New point cloud data received:      2222222222222")
         for point in points:
-            if  point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
+            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.15:
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
                 self.my_publish()
 
@@ -66,7 +66,7 @@ class SimplePointCloudSubscriber(Node):
         points = self.read_points(msg)
         print("3333333333333333 New point cloud data received:   3333333333333333333333333333333")
         for point in points:
-            if  point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
+            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.15:
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
                 self.my_publish()
 
@@ -76,7 +76,7 @@ class SimplePointCloudSubscriber(Node):
         points = self.read_points(msg)
         print("44444444444444444 New point cloud data received: 4444444444444444")
         for point in points:
-            if  point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
+            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.15:
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
                 self.my_publish()
     

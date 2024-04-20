@@ -24,7 +24,7 @@ pin_value = 0
 try:
     while not GPIO.input(18):
         print(GPIO.input(18))
-        time.sleep(1)
+        time.sleep(0.1)
     print("I run nodes")
     supervisor.run_nodes()
 except KeyboardInterrupt:

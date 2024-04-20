@@ -30,7 +30,7 @@ def run_node(command):
         if "ExternalShutdownException" in output:
             print("Relancement du noeud en raison d'une condition d'erreur spécifique...")
         else:
-            print("ERRREUER " + str(output))
+            print("ERREUR " + str(output))
             print("Le noeud s'est terminé normalement ou en raison d'une autre erreur, il ne sera pas relancé.")
             break
 
