@@ -4,13 +4,16 @@ from sensor_msgs.msg import PointCloud2, PointField
 import struct
 import math
 from std_msgs.msg import String
-#import sensor_msgs.point_cloud2 as pc2
+import RPi.GPIO as GPIO
 
 class SimplePointCloudSubscriber(Node):
     def __init__(self):
         super().__init__('simple_pc2_subscriber')
+        self.pin = 24  # Change to your GPIO pin number
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(self.pin, GPIO.OUT)  #,pull_up_down=GPIO.PUD_UP)
         self.msg = String()
-        self.publisher = self.create_publisher(String, "/robotix/stop", 10)
+        #self.publisher = self.create_publisher(String, "/robotix/stop", 10)
         self.subscription = self.create_subscription(
             PointCloud2,
             '/tof_1',
@@ -35,10 +38,11 @@ class SimplePointCloudSubscriber(Node):
             self.listener_callback_4,
             10)
         
-    def my_publish(self):
-        self.msg.data = ('Z')
-        print(self.msg.data)
-        self.publisher.publish(self.msg)
+    #def my_publish(self, stop):
+        #self.msg.data = ('Z')
+        #print(self.msg.data)
+        #self.publisher.publish(self.msg)
+        
 
     def listener_callback(self, msg):
         # Parse the point cloud data
@@ -46,9 +50,11 @@ class SimplePointCloudSubscriber(Node):
         points = self.read_points(msg)
         print("111111111111 New point cloud data received: 1111111111111111111111111111")
         for point in points:
-            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.15:
+            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.3 :
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
-                self.my_publish()
+                GPIO.output(self.pin, GPIO.LOW)
+            else:
+                GPIO.output(self.pin, GPIO.HIGH)
   
     def listener_callback_2(self, msg):
         # Parse the point cloud data
@@ -56,9 +62,11 @@ class SimplePointCloudSubscriber(Node):
         points = self.read_points(msg)
         print("222222222222222 New point cloud data received:      2222222222222")
         for point in points:
-            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.15:
+            if  point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
-                self.my_publish()
+                GPIO.output(self.pin, GPIO.LOW)
+            else:
+                GPIO.output(self.pin, GPIO.HIGH)
 
     def listener_callback_3(self, msg):
         # Parse the point cloud data
@@ -66,9 +74,11 @@ class SimplePointCloudSubscriber(Node):
         points = self.read_points(msg)
         print("3333333333333333 New point cloud data received:   3333333333333333333333333333333")
         for point in points:
-            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.15:
+            if  point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
-                self.my_publish()
+                GPIO.output(self.pin, GPIO.LOW)
+            else:
+                GPIO.output(self.pin, GPIO.HIGH)
 
     def listener_callback_4(self, msg):
         # Parse the point cloud data
@@ -76,9 +86,11 @@ class SimplePointCloudSubscriber(Node):
         points = self.read_points(msg)
         print("44444444444444444 New point cloud data received: 4444444444444444")
         for point in points:
-            if  point[0] < 0.01 and point[0] > -0.01 and point[2] > 0.1 and point[2] < 0.15:
+            if  point[0] < 0.01 and point[0] > -0.01 and point[2] < 0.1 :
                 print(f"x: {point[0]:.2f}, y: {point[1]:.2f}, z: {point[2]:.2f}")
-                self.my_publish()
+                GPIO.output(self.pin, GPIO.LOW)
+            else:
+                GPIO.output(self.pin, GPIO.HIGH)
     
     def read_points(self, cloud, field_names=None, skip_nans=False, uvs=[]):
         fmt = self._get_struct_fmt(cloud.is_bigendian, cloud.fields, field_names)
