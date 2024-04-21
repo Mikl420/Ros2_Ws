@@ -25,7 +25,7 @@ class Ctrl_nav(Node):
         self.subscriber_real_pos = self.create_subscription(Int16, "/robotix/real_pos", self.my_callback_real_pos, 10)
         self.subscriber_lidar_ = self.create_subscription(LaserScan, "/scan", self.my_callback_lidar, 10)
         self.subscriber_claw = self.create_subscription(Int16, "/robotix/serial_pince", self.my_callback_real_pos, 10)
-        self.timer = self.create_timer(5.0, self.check_message_received)
+        #self.timer = self.create_timer(5.0, self.check_message_received)
         self.get_logger().info("Hello from ctrl_nav")
         self.angle_abs = 0
         self.cmd_distance = 0
@@ -35,7 +35,7 @@ class Ctrl_nav(Node):
         self.tab_cmd = ["D0380P090", "D0320N090"]
         self.choice = 1
         self.msg = String()
-        self.extracted_angle = 0
+        self.extracted_angle = "P000"
         self.msg.data = "D0001P000"
         self.msg_claw = String()
         self.last_msg = String()
@@ -65,6 +65,7 @@ class Ctrl_nav(Node):
     def my_publish(self):
         print(self.msg.data)
         self.publisher_cmd_pos.publish(self.msg)
+        print("publish done")
 
     def my_publish_claw(self):
         print(self.msg_claw.data)
@@ -123,7 +124,7 @@ class Ctrl_nav(Node):
             self.msg.data = self.last_msg.data
             self.rewind_after_lidar()
             self.my_publish()
-            self.msg.data = "D0000" + self.extracted_angle
+            self.msg.data = "D0000" + str(self.extracted_angle)
             self.my_publish()
         """"
         if self.index == 10:
@@ -188,7 +189,7 @@ class Ctrl_nav(Node):
             self.msg.data = self.last_msg.data
             self.rewind_after_lidar()
             self.my_publish()
-            self.msg.data = "D0000" + self.extracted_angle
+            self.msg.data = "D0000" + str(self.extracted_angle)
             self.my_publish()
 
         if self.index == 20:
@@ -289,7 +290,7 @@ class Ctrl_nav(Node):
             modified_data = self.msg.data.replace("D", "R")
             modified_data2 = modified_data.replace("N", "P")
             self.msg.data = modified_data2
-            self.extracted_angle = String(self.msg.data[5:9])
+            self.extracted_angle = String(self.msg.data[5:8])
             self.msg.data = self.msg.data[:5] + "P000"
             print("Modified data", modified_data2)
             #self.msg.data.replace("D", "R")

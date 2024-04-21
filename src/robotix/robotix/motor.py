@@ -14,13 +14,13 @@ class Motor(Node):
         super().__init__("motor")
         #self.publisher_ = self.create_publisher(Twist, "/robotix/topic", 10)
         self.subscriber_ = self.create_subscription(String, "/robotix/cmd_pos", self.my_callback, 10)
-        self.subscriber_emergency = self.create_subscription(String, "/robotix/stop", self.my_callback_stop, 10)
+        #self.subscriber_emergency = self.create_subscription(String, "/robotix/stop", self.my_callback_stop, 10)
         #self.timer_ = self.create_timer(5.0, self.my_publish)
         self.ser_ = serial.Serial("/dev/ttyACM0", 115200)
         self.get_logger().info("Hello from motor")
 
     def my_callback(self, pos: String):
-        #print(pos.data)
+        print("I'm in callback motor")
         msg = String
         msg = pos.data
         #print(msg)
@@ -29,6 +29,8 @@ class Motor(Node):
         #print(msg_byte)
         if self.ser_.write(msg_byte):
             print("I sended the Byte ", msg_byte, "\n")
+        else : 
+            print("Failed to send")
     def my_callback_stop(self, pos: String):
         msg = String
         msg = pos.data
