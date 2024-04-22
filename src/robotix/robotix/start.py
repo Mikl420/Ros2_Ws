@@ -28,7 +28,7 @@ try:
         print(GPIO.input(18))
         time.sleep(0.1)
     print("I run nodes")
-    ctrl_nav.Ctrl_nav.setEndTime(time.time())
+   # ctrl_nav.Ctrl_nav.setEndTime(time.time())
     supervisor.run_nodes()
 except KeyboardInterrupt:
     GPIO.cleanup()
